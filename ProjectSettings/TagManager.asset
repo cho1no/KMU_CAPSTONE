@@ -19,7 +19,6 @@ TagManager:
   - BulletEnemy
   - Bullet1
   - Bullet2
-
   layers:
   - Default
   - TransparentFX

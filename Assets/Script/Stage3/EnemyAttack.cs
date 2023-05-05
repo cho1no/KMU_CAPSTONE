@@ -18,7 +18,7 @@ public class EnemyAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "attack")
+        if (collision.gameObject.tag == "Attack")
         {
             if (playerRotation.speed > 0)
             {
