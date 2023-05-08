@@ -36,7 +36,7 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         isLive = true;
-
+        
     }
     void Update()
     {
@@ -54,6 +54,7 @@ public class PlayerControl : MonoBehaviour
     public void yellowButton()
     {
         ItemBoom(-1);
+        
     }
     void LimitScreen()
     {
@@ -93,7 +94,7 @@ public class PlayerControl : MonoBehaviour
         {
             boomImage[i].transform.gameObject.SetActive(false);
         }
-        for (int i = 0; i < maxBoom; i++)
+        for (int i =0; i < maxBoom; i++)
         {
             if (boomCount > i)
             {
