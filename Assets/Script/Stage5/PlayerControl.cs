@@ -5,16 +5,27 @@ using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
+    public static PlayerControl instance;
     float speed = 2; //플레이어 이동 속도
-    public int boomCount = 3;
+    public int boomCount;
+    public int maxBoom;
+    public Image[] boomImage;
     public GameObject gameOver;
     public Animator ani;
     Vector2 moveLimit = new Vector2(2.1f, 0);
 
+
     public bool isLive;
+    private void Awake()
+    {
+        instance = this;
+        maxBoom = boomImage.Length;
+        boomCount = maxBoom;
+    }
     private void Start()
     {
         isLive = true;
+        
     }
     void Update()
     {
@@ -31,10 +42,7 @@ public class PlayerControl : MonoBehaviour
     }
     public void yellowButton()
     {
-        //OnAbsolute();
-        ItemBoom();
-        boomCount--;
-        //hpManager.SetHp(-1);
+        ItemBoom(-1);
         
     }
     void LimitScreen()
@@ -55,10 +63,25 @@ public class PlayerControl : MonoBehaviour
     //    gameObject.tag = "Player";
     //}
 
-    void ItemBoom()
+    public void ItemBoom(int boom)
     {
+        for (int i = 0; i < 3; i++)
+        {
+            boomImage[i].color = new Color(1, 1, 1, 0);
+        }
+        for (int i = 0; i < boomCount; i++)
+        {
+            boomImage[i].color = new Color(1, 1, 1, 1);
+        }
+        if (boomCount >= maxBoom)
+        {
+            boomCount = maxBoom;
+        }
         if (boomCount > 0)
         {
+            boomCount += boom;
+            boomImage[boomCount].transform.gameObject.SetActive(false);
+
             GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
             GameObject[] bullet = GameObject.FindGameObjectsWithTag("BulletEnemy");
 

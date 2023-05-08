@@ -102,6 +102,13 @@ public class EnemyMoveEx : MonoBehaviour
             hitSound.Play();
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            ani.SetTrigger("Attack");
+        }
+    }
     public void OnDestroy()
     {
         if (transform.position.y >= 13)

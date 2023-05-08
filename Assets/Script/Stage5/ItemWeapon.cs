@@ -5,6 +5,8 @@ using UnityEngine;
 public class ItemWeapon : MonoBehaviour
 {
     public Scanner scanner;
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Item1") && GameManager5.instance.weapon.count < 6)
@@ -23,6 +25,12 @@ public class ItemWeapon : MonoBehaviour
         {
             GameManager5.instance.weapon.count++;
             GameManager5.instance.weapon.prefabId = 10;
+            Debug.Log("¾ÆÀÌÅÛ È¹µæ1");
+        }
+        if (collision.gameObject.tag.Equals("Item4"))
+        {
+            PlayerControl.instance.ItemBoom(+1);
+            //PlayerControl.instance.boomImage[PlayerControl.instance.boomCount-1].transform.gameObject.SetActive(true);
             Debug.Log("¾ÆÀÌÅÛ È¹µæ1");
         }
     }

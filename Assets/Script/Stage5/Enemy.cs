@@ -13,16 +13,17 @@ public class Enemy : MonoBehaviour
     public float shootTimer = 0;
 
     public GameObject bulletPrefab;
-    public GameObject item0prefab;
     public GameObject item1prefab;
     public GameObject item2prefab;
+    public GameObject item3prefab;
+    public GameObject item4prefab;
     //public GameObject scoreItemprefab;
 
     Animator ani;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     
-    bool isLive;
+    [SerializeField]bool isLive;
     private void Awake()
     {
         ani = GetComponent<Animator>();
@@ -40,11 +41,15 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        shootTimer += Time.deltaTime;
-        if (shootTimer >= shootInterval)
+        
+        if (transform.position.x >= -2.4 && transform.position.x <= 1.85)
         {
-            shootTimer = 0;
-            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            shootTimer += Time.deltaTime;
+            if (shootTimer >= shootInterval)
+            {
+                shootTimer = 0;
+                Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            }
         }
     }
     void OnEnable() // 프리팹으로 옮겨서 하이어라키에있는 target을 넣을 수 없음
@@ -62,44 +67,43 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (health <= 0 )
-            return;
-        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2"))
+        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2") && isLive == true)
         {
             health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
         }
-            if (health > 0) // live,hit action
+        if (health > 0) // live,hit action
         {
-
+                
         }
-        else
+        else if(health < 0)
         {
+            isLive = false;
             Dead();
             //die
         }
     }
     public void Dead()
     {
-        int itemDrop = Random.Range(0, 10);
-        if (itemDrop < 5)
+        int itemDrop = Random.Range(0, 100);
+        if (itemDrop < 80)
         {
             //Instantiate(item0prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 6)
-        {
-            Instantiate(item0prefab, transform.position, Quaternion.identity);
-        }
-        else if (itemDrop < 7)
+        else if (itemDrop < 85 && itemDrop > 80)
         {
             Instantiate(item1prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 8)
+        else if (itemDrop < 90 && itemDrop > 85)
         {
             Instantiate(item2prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 10)
+        else if (itemDrop < 95 && itemDrop > 90)
         {
-            //Instantiate(scoreItemprefab, transform.position, Quaternion.identity);
+            Instantiate(item3prefab, transform.position, Quaternion.identity);
+        }
+        else if (itemDrop < 100 && itemDrop > 95)
+        {
+            Instantiate(item4prefab, transform.position, Quaternion.identity);
         }
         
         Score.instance.GetScore(40);

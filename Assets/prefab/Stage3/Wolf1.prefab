@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 1047154151431243012}
   m_Layer: 6
   m_Name: Wolf1
-  m_TagString: enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combotext: {fileID: 0}
   combocount: {fileID: 0}
-  speed: 1.5
+  speed: 1.3
   hitSound: {fileID: 0}
   playerRotation: {fileID: 0}
   spawner: {fileID: 0}

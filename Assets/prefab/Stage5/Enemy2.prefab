@@ -614,10 +614,11 @@ MonoBehaviour:
   target: {fileID: 0}
   shootTimer: 0
   bulletPrefab: {fileID: 2305848262806951064, guid: c87fd175d2780174aa1ee01a394d4cca, type: 3}
-  item0prefab: {fileID: 1390577598737627238, guid: 35ac1385ec386d04cae725d5636ba1a5, type: 3}
-  item1prefab: {fileID: 5532145270391001620, guid: d26582a52449f0546a8965ba49b60c8c, type: 3}
-  item2prefab: {fileID: 7036525709740035645, guid: f3750070a16f0f74192f7980c2b74668, type: 3}
-  scoreItemprefab: {fileID: 5176064778753483511, guid: f942ec048ec84774885d3a2c240bf772, type: 3}
+  item1prefab: {fileID: 1390577598737627238, guid: 35ac1385ec386d04cae725d5636ba1a5, type: 3}
+  item2prefab: {fileID: 5532145270391001620, guid: d26582a52449f0546a8965ba49b60c8c, type: 3}
+  item3prefab: {fileID: 7036525709740035645, guid: f3750070a16f0f74192f7980c2b74668, type: 3}
+  item4prefab: {fileID: 4370217222948900365, guid: cfd467623de7a8d429780e7de4475214, type: 3}
+  isLive: 0
 --- !u!1 &6648586042877398345
 GameObject:
   m_ObjectHideFlags: 0

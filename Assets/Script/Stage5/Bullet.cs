@@ -34,12 +34,17 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Enemy") || !collision.CompareTag("Boss"))
-            return;
-         
-        per--;
-        if(per == -1) 
-        { 
+        //if (!collision.CompareTag("Enemy") || per == -1 || !collision.CompareTag("Boss"))
+        //    return;
+
+        //per--;
+        //if(per == -1) 
+        //{ 
+        //    rigid.velocity = Vector2.zero;
+        //    gameObject.SetActive(false);
+        //}
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
+        {
             rigid.velocity = Vector2.zero;
             gameObject.SetActive(false);
         }

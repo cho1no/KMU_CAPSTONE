@@ -65,7 +65,7 @@ public class HpManager : MonoBehaviour
         {
             
             Invoke("Stop",1f);
-            ani.SetTrigger("GameOver");
+            //ani.SetTrigger("GameOver");
             //gameOver.SetActive(true);
         }
     }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4959395618908124468}
   m_Layer: 9
   m_Name: Rock
-  m_TagString: enemy
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combotext: {fileID: 0}
   combocount: {fileID: 0}
-  score: {fileID: 0}
   hitSound: {fileID: 0}
   playerRotation: {fileID: 0}
