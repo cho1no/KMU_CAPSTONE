@@ -7,13 +7,17 @@ public class PlayerControl : MonoBehaviour
 {
     public static PlayerControl instance;
     float speed = 2; //플레이어 이동 속도
-    public int boomCount;
-    public int maxBoom;
-    public Image[] boomImage;
+    //public int boomCount;
+
     public GameObject gameOver;
     public Animator ani;
     Vector2 moveLimit = new Vector2(2.1f, 0);
 
+    [Header("Boom")]
+    private int maxBoom;
+
+    public Image[] boomImage;
+    public int boomCount { get; private set; }
 
     public bool isLive;
     private void Awake()
@@ -21,6 +25,13 @@ public class PlayerControl : MonoBehaviour
         instance = this;
         maxBoom = boomImage.Length;
         boomCount = maxBoom;
+        for (int i = 0; i < maxBoom; i++)
+        {
+            if (boomCount > i)
+            {
+                boomImage[i].sprite = boomImage[0].sprite;
+            }
+        }
     }
     private void Start()
     {
@@ -63,25 +74,39 @@ public class PlayerControl : MonoBehaviour
     //    gameObject.tag = "Player";
     //}
 
-    public void ItemBoom(int boom)
+    public void setBoom(int boom)
     {
-        for (int i = 0; i < 3; i++)
+        //for (int i = 0; i < maxBoom; i++)
+        //{
+        //    boomImage[i].color = new Color(1, 1, 1, 0);
+        //}
+        //for (int i = 0; i < boomCount; i++)
+        //{
+        //    boomImage[i].color = new Color(1, 1, 1, 1);
+        //}
+        //if (boomCount >= maxBoom)
+        //{
+        //    boomCount = maxBoom;
+        //}
+        boomCount += boom;
+        boomCount = Mathf.Clamp(boomCount, 0, maxBoom);
+        for (int i = 0; i < maxBoom; i++)
         {
-            boomImage[i].color = new Color(1, 1, 1, 0);
+            boomImage[i].transform.gameObject.SetActive(false);
         }
-        for (int i = 0; i < boomCount; i++)
+        for (int i =0; i < maxBoom; i++)
         {
-            boomImage[i].color = new Color(1, 1, 1, 1);
+            if (boomCount > i)
+            {
+                boomImage[i].transform.gameObject.SetActive(true);
+            }
         }
-        if (boomCount >= maxBoom)
-        {
-            boomCount = maxBoom;
-        }
+    }
+    public void ItemBoom(int val)
+    {
         if (boomCount > 0)
         {
-            boomCount += boom;
-            boomImage[boomCount].transform.gameObject.SetActive(false);
-
+            setBoom(val);
             GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
             GameObject[] bullet = GameObject.FindGameObjectsWithTag("BulletEnemy");
 
