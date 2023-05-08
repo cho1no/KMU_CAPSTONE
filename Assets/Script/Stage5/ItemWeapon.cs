@@ -29,7 +29,7 @@ public class ItemWeapon : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("Item4"))
         {
-            PlayerControl.instance.ItemBoom(+1);
+            PlayerControl.instance.setBoom(+1);
             //PlayerControl.instance.boomImage[PlayerControl.instance.boomCount-1].transform.gameObject.SetActive(true);
             Debug.Log("æ∆¿Ã≈€ »πµÊ1");
         }

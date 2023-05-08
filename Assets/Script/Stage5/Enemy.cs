@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2") && isLive == true)
+        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2") || isLive == true)
         {
             health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
         }
@@ -85,32 +85,32 @@ public class Enemy : MonoBehaviour
     public void Dead()
     {
         int itemDrop = Random.Range(0, 100);
-        if (itemDrop < 80)
+        if (itemDrop <= 80)
         {
             //Instantiate(item0prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 85 && itemDrop > 80)
+        else if (itemDrop > 80 && itemDrop <= 85)
         {
             Instantiate(item1prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 90 && itemDrop > 85)
+        else if (itemDrop > 85 && itemDrop <= 90)
         {
             Instantiate(item2prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 95 && itemDrop > 90)
+        else if (itemDrop > 90 && itemDrop <= 95)
         {
             Instantiate(item3prefab, transform.position, Quaternion.identity);
         }
-        else if (itemDrop < 100 && itemDrop > 95)
+        else if (itemDrop > 95 && itemDrop <= 100)
         {
             Instantiate(item4prefab, transform.position, Quaternion.identity);
         }
         
         Score.instance.GetScore(40);
         ani.SetBool("Dead", true);
-        Invoke("asdf", 1f);
+        Invoke("DeadActive", 1f);
     }
-    void asdf()
+    void DeadActive()
     {
         gameObject.SetActive(false);
     }

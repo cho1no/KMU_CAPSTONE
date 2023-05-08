@@ -1521,24 +1521,24 @@ MonoBehaviour:
   boss: {fileID: 470588816}
   spawnPoint: []
   spawnData:
-  - spawnTime: 0.7
-    shootInterval: 4
+  - spawnTime: 0.9
+    shootInterval: 6
     health: 2
     speed: 0.5
-  - spawnTime: 0.65
-    shootInterval: 3.5
+  - spawnTime: 0.85
+    shootInterval: 6
     health: 3
     speed: 0.55
-  - spawnTime: 0.6
-    shootInterval: 3
+  - spawnTime: 0.8
+    shootInterval: 5.5
     health: 4
     speed: 0.6
-  - spawnTime: 0.55
-    shootInterval: 2.5
+  - spawnTime: 0.75
+    shootInterval: 5.5
     health: 5
     speed: 0.65
-  - spawnTime: 0.5
-    shootInterval: 2
+  - spawnTime: 0.7
+    shootInterval: 5
     health: 6
     speed: 0.7
   level: 0
@@ -1683,9 +1683,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d59f79068e464886f96aeec1e3519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boomCount: 3
   gameOver: {fileID: 651791718}
   ani: {fileID: 527426133}
+  boomImage:
+  - {fileID: 5308230479647565241}
+  - {fileID: 771952347}
+  - {fileID: 1086469904}
   isLive: 0
 --- !u!50 &1042438187
 Rigidbody2D:
