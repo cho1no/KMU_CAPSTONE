@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
 
         MoveToFirstPosition();
         MoveShadow(playershadow);
+        timeScore(1);
     }
     public void Jump()
     {
@@ -83,6 +84,11 @@ public class PlayerController : MonoBehaviour
             scaleY = 0.03f;
         obj.transform.position = new Vector3(transform.position.x, obj.transform.position.y, obj.transform.position.z);
         obj.transform.localScale = new Vector3(scaleX, scaleY, 0);
+    }
+    void timeScore(int var)
+    {
+        int i = var*(int)Time.deltaTime;
+        Score.instance.GetScore(i);
     }
     IEnumerator Invincibility()//¹«Àû
     {
