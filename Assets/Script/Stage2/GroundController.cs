@@ -68,13 +68,13 @@ public class GroundController : MonoBehaviour
         int random = Random.Range(0, 100);
         switch (random)
         {
-            case <= 10:
+            case <= 70:
                 groundPattern = 0;
                 break;
-            case int n when (10 < n && n <= 20):
+            case int n when (70 < n && n <= 90):
                 groundPattern = 1;
                 break;
-            case > 20:
+            case > 90:
                 groundPattern = 2;
                 break;
         }
