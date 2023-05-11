@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.FantasyMonsters.Scripts;
 
 public class BatControl : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class BatControl : MonoBehaviour
     public float downSpeed;
     public GameObject[] item;
     bool moveRight;  // 오른쪽으로 이동 중인지 여부
-    Animator ani;
+    Monster monster;
     private void Awake()
     {
-        ani = GetComponent<Animator>();
+        monster = GetComponent<Monster>();
     }
     private void Start()
     {
@@ -55,14 +56,17 @@ public class BatControl : MonoBehaviour
         if (collision.gameObject.tag.Equals("Rock"))
         {
             //ani.SetTrigger("Dead");
-            ani.SetBool("Deadd", true);
             Debug.Log("닿았다");
             downSpeed = -3;
             speed = 0;
+            monster.Die();
+            gameObject.tag = "Untagged";
         }
         if (collision.gameObject.tag.Equals("Ground"))
         {
             gameObject.SetActive(false);
+            monster.SetHead(2);
+            gameObject.tag = "Enemy";
         }
     }
     

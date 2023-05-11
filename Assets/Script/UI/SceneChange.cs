@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    public Panel panel;
     public void StartScene()
     {
         SceneManager.LoadScene("StartScene");
@@ -13,7 +12,6 @@ public class SceneChange : MonoBehaviour
     public void LobbyScene()
     {
         SceneManager.LoadScene("LobbyScene");
-        panel.ani.SetBool("Started", true);
     }
     public void Stage1_Go()
     {
@@ -31,5 +29,9 @@ public class SceneChange : MonoBehaviour
     public void Stage5_Go()
     {
         SceneManager.LoadScene("Stage5");
+    }
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

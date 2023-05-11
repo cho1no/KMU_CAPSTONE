@@ -11,7 +11,8 @@ public class shadow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shadow1 = Instantiate(Shadow, new Vector3(0, 0, 0),Quaternion.identity);
+
+        shadow1 = Instantiate(Shadow, new Vector3(0, -100, 0),Quaternion.identity);
         //shadow1.transform.SetParent(gameObject.transform, false);
     }
 
@@ -27,13 +28,15 @@ public class shadow : MonoBehaviour
         if (scaleY <= 0.03f)
             scaleY = 0.03f;
         shadow1.transform.localScale = new Vector3(scaleX,scaleY, 0);
+
         OnDestroy();
     }
     public void OnDestroy()
     {
-        if (transform.position.y <= -10)
+
+        if (gameObject.transform.position.y > 7)
         {
-            gameObject.SetActive(false);
+            Destroy(shadow1);
         }
     }
 }

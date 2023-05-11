@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.FantasyMonsters.Scripts;
 
 public class Enemy : MonoBehaviour
 {
@@ -19,9 +20,12 @@ public class Enemy : MonoBehaviour
     public GameObject item4prefab;
     //public GameObject scoreItemprefab;
 
+    Monster monster;
     Animator ani;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
+    AudioSource audioSource;
+    public AudioClip EnemyDead;
     
     [SerializeField]bool isLive;
     private void Awake()
@@ -29,6 +33,8 @@ public class Enemy : MonoBehaviour
         ani = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
+        monster = GetComponent<Monster>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void FixedUpdate()
     {
@@ -51,11 +57,20 @@ public class Enemy : MonoBehaviour
                 Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             }
         }
+        //if (health < 0)
+        //{
+        //    isLive = false;
+        //    Dead();
+        //}
     }
     void OnEnable() // 프리팹으로 옮겨서 하이어라키에있는 target을 넣을 수 없음
     {
         target = GameManager5.instance.player.GetComponent<Rigidbody2D>();
         isLive = true;
+        if (isLive)
+        {
+            monster.SetHead(0);
+        }
         health = maxHealth;
     }
     public void Init(SpawnData data)
@@ -71,11 +86,11 @@ public class Enemy : MonoBehaviour
         {
             health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
         }
-        if (health > 0) // live,hit action
-        {
+        //if (health > 0) // live,hit action
+        //{
                 
-        }
-        else if(health < 0)
+        //}
+         if(health < 0)
         {
             isLive = false;
             Dead();
@@ -105,7 +120,8 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(item4prefab, transform.position, Quaternion.identity);
         }
-        
+        audioSource.clip = EnemyDead;
+        audioSource.Play();
         Score.instance.GetScore(40);
         ani.SetBool("Dead", true);
         Invoke("DeadActive", 1f);

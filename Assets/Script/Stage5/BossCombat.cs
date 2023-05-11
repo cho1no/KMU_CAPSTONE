@@ -1,28 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.FantasyMonsters.Scripts;
 using UnityEngine;
 
 public class BossCombat : MonoBehaviour
 {
-    public enum BossType { boss1, boss2, boss3, boss4, boss5}
+    public enum BossType { boss1, boss2, boss3, boss4, boss5 }
     public BossType type;
-    [SerializeField] float bossMovement, patternTimer, bulletSpeed, fireRate1, fireRate2, fireRate3, nextFire, resetTimer = 70f, radius, health;
+    [SerializeField] float bossMovement, patternTimer = 40, bulletSpeed, fireRate1, fireRate2, fireRate3, nextFire, resetTimer = 70f, radius, health;
     [SerializeField] int pathNum, currentState, numberOfBullets = 10; //패턴2 총알 갯수
- 
+
     public GameObject point;
     public GameObject bulletPrefab;
     public GameObject spawner;
     public Rigidbody2D bullet;
     public Transform[] wayPoint;
 
+    bool isLive;
     Animator ani;
-    
+    Monster monster;
     private void Awake()
     {
         point = GameObject.Find("WayPoint");
         wayPoint = point.GetComponentsInChildren<Transform>();
         spawner = GameObject.Find("Spawner");
         ani = GetComponent<Animator>();
+        monster = GetComponent<Monster>();
+    }
+    private void OnEnable()
+    {
+        isLive = true;
+        if (isLive)
+        {
+            monster.SetHead(0);
+        }
     }
     private void Start()
     {
@@ -63,15 +74,15 @@ public class BossCombat : MonoBehaviour
     void Update()
     {
         patternTimer -= Time.deltaTime;
-        if (patternTimer <= 30)
+        if (patternTimer <= 10)
         {
             currentState = 1;
         }
-        else if(patternTimer <= 70 && patternTimer > 40 )
+        else if (patternTimer <= 40 && patternTimer > 20)
         {
-            currentState = 2; 
+            currentState = 2;
         }
-        else if(patternTimer <=40 && patternTimer >= 30)
+        else if (patternTimer <= 20 && patternTimer >= 10)
         {
             currentState = 3;
         }
@@ -108,8 +119,8 @@ public class BossCombat : MonoBehaviour
     }
     private void LateUpdate()//데이터 정리
     {
-   
-            
+
+
 
     }
     void RandomFirePattern1()
@@ -149,25 +160,6 @@ public class BossCombat : MonoBehaviour
                 bulletRigidbody.velocity = new Vector2(bulletSpeed * Mathf.Cos(angle), bulletSpeed * Mathf.Sin(angle));
             }
         }
-        //2번째
-        //if (Time.time > nextFire)
-        //{
-        //    nextFire = Time.time + fireRate2;
-        //    Vector3 bossPosition = transform.position;
-        //    float angleStep = 360f / numberOfBullets;
-        //    float angle = 0f;
-        //    for (int i = 0; i < numberOfBullets; i++)
-        //    {
-        //        float bulletDirectionX = bossPosition.x + Mathf.Sin((angle * Mathf.PI) / 180f);
-        //        float bulletDirectionY = bossPosition.y + Mathf.Cos((angle * Mathf.PI) / 180f);
-        //        Vector3 bulletVector = new Vector3(bulletDirectionX, bulletDirectionY, 0);
-        //        Vector3 bulletDirection = (bulletVector - bossPosition).normalized;
-        //        GameObject bullet = (GameObject)Instantiate(bulletPrefab, bossPosition, Quaternion.identity);
-        //        Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
-        //        bulletRigidbody.velocity = new Vector2(bulletDirection.x * bulletSpeed, bulletDirection.y * bulletSpeed);
-        //        angle += angleStep;
-        //    }
-        //}
     }
     public void TrippleAttackPattern3()
     {
@@ -181,31 +173,36 @@ public class BossCombat : MonoBehaviour
             Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
             bulletRigidbody.velocity = new Vector2(0, -bulletSpeed);
         }
-       
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (health <= 0)
+        if (health < 0)
             return;
         if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2"))
         {
+            Debug.Log(health);
             health -= collision.GetComponent<Bullet>().damage;
             Score.instance.GetScore(30);
         }
         if (health > 0)
         {
-            
+
         }
-        else
+        else if (health <= 0)
         {
             OnDie();
         }
     }
     public void OnDie()
     {
-        //Destroy(gameObject);
-        spawner.SetActive(true);
+
         Score.instance.GetScore(5000);
         ani.SetBool("Dead", true);
+        Invoke("DeadActive", 1f);
+    }
+    public void DeadActive()
+    {
+        Destroy(gameObject);
     }
 }

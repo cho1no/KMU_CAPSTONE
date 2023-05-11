@@ -472,7 +472,7 @@ MonoBehaviour:
   maxX: 10
   downSpeed: 0
   item:
-  - {fileID: 3580773195886613098, guid: 6a37ebf53fe51b84d872f5f3cc83f8cf, type: 3}
+  - {fileID: 7302215546371212600, guid: 26e654da9a0854b40bd057a171976d73, type: 3}
   - {fileID: 4661554328774146525, guid: a3aba71e5819ce446bc2f2a67a35ff65, type: 3}
 --- !u!1 &3830169823865218884
 GameObject:

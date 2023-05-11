@@ -16,11 +16,13 @@ public class Weapon : MonoBehaviour
     //public bool isLive = true;
 
     ItemWeapon itemWeapon;
-
+    AudioSource audioSource;
+    public AudioClip shotNormal;
     private void Awake()
     {
         //부모 오브젝트 컴포넌트 가져오는방법
         itemWeapon = GetComponentInParent<ItemWeapon>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start()
     {
@@ -149,6 +151,8 @@ public class Weapon : MonoBehaviour
     }
     void Normal() //플레이어 일반공격
     {
+        audioSource.clip = shotNormal;
+        audioSource.Play();
         Transform bullet0 = GameManager5.instance.pool.Get(prefabId).transform;
         bullet0.position = new Vector3(transform.position.x , transform.position.y + 1 ,transform.position.z);
         bullet0.GetComponent<Bullet>().Init(damage, count, new Vector3(0,1,0));

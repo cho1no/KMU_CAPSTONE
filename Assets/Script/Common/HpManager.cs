@@ -20,7 +20,7 @@ public class HpManager : MonoBehaviour
 
     private void Update()
     {
-        GameOver();
+        Over();
     }
     private void Awake()
     {
@@ -59,25 +59,16 @@ public class HpManager : MonoBehaviour
             }
     }
 
-    public void GameOver()
+    public void Over()
     {
         if (Hp == 0)
         {
-            
+            GameOver.instance.gameOver();
             Invoke("Stop",1f);
-            //ani.SetTrigger("GameOver");
-            //gameOver.SetActive(true);
         }
     }
-    //IEnumerator GameOverRoutine()
-    //{
-    //    gameOver.SetActive(true);
-    //    ani.SetTrigger("GameOver");
-    //    yield return new WaitForSeconds(0.5f);
-    //    Stop();
-    //}
     void Stop()
     {
-        Time.timeScale = 0;
+        
     }
 }

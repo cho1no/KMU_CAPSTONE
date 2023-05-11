@@ -14,7 +14,11 @@ public class PlayerController : MonoBehaviour
     public GameObject playerShadow;
     public GameObject HpItem;
     GameObject playershadow;
-
+    AudioSource audiosource;
+    public AudioClip playerJump;
+    public AudioClip playerKick;
+    public AudioClip playerDestroy;
+    
     [Header("Private")]
     private Rigidbody2D rb; // 물리 엔진 사용을 위한 Rigidbody2D 컴포넌트
     private SpriteRenderer spriterenderer;
@@ -24,12 +28,14 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        audiosource = GetComponent<AudioSource>();
         FirstPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
         spriterenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         ani = GetComponent<Animator>();
         playershadow = Instantiate(playerShadow, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
-        
+        StartCoroutine("timeScore");
+
     }
 
     void Update()
@@ -51,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
         MoveToFirstPosition();
         MoveShadow(playershadow);
-        timeScore(1);
+        
     }
     public void Jump()
     {
@@ -59,14 +65,23 @@ public class PlayerController : MonoBehaviour
         {
             ani.SetBool("isJump", true);
 
-            if (isGround < 1) 
-                rb.velocity = new Vector2(0f, jumpForce);
-            if (isGround == 1)
-                rb.velocity = new Vector2(0f, jumpForce*0.7f);
+            if (isGround == 0)
+            {
+                rb.velocity = new Vector2(0f, jumpForce * 1.2f);
+                audiosource.clip = playerJump;
+                audiosource.Play();
+            }
+
+            //if (isGround == 1)
+            //    rb.velocity = new Vector2(0f, rb.velocity.y);
             isGround += 1;
         }
         if (isGround == 2)
+        {
             ani.SetTrigger("isAttack");
+            audiosource.clip = playerKick;
+            audiosource.Play();
+        }
     }
     void MoveToFirstPosition() //현재위치가 시작위치로 가도록하기
     {
@@ -85,10 +100,40 @@ public class PlayerController : MonoBehaviour
         obj.transform.position = new Vector3(transform.position.x, obj.transform.position.y, obj.transform.position.z);
         obj.transform.localScale = new Vector3(scaleX, scaleY, 0);
     }
-    void timeScore(int var)
+    IEnumerator timeScore()
     {
-        int i = var*(int)Time.deltaTime;
-        Score.instance.GetScore(i);
+        int countTime = 0;
+        while (countTime < 100)
+        {
+            Score.instance.GetScore(5);
+            yield return new WaitForSeconds(0.5f);
+            countTime++;
+        }
+        while (countTime >= 100 && countTime < 200)
+        {
+            Score.instance.GetScore(10);
+            yield return new WaitForSeconds(0.5f);
+            countTime++;
+        }
+        while (countTime >= 200 && countTime < 400)
+        {
+            Score.instance.GetScore(20);
+            yield return new WaitForSeconds(0.5f);
+            countTime++;
+        }
+        while (countTime >= 400 && countTime < 800)
+        {
+            Score.instance.GetScore(40);
+            yield return new WaitForSeconds(0.5f);
+            countTime++;
+        }
+        while (countTime >= 800)
+        {
+            Score.instance.GetScore(80);
+            yield return new WaitForSeconds(0.5f);
+            countTime++;
+        }
+        yield return null;
     }
     IEnumerator Invincibility()//무적
     {
@@ -123,7 +168,7 @@ public class PlayerController : MonoBehaviour
         var obj = collision.gameObject;
         if (HpManager.instance.Hp != 0)
         {
-            if (gameObject.tag == "Player" && !ishit)
+            if (gameObject.tag=="Player" && !ishit)
             {
                 if (obj.tag == "Obstacle1" || obj.tag == "Obstacle2")
                 {
@@ -137,14 +182,29 @@ public class PlayerController : MonoBehaviour
                     StartCoroutine("Invincibility");
                 }
             }
-
-            if (gameObject.tag == "Attack" && obj.tag == "Obstacle2")
+            else if (gameObject.tag == "Attack" && !ishit)
             {
-                Debug.Log("Crash");
-                Destroy(obj);
-                int random = 0; //UnityEngine.Random.Range(0, 10);
-                if (random == 0)
-                    Instantiate(HpItem, obj.transform.position, Quaternion.identity);
+                if (obj.tag == "Obstacle1")
+                {
+                    ani.SetTrigger("isHit");
+                    HpManager.instance.SetHp(-1);
+                    Debug.Log("hit");
+                    //맞았을 때 날아가기
+                    Vector3 hitted = new Vector3(10, 10, 0);
+                    rb.velocity = hitted;
+                    ishit = true; //무적 킴
+                    StartCoroutine("Invincibility");
+                }
+                if (obj.tag == "Obstacle2")
+                {
+                    audiosource.clip = playerDestroy;
+                    audiosource.Play();
+                    Debug.Log("Crash");
+                    Destroy(obj);
+                    int random = 0; //UnityEngine.Random.Range(0, 10);
+                    if (random == 0)
+                        Instantiate(HpItem, obj.transform.position, Quaternion.identity);
+                }
             }
         }
     }

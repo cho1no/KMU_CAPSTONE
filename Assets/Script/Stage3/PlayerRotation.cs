@@ -54,8 +54,7 @@ public class PlayerRotation : MonoBehaviour
             {
                 OnDamaged();
                 Vector3 speed1 = new Vector3(100, 100, 0);
-                GetComponent<Rigidbody2D>().AddForce(speed1);
-                
+                GetComponent<Rigidbody2D>().AddForce(speed1);                
             }
             hpmanager.SetHp(-1);
             ani.hitmotion();
@@ -67,7 +66,7 @@ public class PlayerRotation : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && !ishit)//µπ∏Õ¿Ã
+        if (collision.gameObject.tag == "Rock" && !ishit)//µπ∏Õ¿Ã
         {
             ishit = true;
             hpmanager.SetHp(-1);

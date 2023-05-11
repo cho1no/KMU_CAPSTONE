@@ -471,13 +471,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   bossMovement: 1.3
-  patternTimer: 70
+  patternTimer: 40
   bulletSpeed: 2
   fireRate1: 0.5
   fireRate2: 4
   fireRate3: 3
   nextFire: 0
-  resetTimer: 70
+  resetTimer: 40
   radius: 0
   health: 0
   pathNum: 1
