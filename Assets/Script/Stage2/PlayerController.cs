@@ -172,6 +172,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (obj.tag == "Obstacle1" || obj.tag == "Obstacle2")
                 {
+                    Handheld.Vibrate();
                     ani.SetTrigger("isHit");
                     HpManager.instance.SetHp(-1);
                     Debug.Log("hit");
@@ -186,6 +187,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (obj.tag == "Obstacle1")
                 {
+                    Handheld.Vibrate();
                     ani.SetTrigger("isHit");
                     HpManager.instance.SetHp(-1);
                     Debug.Log("hit");
@@ -197,6 +199,7 @@ public class PlayerController : MonoBehaviour
                 }
                 if (obj.tag == "Obstacle2")
                 {
+                    Handheld.Vibrate();
                     audiosource.clip = playerDestroy;
                     audiosource.Play();
                     Debug.Log("Crash");

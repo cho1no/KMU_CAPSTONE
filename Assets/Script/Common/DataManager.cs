@@ -59,9 +59,14 @@ public class DataManager : MonoBehaviour
 
         // 올바르게 저장됐는지 확인 (자유롭게 변형)
         print("저장 완료");
-        for (int i = 0; i < data.point.Length; i++)
+        for (int i = 0; i < data.stageLock.Length; i++)
         {
-            print($"{i}의 포인트 : " + data.point[i]);
+            print($"{i}의 잠금 : " + data.stageLock[i]);
         }
+        for (int i = 0; i < data.highScore.Length; i++)
+        {
+            print($"{i}의 최고점수 : " + data.highScore[i]);
+        }
+        print("코인 수 : " + data.coin);
     }
 }
