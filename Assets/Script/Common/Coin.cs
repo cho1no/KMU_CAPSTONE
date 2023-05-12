@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
     void Start()
     {
         DataManager.Instance.LoadGameData();
-        coinText.text = DataManager.Instance.data.point[0].ToString();
+        coinText.text = DataManager.Instance.data.coin.ToString();
     }
     private void OnApplicationQuit()
     {

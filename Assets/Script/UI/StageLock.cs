@@ -1,0 +1,78 @@
+using JetBrains.Annotations;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class StageLock : MonoBehaviour
+{
+    public GameObject targetParent;
+    // Start is called before the first frame update
+    void Start()
+    {
+        DataManager.Instance.LoadGameData();
+        Debug.Log("자식의 길이" + targetParent.transform.childCount);
+        for (int i = 0; i < targetParent.transform.childCount-3; i++)
+        {
+            Debug.Log(targetParent.transform.GetChild(i).name);
+        }
+        Default();
+        StageLocked();
+    }
+    private void OnApplicationQuit()
+    {
+        DataManager.Instance.SaveGameData();
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    void Default()
+    {
+        DataManager.Instance.data.stageLock[0] = true;
+        DataManager.Instance.SaveGameData();
+    }
+    void StageLocked()
+    {
+        for (int i = 0; i < targetParent.transform.childCount-3; i++)
+        {
+            if (DataManager.Instance.data.stageLock[i] == false)
+            {
+                targetParent.transform.GetChild(i).GetChild(1).gameObject.SetActive(true);
+            }
+        }
+    }
+    public Button Unlock, Cancel;
+    public void UnLock()
+    {
+        GameObject clickobject = EventSystem.current.currentSelectedGameObject;
+        if (clickobject != null)
+        {
+            for (int i = 0; i < targetParent.transform.childCount - 3; i++)
+            {
+                if (targetParent.transform.GetChild(i) == clickobject.transform.parent)
+                {
+                    Debug.Log($"{i} 버튼 클릭");
+                    targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(true);
+                    int index = i;
+                    Unlock.onClick.AddListener(() => UnLockAccept(index));
+                    Cancel.onClick.AddListener(UnLockCancel);
+                }
+            }
+        }
+    }
+    void UnLockCancel()
+    {
+        targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(false);
+    }
+    void UnLockAccept(int i)
+    {
+        DataManager.Instance.data.stageLock[i] = true;
+        if (DataManager.Instance.data.stageLock[i] == true)
+            targetParent.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
+        targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(false);
+    }
+}
