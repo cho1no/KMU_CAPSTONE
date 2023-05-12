@@ -20,6 +20,7 @@ TagManager:
   - BulletEnemy
   - Bullet1
   - Bullet2
+  - EnemyDead
   layers:
   - Default
   - TransparentFX

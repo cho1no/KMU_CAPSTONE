@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7974314255910997486}
   - component: {fileID: 1644574322995738222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4559876031262479593}
   - component: {fileID: 1644574323033497505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegFrontL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5105688010384521525}
   - component: {fileID: 1644574323297396258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644574324052682924}
   - component: {fileID: 1644574324052682925}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799200788592077729}
   - component: {fileID: 1644574324122637134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegBackL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 245340948770102574}
   - component: {fileID: 3558155664329018566}
   - component: {fileID: -6865064259100109735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -618,7 +618,6 @@ MonoBehaviour:
   item2prefab: {fileID: 5532145270391001620, guid: d26582a52449f0546a8965ba49b60c8c, type: 3}
   item3prefab: {fileID: 7036525709740035645, guid: f3750070a16f0f74192f7980c2b74668, type: 3}
   item4prefab: {fileID: 4370217222948900365, guid: cfd467623de7a8d429780e7de4475214, type: 3}
-  EnemyDead: {fileID: 8300000, guid: 2811073972f8c5640a530e0b4e9237b8, type: 3}
   isLive: 0
 --- !u!82 &-6865064259100109735
 AudioSource:
@@ -630,8 +629,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 2811073972f8c5640a530e0b4e9237b8, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -725,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045710804895774094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,7 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2252803889370752784}
   - component: {fileID: 4311513727196409417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegBackR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819384086556992006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1633955458747202951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7951746757697440577}
   - component: {fileID: 8842073771900782992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegFrontR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

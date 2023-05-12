@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6226080035508952782}
   - component: {fileID: 8282534341027125143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegBackR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6883771996200076377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6118913828027401128}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2845901638580695711}
   - component: {fileID: 3715945514942312526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegFrontR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090184212537920592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2850390906481079344}
   - component: {fileID: 6914811445700317104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8530667525897301303}
   - component: {fileID: 6914811445704500863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegFrontL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152894894295400683}
   - component: {fileID: 6914811446005653500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4770366572480451199}
   - component: {fileID: 6914811446696651408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LegBackL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6914811446857896306}
   - component: {fileID: 6914811446857896307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 4395162484986752295}
   - component: {fileID: 8507050868221104029}
   - component: {fileID: -121840090845863574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -899,7 +899,6 @@ MonoBehaviour:
   item2prefab: {fileID: 5532145270391001620, guid: d26582a52449f0546a8965ba49b60c8c, type: 3}
   item3prefab: {fileID: 7036525709740035645, guid: f3750070a16f0f74192f7980c2b74668, type: 3}
   item4prefab: {fileID: 4370217222948900365, guid: cfd467623de7a8d429780e7de4475214, type: 3}
-  EnemyDead: {fileID: 8300000, guid: 2811073972f8c5640a530e0b4e9237b8, type: 3}
   isLive: 0
 --- !u!82 &-121840090845863574
 AudioSource:
@@ -911,8 +910,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 2811073972f8c5640a530e0b4e9237b8, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

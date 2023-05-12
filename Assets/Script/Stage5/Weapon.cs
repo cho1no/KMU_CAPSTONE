@@ -16,13 +16,14 @@ public class Weapon : MonoBehaviour
     //public bool isLive = true;
 
     ItemWeapon itemWeapon;
-    AudioSource audioSource;
-    public AudioClip shotNormal;
+    //Scanner scanner;
+    AudioSource shotNormal;
     private void Awake()
     {
         //부모 오브젝트 컴포넌트 가져오는방법
         itemWeapon = GetComponentInParent<ItemWeapon>();
-        audioSource = GetComponent<AudioSource>();
+        shotNormal = GetComponent<AudioSource>();
+        //scanner = GetComponent<Scanner>();
     }
     private void Start()
     {
@@ -139,7 +140,7 @@ public class Weapon : MonoBehaviour
     {
         if (!itemWeapon.scanner.nearestTarget)  //아이템에 부여할거면 플레이어가 아닌 총알에 넣자 
             return;
- 
+        shotNormal.Play();
         Vector3 targetPos = itemWeapon.scanner.nearestTarget.position;
         Vector3 dir = targetPos - transform.position;
         dir = dir.normalized; //매그니튜드는 벡터의 크기
@@ -151,8 +152,8 @@ public class Weapon : MonoBehaviour
     }
     void Normal() //플레이어 일반공격
     {
-        audioSource.clip = shotNormal;
-        audioSource.Play();
+        //audioSource.clip = shotNormal;
+        shotNormal.Play();
         Transform bullet0 = GameManager5.instance.pool.Get(prefabId).transform;
         bullet0.position = new Vector3(transform.position.x , transform.position.y + 1 ,transform.position.z);
         bullet0.GetComponent<Bullet>().Init(damage, count, new Vector3(0,1,0));

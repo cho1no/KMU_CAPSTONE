@@ -7,8 +7,9 @@ public class PlayerControl : MonoBehaviour
 {
     public static PlayerControl instance;
     float speed = 2; //플레이어 이동 속도
-    //public int boomCount;
 
+    public GameObject bomb;
+    GameObject bombExp;
     public GameObject gameOver;
     public Animator ani;
     Vector2 moveLimit = new Vector2(2.1f, 0);
@@ -106,6 +107,8 @@ public class PlayerControl : MonoBehaviour
     {
         if (boomCount > 0)
         {
+            bombExp = Instantiate(bomb, new Vector3(0, 0, 0), Quaternion.identity);
+            Invoke("DestroyBomb", 1f);
             setBoom(val);
             GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
             GameObject[] bullet = GameObject.FindGameObjectsWithTag("BulletEnemy");
@@ -125,6 +128,10 @@ public class PlayerControl : MonoBehaviour
                 }
             }
         }
+    }
+    void DestroyBomb()
+    {
+        Destroy(bombExp);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

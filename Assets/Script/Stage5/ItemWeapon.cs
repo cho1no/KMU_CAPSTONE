@@ -6,7 +6,6 @@ public class ItemWeapon : MonoBehaviour
 {
     public Scanner scanner;
     AudioSource audioSource;
-    public AudioClip audicilp;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -44,7 +43,7 @@ public class ItemWeapon : MonoBehaviour
     }
     private void AudioSet()
     {
-        audioSource.clip = audicilp;
         audioSource.Play();
+      
     }
 }

@@ -662,7 +662,6 @@ MonoBehaviour:
   cooltime: 0
   itemTimer: 0
   liveTime: 0
-  shotNormal: {fileID: 0}
 --- !u!114 &296533913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +677,7 @@ MonoBehaviour:
   scanRange: 0
   targetLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 64
   nearestTarget: {fileID: 0}
 --- !u!114 &296533914
 MonoBehaviour:
@@ -693,7 +692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scanner: {fileID: 296533913}
-  audicilp: {fileID: 8300000, guid: 1e4b0615403f0fe45ac9cca3e4905546, type: 3}
 --- !u!58 &296533915
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -720,8 +718,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 1e4b0615403f0fe45ac9cca3e4905546, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2117,6 +2115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d59f79068e464886f96aeec1e3519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bomb: {fileID: 3443853714176969284, guid: e484341e926126e4e83f0609f40459f2, type: 3}
   gameOver: {fileID: 651791718}
   ani: {fileID: 527426133}
   boomImage:
@@ -2180,7 +2179,6 @@ MonoBehaviour:
   cooltime: 0
   itemTimer: 0
   liveTime: 0
-  shotNormal: {fileID: 8300000, guid: 22819c2310e864f44aca3b3e92bcc2dc, type: 3}
 --- !u!82 &1042438191
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2191,8 +2189,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 22819c2310e864f44aca3b3e92bcc2dc, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

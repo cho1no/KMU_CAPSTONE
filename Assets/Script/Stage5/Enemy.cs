@@ -24,8 +24,7 @@ public class Enemy : MonoBehaviour
     Animator ani;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
-    AudioSource audioSource;
-    public AudioClip EnemyDead;
+    AudioSource EnemyDead;
     
     [SerializeField]bool isLive;
     private void Awake()
@@ -34,7 +33,7 @@ public class Enemy : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         monster = GetComponent<Monster>();
-        audioSource = GetComponent<AudioSource>();
+        EnemyDead = GetComponent<AudioSource>();
     }
     private void FixedUpdate()
     {
@@ -66,6 +65,7 @@ public class Enemy : MonoBehaviour
     void OnEnable() // 프리팹으로 옮겨서 하이어라키에있는 target을 넣을 수 없음
     {
         target = GameManager5.instance.player.GetComponent<Rigidbody2D>();
+        gameObject.tag = "Enemy";
         isLive = true;
         if (isLive)
         {
@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2") || isLive == true)
+        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2"))
         {
             health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
         }
@@ -93,6 +93,7 @@ public class Enemy : MonoBehaviour
          if(health < 0)
         {
             isLive = false;
+            gameObject.tag = "EnemyDead";
             Dead();
             //die
         }
@@ -120,8 +121,7 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(item4prefab, transform.position, Quaternion.identity);
         }
-        audioSource.clip = EnemyDead;
-        audioSource.Play();
+        EnemyDead.Play();
         Score.instance.GetScore(40);
         ani.SetBool("Dead", true);
         Invoke("DeadActive", 1f);
