@@ -8,7 +8,6 @@ public class HpManager : MonoBehaviour
     public Animator ani;
     //사용중인 하트 UI를 모아놓은 집합체
     public Image[] Heart;
-    public GameObject gameOver;
     //읽는건 자유, 쓰는 건 private로 표기한다.
     public int Hp { get; private set; }
 

@@ -1158,6 +1158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1224706825}
+  ani: {fileID: 1224706830}
 --- !u!114 &429452074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1176,6 @@ MonoBehaviour:
   - {fileID: 671635359}
   - {fileID: 84476293}
   - {fileID: 1849588255}
-  gameOver: {fileID: 0}
   Back: {fileID: 21300000, guid: 2cf85c467b870434d98b67144a7d7a50, type: 3}
   Front: {fileID: 21300000, guid: eca1e956dc9196e4d97bbdcb0d67706f, type: 3}
 --- !u!1 &432298846
@@ -2838,6 +2838,7 @@ GameObject:
   - component: {fileID: 1224706829}
   - component: {fileID: 1224706828}
   - component: {fileID: 1224706827}
+  - component: {fileID: 1224706830}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -2952,6 +2953,27 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!95 &1224706830
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224706823}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 391b9b2a5c518fa489b33ca2feaf5d3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1239033991
 GameObject:
   m_ObjectHideFlags: 0

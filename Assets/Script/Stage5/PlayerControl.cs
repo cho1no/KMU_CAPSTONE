@@ -65,30 +65,9 @@ public class PlayerControl : MonoBehaviour
     {
         return new Vector3(Mathf.Clamp(pos.x, -moveLimit.x, moveLimit.x), -2.6f, 0);
     }
-    //void OnAbsolute()
-    //{
-    //    gameObject.tag = "Abs";
-    //    Invoke("OffAbsolute", 2);
-    //}
-    //void OffAbsolute()
-    //{
-    //    gameObject.tag = "Player";
-    //}
 
     public void setBoom(int boom)
     {
-        //for (int i = 0; i < maxBoom; i++)
-        //{
-        //    boomImage[i].color = new Color(1, 1, 1, 0);
-        //}
-        //for (int i = 0; i < boomCount; i++)
-        //{
-        //    boomImage[i].color = new Color(1, 1, 1, 1);
-        //}
-        //if (boomCount >= maxBoom)
-        //{
-        //    boomCount = maxBoom;
-        //}
         boomCount += boom;
         boomCount = Mathf.Clamp(boomCount, 0, maxBoom);
         for (int i = 0; i < maxBoom; i++)
