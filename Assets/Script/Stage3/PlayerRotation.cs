@@ -8,7 +8,6 @@ public class PlayerRotation : MonoBehaviour
     public ComboCount combocount;
     public GameObject gameOver;
     public PlayerAnimation ani;
-    public HpManager hpmanager;
     public float speed = 1;
     int playerLife = 4;
     private Rigidbody2D rigid;
@@ -49,14 +48,16 @@ public class PlayerRotation : MonoBehaviour
                 OnDamaged();
                 Vector3 speed1 = new Vector3(-150, 150, 0);
                 GetComponent<Rigidbody2D>().AddForce(speed1);
+                Handheld.Vibrate();
             }
             else
             {
                 OnDamaged();
                 Vector3 speed1 = new Vector3(100, 100, 0);
-                GetComponent<Rigidbody2D>().AddForce(speed1);                
+                GetComponent<Rigidbody2D>().AddForce(speed1);
+                Handheld.Vibrate();
             }
-            hpmanager.SetHp(-1);
+            HpManager.instance.SetHp(-1);
             ani.hitmotion();
             combotext.combo = 0;
             combotext.Ani();
@@ -69,16 +70,17 @@ public class PlayerRotation : MonoBehaviour
         if (collision.gameObject.tag == "Rock" && !ishit)//µπ∏Õ¿Ã
         {
             ishit = true;
-            hpmanager.SetHp(-1);
+            HpManager.instance.SetHp(-1);
             ani.hitmotion();
             combotext.combo = 0;
             combotext.Ani();
             combocount.Ani();
             StartCoroutine(Hit());
+            Handheld.Vibrate();
         }
         if (collision.gameObject.tag.Equals("HpItem"))
         {
-            hpmanager.SetHp(1);
+            HpManager.instance.SetHp(1);
             Destroy(collision.gameObject);
         }
     }

@@ -44,6 +44,8 @@ public class DataManager : MonoBehaviour
             data = JsonUtility.FromJson<Data>(FromJsonData);
             print("불러오기 완료");
         }
+        else
+            data.coin = 500;
     }
 
 

@@ -82,20 +82,23 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2"))
+        if (gameObject.tag == "Enemy")
         {
-            health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
-        }
-        //if (health > 0) // live,hit action
-        //{
-                
-        //}
-         if(health < 0)
-        {
-            isLive = false;
-            gameObject.tag = "EnemyDead";
-            Dead();
-            //die
+            if (collision.CompareTag("Bullet1") || collision.CompareTag("Bullet2"))
+            {
+                health -= collision.GetComponent<Bullet>().damage;//닿이면 bullet스크립트에서 데미지를 가져와 피가 깍인다
+            }
+            //if (health > 0) // live,hit action
+            //{
+
+            //}
+            if (health < 0)
+            {
+                isLive = false;
+                gameObject.tag = "EnemyDead";
+                Dead();
+                //die
+            }
         }
     }
     public void Dead()

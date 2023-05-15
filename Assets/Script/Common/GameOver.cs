@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class GameOver : MonoBehaviour
     public void gameOver()
     {
         //audioSource.Play();
+        //DataManager.Instance.data.NowScore = Score.instance.scoreText;
         GameOverPanel.SetActive(true);
         //ani.SetTrigger("gameOver");
         Invoke("TimeStop", 1f);

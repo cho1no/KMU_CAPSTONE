@@ -55,7 +55,7 @@ public class PlayerControl : MonoBehaviour
     public void yellowButton()
     {
         ItemBoom(-1);
-        
+        Handheld.Vibrate();
     }
     void LimitScreen()
     {
@@ -140,6 +140,7 @@ public class PlayerControl : MonoBehaviour
             if (collision.CompareTag("Enemy") || collision.CompareTag("Boss") || collision.CompareTag("BulletEnemy"))
             {
                 HpManager.instance.SetHp(-1);
+                Handheld.Vibrate();
             }
         }
     }

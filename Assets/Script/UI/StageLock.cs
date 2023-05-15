@@ -18,7 +18,8 @@ public class StageLock : MonoBehaviour
         {
             Debug.Log(targetParent.transform.GetChild(i).name);
         }
-        Default();
+        //Default();
+        DataManager.Instance.data.SceneState = 0;
         StageLocked();
     }
     private void OnApplicationQuit()
@@ -55,6 +56,8 @@ public class StageLock : MonoBehaviour
             {
                 if (targetParent.transform.GetChild(i) == clickobject.transform.parent)
                 {
+                    if (i == 0 || i == 3 || i == 5)
+                        return;
                     Debug.Log($"{i} 버튼 클릭");
                     targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(true);
                     int index = i;
@@ -70,9 +73,18 @@ public class StageLock : MonoBehaviour
     }
     void UnLockAccept(int i)
     {
-        DataManager.Instance.data.stageLock[i] = true;
-        if (DataManager.Instance.data.stageLock[i] == true)
-            targetParent.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
-        targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(false);
+        if (DataManager.Instance.data.coin >= 500)
+        {
+            DataManager.Instance.data.stageLock[i] = true;
+            if (DataManager.Instance.data.stageLock[i] == true)
+                targetParent.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
+            targetParent.transform.GetChild(targetParent.transform.childCount - 1).gameObject.SetActive(false);
+            DataManager.Instance.data.coin -= 500;
+            DataManager.Instance.SaveGameData();
+        }
+        else
+        {
+            Debug.Log("no Coin");
+        }
     }
 }
