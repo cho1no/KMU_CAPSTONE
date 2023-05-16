@@ -1877,23 +1877,23 @@ MonoBehaviour:
   spawnPoint: []
   spawnData:
   - spawnTime: 0.7
-    shootInterval: 4
+    shootInterval: 5
     health: 2
     speed: 0.5
   - spawnTime: 0.65
-    shootInterval: 3.5
+    shootInterval: 4
     health: 3
     speed: 0.55
   - spawnTime: 0.6
-    shootInterval: 3
+    shootInterval: 4.5
     health: 4
     speed: 0.6
   - spawnTime: 0.55
-    shootInterval: 2.5
+    shootInterval: 4.2
     health: 5
     speed: 0.65
   - spawnTime: 0.5
-    shootInterval: 2
+    shootInterval: 4
     health: 6
     speed: 0.7
   level: 0

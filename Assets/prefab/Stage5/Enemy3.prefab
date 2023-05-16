@@ -891,7 +891,7 @@ MonoBehaviour:
   speed: 0
   health: 0
   maxHealth: 0
-  shootInterval: 2
+  shootInterval: 5
   target: {fileID: 0}
   shootTimer: 0
   bulletPrefab: {fileID: 2305848262806951064, guid: c87fd175d2780174aa1ee01a394d4cca, type: 3}
