@@ -58,6 +58,7 @@ public class PlayerRotation : MonoBehaviour
                 Handheld.Vibrate();
             }
             HpManager.instance.SetHp(-1);
+            TotalSound.instance.PlayerHit();
             ani.hitmotion();
             combotext.combo = 0;
             combotext.Ani();
@@ -71,6 +72,7 @@ public class PlayerRotation : MonoBehaviour
         {
             ishit = true;
             HpManager.instance.SetHp(-1);
+            TotalSound.instance.PlayerHit();
             ani.hitmotion();
             combotext.combo = 0;
             combotext.Ani();
@@ -81,6 +83,7 @@ public class PlayerRotation : MonoBehaviour
         if (collision.gameObject.tag.Equals("HpItem"))
         {
             HpManager.instance.SetHp(1);
+            TotalSound.instance.GetHpItem();
             Destroy(collision.gameObject);
         }
     }

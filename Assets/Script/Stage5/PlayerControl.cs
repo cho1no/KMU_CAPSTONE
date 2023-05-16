@@ -11,9 +11,11 @@ public class PlayerControl : MonoBehaviour
     public GameObject bomb;
     GameObject bombExp;
     public GameObject gameOver;
-    public Animator ani;
+    //public Animator ani;
     Vector2 moveLimit = new Vector2(2.1f, 0);
 
+    Animator ani;
+    SpriteRenderer rend;
     [Header("Boom")]
     private int maxBoom;
 
@@ -37,25 +39,33 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         isLive = true;
-        
+        ani = GetComponent<Animator>();
+        rend = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
         LimitScreen();
         transform.Translate(new Vector2(speed * Time.deltaTime, 0));
+        if (speed < 0)
+            rend.flipX = false;
+        else
+            rend.flipX = true;
     }
     public void RedButton() // 좌우 방향 이동
     {
         speed = -2;
+        
     }
     public void blueButton()
     {
         speed = 2;
+        
     }
     public void yellowButton()
     {
         ItemBoom(-1);
         Handheld.Vibrate();
+        ani.SetTrigger("isBoom");
     }
     void LimitScreen()
     {
@@ -63,7 +73,7 @@ public class PlayerControl : MonoBehaviour
     }
     public Vector3 ClampPosition(Vector3 pos)
     {
-        return new Vector3(Mathf.Clamp(pos.x, -moveLimit.x, moveLimit.x), -2.6f, 0);
+        return new Vector3(Mathf.Clamp(pos.x, -moveLimit.x, moveLimit.x), -2f, 0);
     }
 
     public void setBoom(int boom)
@@ -86,6 +96,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (boomCount > 0)
         {
+            TotalSound.instance.Stage5BoomClick();
             bombExp = Instantiate(bomb, new Vector3(0, 0, 0), Quaternion.identity);
             Invoke("DestroyBomb", 1f);
             setBoom(val);

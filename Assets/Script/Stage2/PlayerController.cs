@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriterenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         ani = GetComponent<Animator>();
-        playershadow = Instantiate(playerShadow, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        playershadow = Instantiate(playerShadow, new Vector3(transform.position.x-0.2f, transform.position.y-0.65f, 0), Quaternion.identity);
         StartCoroutine("timeScore");
 
     }
@@ -71,17 +71,22 @@ public class PlayerController : MonoBehaviour
                 audiosource.clip = playerJump;
                 audiosource.Play();
             }
-
+            if (isGround == 1)
+            {
+                rb.velocity = new Vector2(0f, jumpForce * 0.8f);
+                audiosource.clip = playerJump;
+                audiosource.Play();
+            }
             //if (isGround == 1)
             //    rb.velocity = new Vector2(0f, rb.velocity.y);
             isGround += 1;
         }
-        if (isGround == 2)
-        {
-            ani.SetTrigger("isAttack");
-            audiosource.clip = playerKick;
-            audiosource.Play();
-        }
+        //if (isGround == 2)
+        //{
+        //    ani.SetTrigger("isAttack");
+        //    audiosource.clip = playerKick;
+        //    audiosource.Play();
+        //}
     }
     void MoveToFirstPosition() //현재위치가 시작위치로 가도록하기
     {
@@ -90,7 +95,8 @@ public class PlayerController : MonoBehaviour
     }
     void MoveShadow(GameObject obj)
     {
-        float Dist = Vector3.Distance(gameObject.transform.position, obj.transform.position);
+        Vector3 gOposition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 0.65f, gameObject.transform.position.z);
+        float Dist = Vector3.Distance(gOposition, obj.transform.position);
         float scaleX = 0.7f - Dist;
         float scaleY = 0.15f - Dist / 5;
         if (scaleX <= 0.15f)
@@ -159,6 +165,7 @@ public class PlayerController : MonoBehaviour
         }
         if (obj.tag == "HpItem")
         {
+            TotalSound.instance.GetHpItem();
             HpManager.instance.SetHp(1); 
             Destroy(obj);
         }
@@ -180,6 +187,7 @@ public class PlayerController : MonoBehaviour
                     Vector3 hitted = new Vector3(10, 10, 0);
                     rb.velocity = hitted;
                     ishit = true; //무적 킴
+                    TotalSound.instance.PlayerHit();
                     StartCoroutine("Invincibility");
                 }
             }
@@ -195,6 +203,7 @@ public class PlayerController : MonoBehaviour
                     Vector3 hitted = new Vector3(10, 10, 0);
                     rb.velocity = hitted;
                     ishit = true; //무적 킴
+                    TotalSound.instance.PlayerHit();
                     StartCoroutine("Invincibility");
                 }
                 if (obj.tag == "Obstacle2")
