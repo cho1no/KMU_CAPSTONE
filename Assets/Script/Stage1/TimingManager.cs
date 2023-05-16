@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,20 +8,20 @@ public class TimingManager : MonoBehaviour
 {
     public List<GameObject> boxNoteList = new List<GameObject>(); // 판정범위에있는지 모든 노트를 비교 
 
-    public ComboText combotext;
-    public ComboCount combocount;
-
+    [SerializeField] GameObject ComboImage;
+    [SerializeField] UnityEngine.UI.Text comboText;
     [SerializeField] Transform Center = null;
     [SerializeField] RectTransform[] timingRect = null; //판정 범위
     Vector2[] timingBoxs = null; //판정범위의 최소값x, 최대값y
 
     EffectManager effectManager;
-    public Animator ani;
 
+    public int currentCombo = 0;
     public Button redButton, blueButton, yellowButton;
     bool redButtonPressed = false;
     bool blueButtonPressed = false;
     bool yellowButtonPressed = false;
+    public Animator ani;
     private void Awake()
     {
         effectManager = FindObjectOfType<EffectManager>();
@@ -38,29 +39,44 @@ public class TimingManager : MonoBehaviour
         redButton.onClick.AddListener(RedButtonPressed);
         blueButton.onClick.AddListener(BlueButtonPressed);
         yellowButton.onClick.AddListener(YellowButtonPressed);
-    }
-    //public void FeverButton()
-    //{
-    //    for (int i = 0; i < boxNoteList.Count; i++)
-    //    {
-    //        float t_notePosY = boxNoteList[i].transform.localPosition.y;
-    //        if (boxNoteList[0].layer == 10)
-    //        {
-    //            for (int y = 0; y < timingBoxs.Length; y++)
-    //            {
-    //                if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
-    //                {
-    //                    Destroy(boxNoteList[i]);
-    //                    boxNoteList.RemoveAt(i);
-    //                    Debug.Log("Hit" + y);
-    //                    return;
-    //                }
-    //            }
 
-    //        }
-    //    }
-    //    Debug.Log("Miss");
-    //}
+        comboText.gameObject.SetActive(false);
+        ComboImage.SetActive(false);
+    }
+    public void FeverButton()
+    {
+        ani.SetTrigger("isPicking");
+        for (int i = 0; i < boxNoteList.Count; i++)
+        {
+            float t_notePosY = boxNoteList[i].transform.localPosition.y;
+            if (boxNoteList[0].layer == 10)
+            {
+                for (int y = 0; y < timingBoxs.Length; y++)
+                {
+                    if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
+                    {
+                        if (y == 0)
+                            Score.instance.GetScore(70);
+                        else if (y == 1)
+                            Score.instance.GetScore(50);
+                        else if (y == 2)
+                            Score.instance.GetScore(30);
+                        if (y < timingBoxs.Length - 1) // bad
+                        {
+                            effectManager.NoteHitEffect();
+                        }
+                        boxNoteList[i].GetComponent<NoteControl>().HideNote();
+                        boxNoteList.RemoveAt(i);
+
+                        TotalSound.instance.CatchStar();
+                        effectManager.judgeMentEffect(y);
+                        return;
+                    }
+                }
+            }
+        }
+        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+    }
     public void RedButton()
     {
         ani.SetTrigger("isPicking");
@@ -68,7 +84,7 @@ public class TimingManager : MonoBehaviour
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
 
-            if (boxNoteList[0].tag == "RedNote")
+            if (boxNoteList[0].tag == "RedNote" || boxNoteList[0].tag == "RainbowNote") //수정 필요
             {
                 for (int y = 0; y < timingBoxs.Length; y++)
                 {
@@ -83,16 +99,14 @@ public class TimingManager : MonoBehaviour
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
-                            combotext.combo = 0;
                         }
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
                         boxNoteList.RemoveAt(i);
 
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
 
-                        combotext.combo++;
-                        combotext.Ani();
-                        combocount.Ani();
+                        IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -102,9 +116,8 @@ public class TimingManager : MonoBehaviour
                 }
             }
         }
-
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        combotext.combo = 0;
+        ResetCombo();
     }
     public void BlueButton()
     {
@@ -113,7 +126,7 @@ public class TimingManager : MonoBehaviour
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
 
-            if (boxNoteList[0].tag == "BlueNote") //가장 가까운걸로 바꿔야함
+            if (boxNoteList[0].tag == "BlueNote" || boxNoteList[0].tag == "RainbowNote") //가장 가까운걸로 바꿔야함
             {
                 for (int y = 0; y < timingBoxs.Length; y++)
                 {
@@ -128,16 +141,14 @@ public class TimingManager : MonoBehaviour
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
-                            combotext.combo = 0;
                         }
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
 
                         boxNoteList.RemoveAt(i);
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
 
-                        combotext.combo++;
-                        combotext.Ani();
-                        combocount.Ani();
+                        IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -148,7 +159,7 @@ public class TimingManager : MonoBehaviour
             }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        combotext.combo = 0;
+        ResetCombo();
     }
 
     public void YellowButton()
@@ -158,7 +169,7 @@ public class TimingManager : MonoBehaviour
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
 
-            if (boxNoteList[0].tag == "YellowNote")
+            if (boxNoteList[0].tag == "YellowNote" || boxNoteList[0].tag == "RainbowNote")
             {
                 for (int y = 0; y < timingBoxs.Length; y++)
                 {
@@ -173,16 +184,13 @@ public class TimingManager : MonoBehaviour
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
-                            combotext.combo = 0;
                         }
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
-
                         boxNoteList.RemoveAt(i);
-                        effectManager.judgeMentEffect(y);
 
-                        combotext.combo++;
-                        combotext.Ani();
-                        combocount.Ani();
+                        TotalSound.instance.CatchStar();
+                        effectManager.judgeMentEffect(y);
+                        IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -193,7 +201,7 @@ public class TimingManager : MonoBehaviour
             }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        combotext.combo = 0;
+        ResetCombo();
     }
 
     void RedButtonPressed()
@@ -237,16 +245,13 @@ public class TimingManager : MonoBehaviour
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
-                                combotext.combo = 0;
                             }
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-
-                            combotext.combo++;
-                            combotext.Ani();
-                            combocount.Ani();
+                            IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -257,7 +262,7 @@ public class TimingManager : MonoBehaviour
                 }
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            combotext.combo = 0;
+            ResetCombo();
         }
     }
 
@@ -284,16 +289,13 @@ public class TimingManager : MonoBehaviour
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
-                                combotext.combo = 0;
                             }
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-
-                            combotext.combo++;
-                            combotext.Ani();
-                            combocount.Ani();
+                            IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -303,9 +305,8 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
-            
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            combotext.combo = 0;
+            ResetCombo();
         }
     }
 
@@ -333,16 +334,13 @@ public class TimingManager : MonoBehaviour
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
-                                combotext.combo = 0;
                             }
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-
-                            combotext.combo++;
-                            combotext.Ani();
-                            combocount.Ani();
+                            IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -352,9 +350,31 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
-            
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            combotext.combo = 0;
+            ResetCombo();
         }
+    }
+    public void IncreaseCombo(int num = 1)
+    {
+        currentCombo += num;
+        comboText.text = string.Format("{0:#,##0}", currentCombo);
+
+        if (currentCombo > 2)
+        {
+            comboText.gameObject.SetActive(true);
+            ComboImage.SetActive(true);
+        }
+        GetCombo();
+    }
+    public void ResetCombo()
+    {
+        currentCombo = 0;
+        comboText.text = "0";
+        comboText.gameObject.SetActive(false);
+        ComboImage.SetActive(false);
+    }
+    int GetCombo()
+    {
+        return currentCombo;
     }
 }

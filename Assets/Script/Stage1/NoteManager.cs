@@ -14,7 +14,6 @@ public class NoteManager : MonoBehaviour
     int num;
     [SerializeField] Transform tfNoteApeear;
 
-    public NoteControl notecontrol;
     TimingManager timingManager;
     EffectManager effectManager;
 
