@@ -67,4 +67,10 @@ public class ComboText : MonoBehaviour
     {
         return combo;
     }
+    public void IncreaseCombo(int newCombo = 1 )
+    {
+        combo += newCombo;
+        comboText.text = string.Format("{0:#,##0}", combo);
+    }
+
 }

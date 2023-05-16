@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
     public Animator ani;
     string aniScoreUp = "ScoreUp";
 
+
     private void Awake()
     {
         

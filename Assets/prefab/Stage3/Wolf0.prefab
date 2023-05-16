@@ -65,7 +65,7 @@ Transform:
   m_GameObject: {fileID: 3455204924431769928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.9654524, y: 1.4187529, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 0.86666656}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3455204926471911321}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combotext: {fileID: 0}
   combocount: {fileID: 0}
-  speed: 1.3
+  speed: 1.1
   hitSound: {fileID: 0}
   playerRotation: {fileID: 0}
   spawner: {fileID: 0}
