@@ -72,6 +72,7 @@ public class TimingManager : MonoBehaviour
             }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+        Handheld.Vibrate();
     }
     public void RedButton()
     {
@@ -109,9 +110,16 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "RedBlueNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
+
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
     public void BlueButton()
     {
@@ -126,11 +134,11 @@ public class TimingManager : MonoBehaviour
                     if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                     {
                         if (y == 0)
-                            Score.instance.GetScore(70);
+                            Score.instance.GetScore(70,1);
                         else if (y == 1)
-                            Score.instance.GetScore(50);
+                            Score.instance.GetScore(50,1);
                         else if (y == 2)
-                            Score.instance.GetScore(30);
+                            Score.instance.GetScore(30,1);
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
@@ -140,7 +148,7 @@ public class TimingManager : MonoBehaviour
                         boxNoteList.RemoveAt(i);
                         effectManager.judgeMentEffect(y);
 
-                        IncreaseCombo();
+                        //IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -149,9 +157,15 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "BlueYellowNote" || boxNoteList[0].tag == "RedBlueNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
 
     public void YellowButton()
@@ -167,11 +181,11 @@ public class TimingManager : MonoBehaviour
                     if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                     {
                         if (y == 0)
-                            Score.instance.GetScore(70);
+                            Score.instance.GetScore(70, 1);
                         else if (y == 1)
-                            Score.instance.GetScore(50);
+                            Score.instance.GetScore(50, 1);
                         else if (y == 2)
-                            Score.instance.GetScore(30);
+                            Score.instance.GetScore(30, 1);
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
@@ -180,7 +194,7 @@ public class TimingManager : MonoBehaviour
                         boxNoteList.RemoveAt(i);
 
                         effectManager.judgeMentEffect(y);
-                        IncreaseCombo();
+                        //IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -189,9 +203,15 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "BlueYellowNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
 
     void RedButtonPressed()
@@ -239,7 +259,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList.RemoveAt(i);
 
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo(); //ÀÛµ¿ ¾ÈµÇ´Â Áß
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -251,6 +271,7 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
 
@@ -268,11 +289,11 @@ public class TimingManager : MonoBehaviour
                         if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                         {
                             if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70);
+                                Score.instance.GetScore(70, 1);
                             else if (y == 1) //Äð
-                                Score.instance.GetScore(50);
+                                Score.instance.GetScore(50, 1);
                             else if (y == 2) //±Â
-                                Score.instance.GetScore(30);
+                                Score.instance.GetScore(30, 1);
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
@@ -281,7 +302,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList.RemoveAt(i);
 
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -293,6 +314,7 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
 
@@ -311,11 +333,11 @@ public class TimingManager : MonoBehaviour
                         if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                         {
                             if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70);
+                                Score.instance.GetScore(70, 1);
                             else if (y == 1) //Äð
-                                Score.instance.GetScore(50);
+                                Score.instance.GetScore(50, 1);
                             else if (y == 2) //±Â
-                                Score.instance.GetScore(30);
+                                Score.instance.GetScore(30, 1);
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
@@ -324,7 +346,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList.RemoveAt(i);
 
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -336,6 +358,7 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
     public void IncreaseCombo(int num = 1)

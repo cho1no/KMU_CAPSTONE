@@ -14,7 +14,6 @@ public class NoteManager : MonoBehaviour
     int num;
     [SerializeField] Transform tfNoteApeear;
 
-    public NoteControl notecontrol;
     TimingManager timingManager;
     EffectManager effectManager;
 
@@ -112,6 +111,7 @@ public class NoteManager : MonoBehaviour
 
                 collision.GetComponent<NoteControl>().HideNote();
                 HpManager.instance.SetHp(-1);
+                Handheld.Vibrate();
             }
         }
     }
