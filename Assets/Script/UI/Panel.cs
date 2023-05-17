@@ -6,7 +6,7 @@ using UnityEngine;
 public class Panel : MonoBehaviour
 {
     public Animator ani;
-
+    //public GameObject TotalPanel;
     public GameObject[] Stage;
     public GameObject[] PanelList;
 
@@ -65,10 +65,12 @@ public class Panel : MonoBehaviour
     public void panelUp()
     {
         //TotalGameState = true;
+        //TotalPanel.SetActive(true); 
         ani.SetTrigger("PanelUp");
     }
     public void panelDown()
     {
+        //TotalPanel.SetActive(false);
         ani.SetTrigger("PanelDown");
     }
 

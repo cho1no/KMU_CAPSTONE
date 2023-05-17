@@ -68,14 +68,20 @@ public class GroundController : MonoBehaviour
         int random = Random.Range(0, 100);
         switch (random)
         {
-            case <= 70:
+            case <= 40:
                 groundPattern = 0;
                 break;
-            case int n when (70 < n && n <= 90):
+            case int n when (40 < n && n <= 70):
                 groundPattern = 1;
                 break;
-            case > 90:
+            case int n when (70 < n && n <= 80):
                 groundPattern = 2;
+                break;
+            case int n when (80 < n && n <= 90):
+                groundPattern = 3;
+                break;
+            case > 90:
+                groundPattern = 4;
                 break;
         }
         // 땅 오브젝트 생성 및 리스트에 추가

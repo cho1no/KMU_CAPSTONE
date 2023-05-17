@@ -155,7 +155,7 @@ public class Weapon : MonoBehaviour
         //audioSource.clip = shotNormal;
         shotNormal.Play();
         Transform bullet0 = GameManager5.instance.pool.Get(prefabId).transform;
-        bullet0.position = new Vector3(transform.position.x , transform.position.y + 1 ,transform.position.z);
+        bullet0.position = new Vector3(transform.position.x , transform.position.y+0.5f ,transform.position.z);
         bullet0.GetComponent<Bullet>().Init(damage, count, new Vector3(0,1,0));
     }
     public void RotationWeapon() //아이템 회전

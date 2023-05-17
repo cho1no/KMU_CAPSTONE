@@ -70,4 +70,5 @@ public class NoteControl : MonoBehaviour
         color.a += alphaSpeed * Time.deltaTime;
         noteImage.color = color;
     }
+
 }

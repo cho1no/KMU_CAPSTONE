@@ -56,7 +56,7 @@ public class StageLock : MonoBehaviour
             {
                 if (targetParent.transform.GetChild(i) == clickobject.transform.parent)
                 {
-                    if (i == 0 || i == 3 || i == 5)
+                    if (i == 3 || i == 5)
                         return;
                     Debug.Log($"{i} 버튼 클릭");
                     targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(true);
@@ -67,6 +67,7 @@ public class StageLock : MonoBehaviour
             }
         }
     }
+    public Button NotEnoughCoinCheck;
     void UnLockCancel()
     {
         targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(false);
@@ -81,10 +82,36 @@ public class StageLock : MonoBehaviour
             targetParent.transform.GetChild(targetParent.transform.childCount - 1).gameObject.SetActive(false);
             DataManager.Instance.data.coin -= 500;
             DataManager.Instance.SaveGameData();
+            TotalSound.instance.LobbyBuyGame();
         }
         else
         {
-            Debug.Log("no Coin");
+            targetParent.transform.GetChild(targetParent.transform.childCount - 1).GetChild(1).gameObject.SetActive(true);
+            NotEnoughCoinCheck.onClick.AddListener(NotEoughCoinCancel);
         }
+    }
+    void NotEoughCoinCancel()
+    {
+        targetParent.transform.GetChild(targetParent.transform.childCount - 1).GetChild(1).gameObject.SetActive(false);
+        targetParent.transform.GetChild(targetParent.transform.childCount - 1).gameObject.SetActive(false);
+    }
+    public void DataReset()
+    {
+        DataManager.Instance.LoadGameData();
+        DataManager.Instance.data.coin = 500;
+        DataManager.Instance.data.SceneState = 0;
+        for (int i = 0; i < DataManager.Instance.data.highScore.Length; i++)
+        {
+            DataManager.Instance.data.highScore[i] = 0;
+            DataManager.Instance.data.stageLock[i] = false;
+        }
+        DataManager.Instance.SaveGameData();
+    }
+    public void CoinCheat()
+    {
+        DataManager.Instance.LoadGameData();
+        DataManager.Instance.data.coin += 1000;
+        DataManager.Instance.data.SceneState = 0;
+        DataManager.Instance.SaveGameData();
     }
 }

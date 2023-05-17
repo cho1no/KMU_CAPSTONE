@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,7 @@ public class TimingManager : MonoBehaviour
     bool redButtonPressed = false;
     bool blueButtonPressed = false;
     bool yellowButtonPressed = false;
+    public Animator ani;
     private void Awake()
     {
         effectManager = FindObjectOfType<EffectManager>();
@@ -43,6 +45,7 @@ public class TimingManager : MonoBehaviour
     }
     public void FeverButton()
     {
+        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -65,6 +68,7 @@ public class TimingManager : MonoBehaviour
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
                         boxNoteList.RemoveAt(i);
 
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
                         return;
                     }
@@ -76,6 +80,7 @@ public class TimingManager : MonoBehaviour
     }
     public void RedButton()
     {
+        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -99,6 +104,7 @@ public class TimingManager : MonoBehaviour
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
                         boxNoteList.RemoveAt(i);
 
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
 
                         IncreaseCombo();
@@ -123,6 +129,7 @@ public class TimingManager : MonoBehaviour
     }
     public void BlueButton()
     {
+        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -146,6 +153,7 @@ public class TimingManager : MonoBehaviour
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
 
                         boxNoteList.RemoveAt(i);
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
 
                         //IncreaseCombo();
@@ -170,6 +178,7 @@ public class TimingManager : MonoBehaviour
 
     public void YellowButton()
     {
+        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -193,13 +202,14 @@ public class TimingManager : MonoBehaviour
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
                         boxNoteList.RemoveAt(i);
 
+                        TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
                         //IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
                         yellowButtonPressed = false;
-                        return;  
+                        return;
                     }
                 }
             }
@@ -234,12 +244,13 @@ public class TimingManager : MonoBehaviour
     }
     void CheckButtonRY() //»¡ ³ë
     {
+        ani.SetTrigger("isPicking");
         if (yellowButtonPressed && redButtonPressed) //»¡³ë
         {
             for (int i = 0; i < boxNoteList.Count; i++)
             {
                 float t_notePosY = boxNoteList[i].transform.localPosition.y;
-                if (boxNoteList[0].tag == "YellowRedNote") 
+                if (boxNoteList[0].tag == "YellowRedNote")
                 {
                     for (int y = 0; y < timingBoxs.Length; y++)
                     {
@@ -258,6 +269,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
                             //IncreaseCombo(); //ÀÛµ¿ ¾ÈµÇ´Â Áß
 
@@ -277,6 +289,7 @@ public class TimingManager : MonoBehaviour
 
     void CheckButtonRB() //»¡ÆÄ
     {
+        ani.SetTrigger("isPicking");
         if (redButtonPressed && blueButtonPressed) //»¡ÆÄ
         {
             for (int i = 0; i < boxNoteList.Count; i++)
@@ -301,6 +314,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
                             //IncreaseCombo();
 
@@ -320,6 +334,7 @@ public class TimingManager : MonoBehaviour
 
     void CheckButtonBY() //³ëÆÄ
     {
+        ani.SetTrigger("isPicking");
         if (blueButtonPressed && yellowButtonPressed) //³ëÆÄ
         {
             for (int i = 0; i < boxNoteList.Count; i++)
@@ -345,6 +360,7 @@ public class TimingManager : MonoBehaviour
                             boxNoteList[i].GetComponent<NoteControl>().HideNote();
                             boxNoteList.RemoveAt(i);
 
+                            TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
                             //IncreaseCombo();
 
@@ -384,5 +400,4 @@ public class TimingManager : MonoBehaviour
     {
         return currentCombo;
     }
-
 }
