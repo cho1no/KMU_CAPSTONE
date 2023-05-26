@@ -9,14 +9,15 @@ public class NoteControl : MonoBehaviour
     public float alphaSpeed;
     public float maxSize = 2;
     UnityEngine.UI.Image noteImage;
-
+    [SerializeField] float speedUpTime;
     float initialWidth, initialHeight;
-
+ 
     RectTransform rectTransform;
-
+    NoteManager noteManager;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        noteManager = FindObjectOfType<NoteManager>();
     }
     private void Start()
     {
@@ -34,8 +35,13 @@ public class NoteControl : MonoBehaviour
             noteImage = GetComponent<UnityEngine.UI.Image>();
         }
         noteImage.enabled = true;
-    }
 
+    }
+    public void Init(SpeedData data)
+    {
+        noteSpeed = data.noteSpeed;
+        noteManager.bpm = data.bpm;
+    }
     public void HideNote()
     {
         noteImage.enabled = false;
@@ -70,5 +76,4 @@ public class NoteControl : MonoBehaviour
         color.a += alphaSpeed * Time.deltaTime;
         noteImage.color = color;
     }
-
 }

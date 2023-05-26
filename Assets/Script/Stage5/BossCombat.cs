@@ -43,31 +43,31 @@ public class BossCombat : MonoBehaviour
                 health = 50;
                 numberOfBullets = 10;
                 bossMovement = 1.3f;
-                bulletSpeed = 1.8f;
+                bulletSpeed = 1.5f;
                 break;
             case BossType.boss2:
                 health = 75;
                 numberOfBullets = 12;
                 bossMovement = 1.5f;
-                bulletSpeed = 1.8f;
+                bulletSpeed = 1.5f;
                 break;
             case BossType.boss3:
                 health = 100;
                 numberOfBullets = 14;
                 bossMovement = 1.5f;
-                bulletSpeed = 1.8f;
+                bulletSpeed = 1.5f;
                 break;
             case BossType.boss4:
                 health = 125;
                 numberOfBullets = 16;
                 bossMovement = 1.7f;
-                bulletSpeed = 1.8f;
+                bulletSpeed = 1.5f;
                 break;
             case BossType.boss5:
                 health = 150;
                 numberOfBullets = 18;
                 bossMovement = 1.9f;
-                bulletSpeed = 1.8f;
+                bulletSpeed = 1.5f;
                 break;
         }
     }

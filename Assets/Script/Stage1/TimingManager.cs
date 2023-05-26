@@ -18,9 +18,6 @@ public class TimingManager : MonoBehaviour
 
     public int currentCombo = 0;
     public Button redButton, blueButton, yellowButton;
-    bool redButtonPressed = false;
-    bool blueButtonPressed = false;
-    bool yellowButtonPressed = false;
     public Animator ani;
     private void Awake()
     {
@@ -70,187 +67,23 @@ public class TimingManager : MonoBehaviour
 
                         TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
+                        Handheld.Vibrate();
                         return;
                     }
                 }
             }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        Handheld.Vibrate();
+        ResetCombo();
     }
     public void RedButton()
     {
-        ani.SetTrigger("isPicking");
-        for (int i = 0; i < boxNoteList.Count; i++)
-        {
-            float t_notePosY = boxNoteList[i].transform.localPosition.y;
-
-            if (boxNoteList[0].tag == "RedNote" || boxNoteList[0].tag == "RainbowNote") //¼öÁ¤ ÇÊ¿ä
-            {
-                for (int y = 0; y < timingBoxs.Length; y++)
-                {
-                    if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
-                    {
-                        if (y == 0) //ÆÛÆåÆ®
-                            Score.instance.GetScore(70);
-                        else if (y == 1) //Äð
-                            Score.instance.GetScore(50);
-                        else if (y == 2) //±Â
-                            Score.instance.GetScore(30);
-                        if (y < timingBoxs.Length - 1) // bad
-                        {
-                            effectManager.NoteHitEffect();
-                        }
-                        boxNoteList[i].GetComponent<NoteControl>().HideNote();
-                        boxNoteList.RemoveAt(i);
-
-                        TotalSound.instance.CatchStar();
-                        effectManager.judgeMentEffect(y);
-
-                        IncreaseCombo();
-
-                        redButtonPressed = false;
-                        blueButtonPressed = false;
-                        yellowButtonPressed = false;
-                        return;
-                    }
-                }
-            }
-            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "RedBlueNote")
-            {
-                return;
-            }
-            else { ResetCombo(); }
-
-        }
-        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        ResetCombo();
-        Handheld.Vibrate();
-    }
-    public void BlueButton()
-    {
-        ani.SetTrigger("isPicking");
-        for (int i = 0; i < boxNoteList.Count; i++)
-        {
-            float t_notePosY = boxNoteList[i].transform.localPosition.y;
-
-            if (boxNoteList[0].tag == "BlueNote" || boxNoteList[0].tag == "RainbowNote") //°¡Àå °¡±î¿î°É·Î ¹Ù²ã¾ßÇÔ
-            {
-                for (int y = 0; y < timingBoxs.Length; y++)
-                {
-                    if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
-                    {
-                        if (y == 0)
-                            Score.instance.GetScore(70,1);
-                        else if (y == 1)
-                            Score.instance.GetScore(50,1);
-                        else if (y == 2)
-                            Score.instance.GetScore(30,1);
-                        if (y < timingBoxs.Length - 1) // bad
-                        {
-                            effectManager.NoteHitEffect();
-                        }
-                        boxNoteList[i].GetComponent<NoteControl>().HideNote();
-
-                        boxNoteList.RemoveAt(i);
-                        TotalSound.instance.CatchStar();
-                        effectManager.judgeMentEffect(y);
-
-                        //IncreaseCombo();
-
-                        redButtonPressed = false;
-                        blueButtonPressed = false;
-                        yellowButtonPressed = false;
-                        return;
-                    }
-                }
-            }
-            else if (boxNoteList[0].tag == "BlueYellowNote" || boxNoteList[0].tag == "RedBlueNote")
-            {
-                return;
-            }
-            else { ResetCombo(); }
-        }
-        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        ResetCombo();
-        Handheld.Vibrate();
-    }
-
-    public void YellowButton()
-    {
-        ani.SetTrigger("isPicking");
-        for (int i = 0; i < boxNoteList.Count; i++)
-        {
-            float t_notePosY = boxNoteList[i].transform.localPosition.y;
-
-            if (boxNoteList[0].tag == "YellowNote" || boxNoteList[0].tag == "RainbowNote")
-            {
-                for (int y = 0; y < timingBoxs.Length; y++)
-                {
-                    if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
-                    {
-                        if (y == 0)
-                            Score.instance.GetScore(70, 1);
-                        else if (y == 1)
-                            Score.instance.GetScore(50, 1);
-                        else if (y == 2)
-                            Score.instance.GetScore(30, 1);
-                        if (y < timingBoxs.Length - 1) // bad
-                        {
-                            effectManager.NoteHitEffect();
-                        }
-                        boxNoteList[i].GetComponent<NoteControl>().HideNote();
-                        boxNoteList.RemoveAt(i);
-
-                        TotalSound.instance.CatchStar();
-                        effectManager.judgeMentEffect(y);
-                        //IncreaseCombo();
-
-                        redButtonPressed = false;
-                        blueButtonPressed = false;
-                        yellowButtonPressed = false;
-                        return;
-                    }
-                }
-            }
-            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "BlueYellowNote")
-            {
-                return;
-            }
-            else { ResetCombo(); }
-        }
-        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-        ResetCombo();
-        Handheld.Vibrate();
-    }
-
-    void RedButtonPressed()
-    {
-        redButtonPressed = true;
-        CheckButtonRY();
-        CheckButtonRB();
-    }
-    void BlueButtonPressed()
-    {
-        blueButtonPressed = true;
-        CheckButtonBY();
-        CheckButtonRB();
-    }
-    void YellowButtonPressed()
-    {
-        yellowButtonPressed = true;
-        CheckButtonRY();
-        CheckButtonBY();
-    }
-    void CheckButtonRY() //»¡ ³ë
-    {
-        ani.SetTrigger("isPicking");
-        if (yellowButtonPressed && redButtonPressed) //»¡³ë
-        {
+            ani.SetTrigger("isPicking");
             for (int i = 0; i < boxNoteList.Count; i++)
             {
                 float t_notePosY = boxNoteList[i].transform.localPosition.y;
-                if (boxNoteList[0].tag == "YellowRedNote")
+
+                if (boxNoteList[0].tag == "RedNote" || boxNoteList[0].tag == "RainbowNote") //¼öÁ¤ ÇÊ¿ä
                 {
                     for (int y = 0; y < timingBoxs.Length; y++)
                     {
@@ -271,42 +104,76 @@ public class TimingManager : MonoBehaviour
 
                             TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-                            //IncreaseCombo(); //ÀÛµ¿ ¾ÈµÇ´Â Áß
 
-                            redButtonPressed = false;
-                            blueButtonPressed = false;
-                            yellowButtonPressed = false;
+                            IncreaseCombo();
+                            Handheld.Vibrate();
                             return;
                         }
                     }
                 }
             }
-            effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            ResetCombo();
-            Handheld.Vibrate();
-        }
+        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+        ResetCombo();
     }
-
-    void CheckButtonRB() //»¡ÆÄ
+    public void BlueButton()
     {
-        ani.SetTrigger("isPicking");
-        if (redButtonPressed && blueButtonPressed) //»¡ÆÄ
-        {
+            ani.SetTrigger("isPicking");
             for (int i = 0; i < boxNoteList.Count; i++)
             {
                 float t_notePosY = boxNoteList[i].transform.localPosition.y;
-                if (boxNoteList[0].tag == "RedBlueNote")
+
+                if (boxNoteList[0].tag == "BlueNote" || boxNoteList[0].tag == "RainbowNote") //°¡Àå °¡±î¿î°É·Î ¹Ù²ã¾ßÇÔ
                 {
                     for (int y = 0; y < timingBoxs.Length; y++)
                     {
                         if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                         {
-                            if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70, 1);
-                            else if (y == 1) //Äð
-                                Score.instance.GetScore(50, 1);
-                            else if (y == 2) //±Â
-                                Score.instance.GetScore(30, 1);
+                            if (y == 0)
+                                Score.instance.GetScore(70);
+                            else if (y == 1)
+                                Score.instance.GetScore(50);
+                            else if (y == 2)
+                                Score.instance.GetScore(30);
+                            if (y < timingBoxs.Length - 1) // bad
+                            {
+                                effectManager.NoteHitEffect();
+                            }
+                            boxNoteList[i].GetComponent<NoteControl>().HideNote();
+
+                            boxNoteList.RemoveAt(i);
+                            TotalSound.instance.CatchStar();
+                            effectManager.judgeMentEffect(y);
+
+                            IncreaseCombo();
+                            Handheld.Vibrate();
+                            return;
+                        }
+                    }
+                }
+            }
+        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+        ResetCombo();
+    }
+
+    public void YellowButton()
+    {
+            ani.SetTrigger("isPicking");
+            for (int i = 0; i < boxNoteList.Count; i++)
+            {
+                float t_notePosY = boxNoteList[i].transform.localPosition.y;
+
+                if (boxNoteList[0].tag == "YellowNote" || boxNoteList[0].tag == "RainbowNote")
+                {
+                    for (int y = 0; y < timingBoxs.Length; y++)
+                    {
+                        if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
+                        {
+                            if (y == 0)
+                                Score.instance.GetScore(70);
+                            else if (y == 1)
+                                Score.instance.GetScore(50);
+                            else if (y == 2)
+                                Score.instance.GetScore(30);
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
@@ -316,66 +183,29 @@ public class TimingManager : MonoBehaviour
 
                             TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-                            //IncreaseCombo();
 
-                            redButtonPressed = false;
-                            blueButtonPressed = false;
-                            yellowButtonPressed = false;
+                            IncreaseCombo();
+                            Handheld.Vibrate();
                             return;
                         }
                     }
                 }
             }
-            effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            ResetCombo();
-            Handheld.Vibrate();
-        }
+        effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+        ResetCombo();
     }
 
-    void CheckButtonBY() //³ëÆÄ
+    void RedButtonPressed()
     {
-        ani.SetTrigger("isPicking");
-        if (blueButtonPressed && yellowButtonPressed) //³ëÆÄ
-        {
-            for (int i = 0; i < boxNoteList.Count; i++)
-            {
-                float t_notePosY = boxNoteList[i].transform.localPosition.y;
-
-                if (boxNoteList[0].tag == "BlueYellowNote")
-                {
-                    for (int y = 0; y < timingBoxs.Length; y++)
-                    {
-                        if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
-                        {
-                            if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70, 1);
-                            else if (y == 1) //Äð
-                                Score.instance.GetScore(50, 1);
-                            else if (y == 2) //±Â
-                                Score.instance.GetScore(30, 1);
-                            if (y < timingBoxs.Length - 1) // bad
-                            {
-                                effectManager.NoteHitEffect();
-                            }
-                            boxNoteList[i].GetComponent<NoteControl>().HideNote();
-                            boxNoteList.RemoveAt(i);
-
-                            TotalSound.instance.CatchStar();
-                            effectManager.judgeMentEffect(y);
-                            //IncreaseCombo();
-
-                            redButtonPressed = false;
-                            blueButtonPressed = false;
-                            yellowButtonPressed = false;
-                            return;
-                        }
-                    }
-                }
-            }
-            effectManager.judgeMentEffect(timingBoxs.Length); //Miss
-            ResetCombo();
-            Handheld.Vibrate();
-        }
+        RedButton();
+    }
+    void BlueButtonPressed()
+    {
+        BlueButton();
+    }
+    void YellowButtonPressed()
+    {
+        YellowButton();
     }
     public void IncreaseCombo(int num = 1)
     {

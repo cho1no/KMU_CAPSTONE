@@ -6,20 +6,22 @@ public class NoteManager : MonoBehaviour
 {
     public enum State { Normal, Fever}
     public State stageState;
-
+    public SpeedData[] speedData;
     public int bpm = 0;
-    double currentTime;
+    [SerializeField]double currentTime;
     
   
     int num;
+    [SerializeField] int level, maxLevel;
     [SerializeField] Transform tfNoteApeear;
+    [SerializeField] double feverTime;
+    [SerializeField] float levelUpTimer;
 
     TimingManager timingManager;
     EffectManager effectManager;
 
     public GameObject[] buttons;
     public GameObject feverButton;
-    [SerializeField]double feverTime;
     public GameObject feverPanel; //버튼 이펙트, 판
 
 
@@ -28,31 +30,42 @@ public class NoteManager : MonoBehaviour
          timingManager = GetComponent<TimingManager>();
          effectManager = FindObjectOfType<EffectManager>();
 
-
     }
     private void Start()
     {
         stageState = State.Normal;
+        maxLevel = 5;
     }
 
     private void Update()
     {
-
-        if (timingManager.currentCombo >= 50)
+        levelUpTimer += Time.deltaTime;
+        if (timingManager.currentCombo >= 30)
         {
 
             stageState = State.Fever;
         }
+        if (levelUpTimer >= 30)
+        {
+            level++;
+            levelUpTimer = 0;
+        }
+        else if (level == maxLevel)
+        {
+            level = maxLevel;
+            levelUpTimer = 0;
+        }
         switch (stageState)
         {
             
-            case State.Normal:
-                bpm = 120;
+            case State.Normal: //기본상태
+                //bpm = 120;
                 currentTime += Time.deltaTime;
                 if (currentTime >= 60d / bpm)
                 {
                     RandomGenerate();
                     GameObject t_note = NotePool1.instance.Get(num);
+                    t_note.GetComponent<NoteControl>().Init(speedData[level]);
                     t_note.transform.position = tfNoteApeear.position;
                     t_note.transform.SetParent(transform);
                     t_note.SetActive(true);
@@ -60,14 +73,13 @@ public class NoteManager : MonoBehaviour
                     timingManager.boxNoteList.Add(t_note);
                     currentTime -= 60d / bpm;
                 }
-
                 ButtonActive(true); //3개버튼
                 feverPanel.SetActive(false);
                 RandomGenerate();
 
                 break;
-            case State.Fever:
-                bpm = 180;
+            case State.Fever: //피버타임
+                //bpm = 180;
                 currentTime += Time.deltaTime;
                 feverTime += Time.deltaTime;
                 feverPanel.SetActive(true);
@@ -75,8 +87,9 @@ public class NoteManager : MonoBehaviour
 
                 if (currentTime >= 60d / bpm)
                 {
-                    num = 6;
+                    num = 3;
                     GameObject t_note = NotePool1.instance.Get(num);
+                    t_note.GetComponent<NoteControl>().Init(speedData[level]);// 시간에 따른 노트 스피드 상승
                     t_note.transform.position = tfNoteApeear.position;
                     t_note.transform.SetParent(transform);
                     t_note.SetActive(true);
@@ -128,30 +141,23 @@ public class NoteManager : MonoBehaviour
         int randomNote = Random.Range(0, 100); // 확률 넣기
         Debug.Log(num);
 
-        if (randomNote <= 29)
+        if (randomNote <= 24)
         {
             num = 0;
         }
-        else if (randomNote <= 57)
+        else if (randomNote <= 67)
         {
             num = 1;
         }
-        else if (randomNote <= 85)
+        else if (randomNote <= 100)
         {
             num = 2;
         }
-        else if (randomNote <= 9)
-        {
-            num = 3;
-        }
-        else if (randomNote <= 95)
-        {
-            num = 4;
-        }
-        else if (randomNote <= 100)
-        {
-            num = 5;
-        }
     }
-
+}
+[System.Serializable]
+public class SpeedData
+{
+    public int noteSpeed;
+    public int bpm;
 }
