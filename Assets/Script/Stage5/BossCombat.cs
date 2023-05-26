@@ -18,6 +18,7 @@ public class BossCombat : MonoBehaviour
 
     bool isLive;
     Animator ani;
+    //public GameObject spawn5;
     Monster monster;
     private void Awake()
     {
@@ -200,9 +201,11 @@ public class BossCombat : MonoBehaviour
         Score.instance.GetScore(5000);
         ani.SetBool("Dead", true);
         Invoke("DeadActive", 1f);
+
     }
     public void DeadActive()
     {
         Destroy(gameObject);
+        spawner.SetActive(true);
     }
 }

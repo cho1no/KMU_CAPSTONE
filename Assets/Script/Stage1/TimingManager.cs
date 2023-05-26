@@ -21,7 +21,6 @@ public class TimingManager : MonoBehaviour
     bool redButtonPressed = false;
     bool blueButtonPressed = false;
     bool yellowButtonPressed = false;
-    public Animator ani;
     private void Awake()
     {
         effectManager = FindObjectOfType<EffectManager>();
@@ -45,7 +44,7 @@ public class TimingManager : MonoBehaviour
     }
     public void FeverButton()
     {
-        ani.SetTrigger("isPicking");
+
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -66,8 +65,8 @@ public class TimingManager : MonoBehaviour
                             effectManager.NoteHitEffect();
                         }
                         boxNoteList[i].GetComponent<NoteControl>().HideNote();
+                        TotalSound.instance.CatchStar();
                         boxNoteList.RemoveAt(i);
-
                         TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
                         return;
@@ -76,10 +75,10 @@ public class TimingManager : MonoBehaviour
             }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
+        Handheld.Vibrate();
     }
     public void RedButton()
     {
-        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -115,13 +114,19 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "RedBlueNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
+
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
     public void BlueButton()
     {
-        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -148,7 +153,7 @@ public class TimingManager : MonoBehaviour
                         TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
 
-                        IncreaseCombo();
+                        //IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -157,14 +162,19 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "BlueYellowNote" || boxNoteList[0].tag == "RedBlueNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
 
     public void YellowButton()
     {
-        ani.SetTrigger("isPicking");
         for (int i = 0; i < boxNoteList.Count; i++)
         {
             float t_notePosY = boxNoteList[i].transform.localPosition.y;
@@ -190,7 +200,7 @@ public class TimingManager : MonoBehaviour
 
                         TotalSound.instance.CatchStar();
                         effectManager.judgeMentEffect(y);
-                        IncreaseCombo();
+                        //IncreaseCombo();
 
                         redButtonPressed = false;
                         blueButtonPressed = false;
@@ -199,9 +209,15 @@ public class TimingManager : MonoBehaviour
                     }
                 }
             }
+            else if (boxNoteList[0].tag == "YellowRedNote" || boxNoteList[0].tag == "BlueYellowNote")
+            {
+                return;
+            }
+            else { ResetCombo(); }
         }
         effectManager.judgeMentEffect(timingBoxs.Length); //Miss
         ResetCombo();
+        Handheld.Vibrate();
     }
 
     void RedButtonPressed()
@@ -224,7 +240,6 @@ public class TimingManager : MonoBehaviour
     }
     void CheckButtonRY() //»¡ ³ë
     {
-        ani.SetTrigger("isPicking");
         if (yellowButtonPressed && redButtonPressed) //»¡³ë
         {
             for (int i = 0; i < boxNoteList.Count; i++)
@@ -251,7 +266,7 @@ public class TimingManager : MonoBehaviour
 
                             TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo(); //ÀÛµ¿ ¾ÈµÇ´Â Áß
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -263,12 +278,12 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
 
     void CheckButtonRB() //»¡ÆÄ
     {
-        ani.SetTrigger("isPicking");
         if (redButtonPressed && blueButtonPressed) //»¡ÆÄ
         {
             for (int i = 0; i < boxNoteList.Count; i++)
@@ -295,7 +310,7 @@ public class TimingManager : MonoBehaviour
 
                             TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -307,12 +322,12 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
 
     void CheckButtonBY() //³ëÆÄ
     {
-        ani.SetTrigger("isPicking");
         if (blueButtonPressed && yellowButtonPressed) //³ëÆÄ
         {
             for (int i = 0; i < boxNoteList.Count; i++)
@@ -340,7 +355,7 @@ public class TimingManager : MonoBehaviour
 
                             TotalSound.instance.CatchStar();
                             effectManager.judgeMentEffect(y);
-                            IncreaseCombo();
+                            //IncreaseCombo();
 
                             redButtonPressed = false;
                             blueButtonPressed = false;
@@ -352,6 +367,7 @@ public class TimingManager : MonoBehaviour
             }
             effectManager.judgeMentEffect(timingBoxs.Length); //Miss
             ResetCombo();
+            Handheld.Vibrate();
         }
     }
     public void IncreaseCombo(int num = 1)
@@ -377,4 +393,5 @@ public class TimingManager : MonoBehaviour
     {
         return currentCombo;
     }
+
 }

@@ -109,7 +109,6 @@ public class StageLock : MonoBehaviour
     }
     public void CoinCheat()
     {
-        DataManager.Instance.LoadGameData();
         DataManager.Instance.data.coin += 1000;
         DataManager.Instance.data.SceneState = 0;
         DataManager.Instance.SaveGameData();

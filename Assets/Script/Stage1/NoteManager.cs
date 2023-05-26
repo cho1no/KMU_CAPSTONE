@@ -38,7 +38,7 @@ public class NoteManager : MonoBehaviour
     private void Update()
     {
 
-        if (timingManager.currentCombo >= 50)
+        if (timingManager.currentCombo >= 3)
         {
 
             stageState = State.Fever;
@@ -87,7 +87,7 @@ public class NoteManager : MonoBehaviour
 
                 ButtonActive(false);
 
-                if (feverTime >= 10)
+                if (feverTime >= 5)
                 {
                     stageState = State.Normal;
                     timingManager.ResetCombo();
@@ -111,6 +111,7 @@ public class NoteManager : MonoBehaviour
 
                 collision.GetComponent<NoteControl>().HideNote();
                 HpManager.instance.SetHp(-1);
+                Handheld.Vibrate();
             }
         }
     }
