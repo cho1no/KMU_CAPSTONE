@@ -138,11 +138,11 @@ public class TimingManager : MonoBehaviour
                     if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                     {
                         if (y == 0)
-                            Score.instance.GetScore(70);
+                            Score.instance.GetScore(70,1);
                         else if (y == 1)
-                            Score.instance.GetScore(50);
+                            Score.instance.GetScore(50,1);
                         else if (y == 2)
-                            Score.instance.GetScore(30);
+                            Score.instance.GetScore(30,1);
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
@@ -186,11 +186,11 @@ public class TimingManager : MonoBehaviour
                     if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                     {
                         if (y == 0)
-                            Score.instance.GetScore(70);
+                            Score.instance.GetScore(70, 1);
                         else if (y == 1)
-                            Score.instance.GetScore(50);
+                            Score.instance.GetScore(50, 1);
                         else if (y == 2)
-                            Score.instance.GetScore(30);
+                            Score.instance.GetScore(30, 1);
                         if (y < timingBoxs.Length - 1) // bad
                         {
                             effectManager.NoteHitEffect();
@@ -296,11 +296,11 @@ public class TimingManager : MonoBehaviour
                         if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                         {
                             if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70);
+                                Score.instance.GetScore(70, 1);
                             else if (y == 1) //Äð
-                                Score.instance.GetScore(50);
+                                Score.instance.GetScore(50, 1);
                             else if (y == 2) //±Â
-                                Score.instance.GetScore(30);
+                                Score.instance.GetScore(30, 1);
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
@@ -341,11 +341,11 @@ public class TimingManager : MonoBehaviour
                         if (timingBoxs[y].x <= t_notePosY && t_notePosY <= timingBoxs[y].y)
                         {
                             if (y == 0) //ÆÛÆåÆ®
-                                Score.instance.GetScore(70);
+                                Score.instance.GetScore(70, 1);
                             else if (y == 1) //Äð
-                                Score.instance.GetScore(50);
+                                Score.instance.GetScore(50, 1);
                             else if (y == 2) //±Â
-                                Score.instance.GetScore(30);
+                                Score.instance.GetScore(30, 1);
                             if (y < timingBoxs.Length - 1) // bad
                             {
                                 effectManager.NoteHitEffect();
