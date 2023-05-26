@@ -55,7 +55,7 @@ public class Spawn5 : MonoBehaviour
             }
         }
     }
-    void Spawn()
+    public void Spawn()
     {
         int RandomSpawn = Random.Range(0, pool.prefabs.Length - 6); //·£´ý ½ºÆù
         GameObject enemy = GameManager5.instance.pool.Get(RandomSpawn);
