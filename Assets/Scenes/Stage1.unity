@@ -4018,11 +4018,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageState: 0
+  speedData:
+  - noteSpeed: 400
+    bpm: 120
+  - noteSpeed: 425
+    bpm: 135
+  - noteSpeed: 450
+    bpm: 150
+  - noteSpeed: 475
+    bpm: 165
+  - noteSpeed: 500
+    bpm: 1800
   bpm: 120
+  currentTime: 0
+  level: 0
+  maxLevel: 0
   tfNoteApeear: {fileID: 1349387963}
+  feverTime: 0
+  levelUpTimer: 0
   buttons: []
   feverButton: {fileID: 291195202}
-  feverTime: 0
   feverPanel: {fileID: 316968085}
 --- !u!61 &1075780419
 BoxCollider2D:
@@ -6023,7 +6038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1969317405
 RectTransform:
   m_ObjectHideFlags: 0
