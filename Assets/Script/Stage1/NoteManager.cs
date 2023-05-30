@@ -22,7 +22,7 @@ public class NoteManager : MonoBehaviour
 
     public GameObject[] buttons;
     public GameObject feverButton;
-    public GameObject feverPanel; 
+    public GameObject feverPanel;
 
 
     private void Awake()
@@ -45,7 +45,7 @@ public class NoteManager : MonoBehaviour
 
             stageState = State.Fever;
         }
-        if (levelUpTimer >= 30)
+        if (levelUpTimer >= 10)
         {
             level++;
             levelUpTimer = 0;
@@ -58,7 +58,7 @@ public class NoteManager : MonoBehaviour
         switch (stageState)
         {
 
-            case State.Normal: 
+            case State.Normal:
                 //bpm = 120;
                 currentTime += Time.deltaTime;
                 if (currentTime >= 60d / bpm)
@@ -73,12 +73,12 @@ public class NoteManager : MonoBehaviour
                     timingManager.boxNoteList.Add(t_note);
                     currentTime -= 60d / bpm;
                 }
-                ButtonActive(true); 
+                ButtonActive(true);
                 feverPanel.SetActive(false);
                 RandomGenerate();
 
                 break;
-            case State.Fever: 
+            case State.Fever:
                 //bpm = 180;
                 currentTime += Time.deltaTime;
                 feverTime += Time.deltaTime;
@@ -115,7 +115,7 @@ public class NoteManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 10) 
+        if (collision.gameObject.layer == 10)
         {
             if (collision.GetComponent<NoteControl>().GetNoteFlag())
             {
@@ -138,7 +138,7 @@ public class NoteManager : MonoBehaviour
     }
     public void RandomGenerate()
     {
-        int randomNote = Random.Range(0, 100); 
+        int randomNote = Random.Range(0, 100);
         Debug.Log(num);
 
         if (randomNote <= 24)

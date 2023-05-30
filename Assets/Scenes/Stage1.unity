@@ -1183,7 +1183,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &221631519
 Animator:
@@ -2203,31 +2203,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 515287795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: YellowButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: YellowButtonReleased
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &515287795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3075,31 +3051,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 767588301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: RedButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: RedButtonReleased
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &767588301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3761,7 +3713,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 975812466}
-  - component: {fileID: 975812465}
   - component: {fileID: 975812467}
   m_Layer: 0
   m_Name: NotePool
@@ -3770,18 +3721,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &975812465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975812464}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bda351fa7c287a49b4154cfb8452b6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &975812466
 Transform:
   m_ObjectHideFlags: 0
@@ -3813,9 +3752,6 @@ MonoBehaviour:
   - {fileID: 7965643172528965376, guid: 5521a8e7472a7644481c17f2323bb81a, type: 3}
   - {fileID: 7265504416194536035, guid: 8777a6443823ae34d82821fad4ed67b1, type: 3}
   - {fileID: 7075968990234865015, guid: 0b33588a4b62e69438d492daa2a93eca, type: 3}
-  - {fileID: 6517891930465118826, guid: 10c744f6e47c7c24eab215b88c5d93ca, type: 3}
-  - {fileID: 5924874612781779704, guid: f521f0ef2fea2b745ad2f5380e88052d, type: 3}
-  - {fileID: 2239927183770774743, guid: 7644c558099a5ec46970752ee00b5f66, type: 3}
   - {fileID: 7242124868303567500, guid: 264b91cc165fedd499da801b6653b7cb, type: 3}
 --- !u!1 &1001240736
 GameObject:
@@ -4090,6 +4026,7 @@ MonoBehaviour:
   redButton: {fileID: 767588300}
   blueButton: {fileID: 1927479977}
   yellowButton: {fileID: 515287794}
+  ani: {fileID: 536195515}
 --- !u!1 &1150400209
 GameObject:
   m_ObjectHideFlags: 0
@@ -5957,31 +5894,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1927479978}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: BlueButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1075780420}
-        m_TargetAssemblyTypeName: TimingManager, Assembly-CSharp
-        m_MethodName: BlueButtonReleased
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1927479978
 MonoBehaviour:
   m_ObjectHideFlags: 0

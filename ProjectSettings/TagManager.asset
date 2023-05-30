@@ -29,6 +29,9 @@ TagManager:
   - YellowRedNote
   - RainbowNote
   - Music
+  - Section1
+  - Section2
+  - Section3
   layers:
   - Default
   - TransparentFX
