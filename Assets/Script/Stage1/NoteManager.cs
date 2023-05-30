@@ -45,7 +45,7 @@ public class NoteManager : MonoBehaviour
 
             stageState = State.Fever;
         }
-        if (levelUpTimer >= 10)
+        if (levelUpTimer >= 30)
         {
             level++;
             levelUpTimer = 0;

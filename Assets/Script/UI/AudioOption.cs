@@ -7,40 +7,28 @@ using UnityEngine.UI;
 
 public class AudioOption : MonoBehaviour
 {
-    //private AudioSource audioSource;
-    //private GameObject[] music;
-
-    //private void Awake()
-    //{
-    //    music = GameObject.FindGameObjectsWithTag("Music");
-
-    //    if(music.Length >= 2)
-    //    {
-    //        Destroy(this.gameObject);
-    //    }
-    //    DontDestroyOnLoad(transform.gameObject);
-    //    audioSource = GetComponent<AudioSource>();
-    //}
-    //public void PlayMusic()
-    //{
-    //    if (audioSource.isPlaying) return;
-    //    audioSource.Play();
-    //}
-    //public void StopMusic()
-    //{
-    //    audioSource.Stop();
-    //}
-
-    public AudioMixer mixer;
-    public Slider slider;
-
-    private void Start()
+    private AudioSource audioSource;
+    [SerializeField]
+    private GameObject[] music;
+    private void Awake()
     {
-        slider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+        music = GameObject.FindGameObjectsWithTag("Music");
+
+        if (music.Length >= 2)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(transform.gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
-    public void SetLevel(float sliderValue)
+    public void PlayMusic()
     {
-        mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
-        PlayerPrefs.SetFloat("MusicVolume", sliderValue);
+        if (audioSource.isPlaying) return;
+        audioSource.Play();
     }
+    public void StopMusic()
+    {
+        audioSource.Stop();
+    }
+
 }

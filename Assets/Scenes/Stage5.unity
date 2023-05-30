@@ -717,7 +717,7 @@ AudioSource:
   m_GameObject: {fileID: 296533906}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5117624341100305344, guid: a639b877b0635fa4588c0671f213b3c4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 1e4b0615403f0fe45ac9cca3e4905546, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2216,7 +2216,7 @@ AudioSource:
   m_GameObject: {fileID: 869533700}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5117624341100305344, guid: a639b877b0635fa4588c0671f213b3c4, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2715,7 +2715,7 @@ AudioSource:
   m_GameObject: {fileID: 1042438182}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5117624341100305344, guid: a639b877b0635fa4588c0671f213b3c4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 22819c2310e864f44aca3b3e92bcc2dc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4049,7 +4049,7 @@ GameObject:
   - component: {fileID: 1487563742}
   m_Layer: 0
   m_Name: Bgm
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4063,7 +4063,7 @@ AudioSource:
   m_GameObject: {fileID: 1487563741}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1070891880805456460, guid: a639b877b0635fa4588c0671f213b3c4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 905b69dcf180f544d8bc986b69f5b122, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

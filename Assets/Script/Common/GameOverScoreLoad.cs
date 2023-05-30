@@ -45,6 +45,6 @@ public class GameOverScoreLoad : MonoBehaviour
                 break;
         }
         DataManager.Instance.data.coin += GetStar;
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("NowScore");
     }
 }

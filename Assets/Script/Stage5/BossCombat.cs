@@ -13,7 +13,6 @@ public class BossCombat : MonoBehaviour
     public GameObject point;
     public GameObject bulletPrefab;
     public GameObject spawner;
-    public GameObject item;
     public Rigidbody2D bullet;
     public Transform[] wayPoint;
 
@@ -198,7 +197,7 @@ public class BossCombat : MonoBehaviour
     }
     public void OnDie()
     {
-        Instantiate(item, transform.position, Quaternion.identity);
+
         Score.instance.GetScore(5000);
         ani.SetBool("Dead", true);
         Invoke("DeadActive", 1f);

@@ -13,6 +13,15 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("StartScene");
     }
+    public void FistToLobby()
+    {
+        IEnumerator FTL()
+        {
+            yield return new WaitForSeconds(0.6f);
+            SceneManager.LoadScene("LobbyScene");
+        }
+        StartCoroutine(FTL());
+    }
     public void LobbyScene()
     {
         Time.timeScale = 1.0f;
