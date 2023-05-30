@@ -78,6 +78,14 @@ public class SceneChange : MonoBehaviour
         }
         Time.timeScale = 1.0f;
     }
+    public void stoptime()
+    {
+        Time.timeScale = 0;
+    }
+    public void gotime()
+    {
+        Time.timeScale = 1.0f;
+    }
     public void GameOver()
     {
         int nowscore = int.Parse(Score.instance.scoreText.text);
