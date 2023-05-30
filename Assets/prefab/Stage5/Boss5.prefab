@@ -1024,6 +1024,7 @@ MonoBehaviour:
   point: {fileID: 0}
   bulletPrefab: {fileID: 5644090229682834401, guid: b4b1918bc18274142826ca2de68b4e27, type: 3}
   spawner: {fileID: 0}
+  item: {fileID: 5532145270391001620, guid: d26582a52449f0546a8965ba49b60c8c, type: 3}
   bullet: {fileID: 134327490678635006, guid: b4b1918bc18274142826ca2de68b4e27, type: 3}
   wayPoint: []
 --- !u!1 &6174848695706577901
