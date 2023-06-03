@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: e33328bc97015ad4798ca9b3e06c51cb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 124
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5196b158141a80d70800000000000000
+      internalID: 9009628357332789525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 424
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e16b4797cad57d0800000000000000
+      internalID: -2927994545071841697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_02
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 124
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0805316119777d1e0800000000000000
+      internalID: -2173136830158647168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_03
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 724
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e55c6544f4d83600800000000000000
+      internalID: 448342308525200869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_04
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 124
+        width: 151
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80406b71be9744670800000000000000
+      internalID: 8522070445513901064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_05
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 724
+        width: 151
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a2eb2ba37de6040800000000000000
+      internalID: 4642884912972442180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_06
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 723
+        width: 151
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3442851610053e60800000000000000
+      internalID: 7941253612787876927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_07
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 124
+        width: 152
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c5d1c6707509ae0800000000000000
+      internalID: -1544638982797829058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_08
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 124
+        width: 152
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58022e6754a91a220800000000000000
+      internalID: 2495445291677917317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_09
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 423
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bead4a33cb4528f0800000000000000
+      internalID: -565962876296253773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_10
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 124
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b92a385c7fdf480800000000000000
+      internalID: -8863656063906178270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_11
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 721
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7ed67c9d14d09f0800000000000000
+      internalID: -500671579958679590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_12
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 423
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54f8db58c5d28310800000000000000
+      internalID: 1405921090204136538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_13
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 124
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54319f519b7d003a0800000000000000
+      internalID: -6701119055589731515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_14
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 124
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae14f96da309901d0800000000000000
+      internalID: -3384015062608952854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_15
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 124
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac585400101c7f40800000000000000
+      internalID: 5727470487086849187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_16
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 124
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328de1ff7317e53c0800000000000000
+      internalID: -4368930103185450973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_17
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 124
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068cf94473dd28b10800000000000000
+      internalID: 1982390015440701536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_18
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 722
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef90269739497270800000000000000
+      internalID: 8248704695596523489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_19
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 422
+        width: 152
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148b2ac77f0ccf280800000000000000
+      internalID: -9008112985467340735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_20
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 124
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2ce6988ebeb4890800000000000000
+      internalID: -7472619772720528671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_21
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 721
+        width: 152
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65359a6703529940800000000000000
+      internalID: 5301391002686535021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 124
+        width: 152
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b9c7b95a972eac0800000000000000
+      internalID: -3827362981126300770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_23
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 423
+        width: 151
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2873110b0e7df5e10800000000000000
+      internalID: 2188705303951914882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_24
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 423
+        width: 151
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e59f262989f36c40800000000000000
+      internalID: 5504517537023366626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_25
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 424
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d11eeea5b05fa6b0800000000000000
+      internalID: -5282915096628162092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Idle_Back_26
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 423
+        width: 151
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4d47b3342dda580800000000000000
+      internalID: -8814157709492038496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sheep-Idle_Back_00: 9009628357332789525
+      Sheep-Idle_Back_01: -2927994545071841697
+      Sheep-Idle_Back_02: -2173136830158647168
+      Sheep-Idle_Back_03: 448342308525200869
+      Sheep-Idle_Back_04: 8522070445513901064
+      Sheep-Idle_Back_05: 4642884912972442180
+      Sheep-Idle_Back_06: 7941253612787876927
+      Sheep-Idle_Back_07: -1544638982797829058
+      Sheep-Idle_Back_08: 2495445291677917317
+      Sheep-Idle_Back_09: -565962876296253773
+      Sheep-Idle_Back_10: -8863656063906178270
+      Sheep-Idle_Back_11: -500671579958679590
+      Sheep-Idle_Back_12: 1405921090204136538
+      Sheep-Idle_Back_13: -6701119055589731515
+      Sheep-Idle_Back_14: -3384015062608952854
+      Sheep-Idle_Back_15: 5727470487086849187
+      Sheep-Idle_Back_16: -4368930103185450973
+      Sheep-Idle_Back_17: 1982390015440701536
+      Sheep-Idle_Back_18: 8248704695596523489
+      Sheep-Idle_Back_19: -9008112985467340735
+      Sheep-Idle_Back_20: -7472619772720528671
+      Sheep-Idle_Back_21: 5301391002686535021
+      Sheep-Idle_Back_22: -3827362981126300770
+      Sheep-Idle_Back_23: 2188705303951914882
+      Sheep-Idle_Back_24: 5504517537023366626
+      Sheep-Idle_Back_25: -5282915096628162092
+      Sheep-Idle_Back_26: -8814157709492038496
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
