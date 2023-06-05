@@ -117,7 +117,7 @@ public class PlayerRotation : MonoBehaviour
     }
     public Vector3 ClampPosition(Vector3 position)
     {
-        return new Vector3(Mathf.Clamp(position.x, -moveLimit.x, moveLimit.x), -2f, 0);
+        return new Vector3(Mathf.Clamp(position.x, -moveLimit.x, moveLimit.x), -1.5f, 0);
     }
     //public void GameOver()
     //{

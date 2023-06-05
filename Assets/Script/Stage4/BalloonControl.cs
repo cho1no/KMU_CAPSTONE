@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class BalloonControl : MonoBehaviour
 {
-    float speed = 0.6f;
+    //float speed = 0.6f;
     ButtonControl buttonControl;
+    //Transform balloon;
     private void Awake()
     {
         buttonControl = FindObjectOfType<ButtonControl>();
+        //balloon = transform.parent;
     }
     private void OnEnable()
     {
-        transform.localScale = new Vector3(0.5f, 0.5f, 1);
+        transform.localScale = new Vector3(0.2f, 0.2f, 1);
     }
     private void Update()
     {
-        if (transform.localScale == new Vector3(1.5f, 1.5f, 1))
+        if (transform.localScale == new Vector3(0.35f, 0.35f, 1))
         {
+            Score.instance.GetScore(30);
             gameObject.SetActive(false);
             ListRemove();
         }
-        transform.position = transform.position + Vector3.up * speed * Time.deltaTime;
+        //transform.position = transform.position + Vector3.up * speed * Time.deltaTime;
+
     }
     void ListRemove()
     {

@@ -29,19 +29,19 @@ public class ButtonControl : MonoBehaviour
     {
         Section();
         TargetHit();
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2, 0);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2.5f, 0);
     }
     public void LeftButton()
     {
-        transform.position = new Vector3(transform.position.x - speed, -2, 0);
+        transform.position = new Vector3(transform.position.x - speed, -2.5f, 0);
     }
     public void HitButton()
     {
-        target.transform.localScale += new Vector3(0.1f,0.1f, 0); //만큼 증가
+        target.transform.localScale += new Vector3(0.015f,0.015f, 0); //만큼 증가
     }
     public void RightButton()
     {
-        transform.position = new Vector3(transform.position.x + speed, -2, 0);
+        transform.position = new Vector3(transform.position.x + speed, -2.5f, 0);
     }
 
     void Section()
@@ -71,53 +71,23 @@ public class ButtonControl : MonoBehaviour
         if (section1)
         {
             if (balloonList1.Count >= 1)
-                target = balloonList1[0];
+                target = balloonList1[0].transform.GetChild(0).gameObject;
             if (balloonList1.Count < 1)
                 target = null;
         }
         if (section2)
         {
             if (balloonList2.Count >= 1)
-                target = balloonList2[0];
+                target = balloonList2[0].transform.GetChild(0).gameObject;
             if (balloonList2.Count <1)
                 target = null;
         }
         if (section3)
         {
             if (balloonList3.Count >= 1)
-                target = balloonList3[0];
+                target = balloonList3[0].transform.GetChild(0).gameObject;
             if (balloonList3.Count < 1)
                 target = null;
         }
-        //if (section2 && balloonList2.Count >= 1)
-        //{
-        //    target = balloonList2[0];  
-        //}
-        //if (section3 && balloonList3.Count >= 1)
-        //{
-        //    target = balloonList3[0];  
-        //}
-
-        //if (section3 && balloonList3.Count < 1)
-        //{
-        //    target = null;
-        //}
-        //if (section2 && balloonList2.Count < 1)
-        //{
-        //    target = null;
-        //}
-        //if (section1 && balloonList1.Count < 1)
-        //{
-        //    target = null;
-        //}
-
-        //if (section2 && balloonList2.Count >= 1)
-        //{
-        //    target = balloonList2[0];
-        //}
-        //if (section3 && balloonList3.Count >= 1)
-        //{
-        //    target = balloonList3[0];
-        //}
     }
 }

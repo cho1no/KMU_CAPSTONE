@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class BalloonGenerate : MonoBehaviour
 {
-    float spawnMaxTime = 4f;
-    float spawnTime, levelTime;
+    [SerializeField]float spawnTime, levelTime, spawnMaxTime = 4f;
     public Transform[] spawnPoint;
 
     public Level[] level;
     
-    int curlevel, maxLevel = 5;
+    [SerializeField]int curlevel, maxLevel = 5;
     ButtonControl buttonControl;
     private void Awake()
     {
@@ -45,22 +44,24 @@ public class BalloonGenerate : MonoBehaviour
     }
     public void Spawn()
     {
-        GameObject balloon = BalloonPool.instance.Get(0);
+        int balloonCount = Random.Range(0, 5);
+        GameObject balloon = BalloonPool.instance.Get(balloonCount);
+        //balloon = balloon.transform.GetChild(0).gameObject;
         int point = Random.Range(1, spawnPoint.Length);
         balloon.transform.position = spawnPoint[point].position;
         if (point == 1)
         {
-            balloon.tag = "Section1";
+            balloon.transform.GetChild(0).tag = "Section1";
             buttonControl.balloonList1.Add(balloon);
         }
         else if (point == 2)
         {
-            balloon.tag = "Section2";
+            balloon.transform.GetChild(0).tag = "Section2";
             buttonControl.balloonList2.Add(balloon);
         }
         else if (point == 3)
         {
-            balloon.tag = "Section3";
+            balloon.transform.GetChild(0).tag = "Section3";
             buttonControl.balloonList3.Add(balloon);
         }
     }

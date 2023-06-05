@@ -9,7 +9,7 @@ public class TimingManager : MonoBehaviour
     public List<GameObject> boxNoteList = new List<GameObject>(); // 판정범위에있는지 모든 노트를 비교 
 
     [SerializeField] GameObject ComboImage;
-    [SerializeField] UnityEngine.UI.Text comboText;
+    [SerializeField] Text comboText;
     [SerializeField] Transform Center = null;
     [SerializeField] RectTransform[] timingRect = null; //판정 범위
     Vector2[] timingBoxs = null; //판정범위의 최소값x, 최대값y
