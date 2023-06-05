@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public PlayerAnimation playerani;
-    public WeaponAnimation weaponani;
+    //public WeaponAnimation weaponani;
     public PlayerRotation playerRoation;
     public GameObject groundAttack;
     public GameObject skyAttack;
@@ -18,19 +18,19 @@ public class PlayerAttack : MonoBehaviour
         {
             if (playerRoation.speed > 0)
             {
-                Instantiate(groundAttack, new Vector3(player.transform.position.x - 1, player.transform.position.y, 0), Quaternion.identity);
+                Instantiate(groundAttack, new Vector3(player.transform.position.x -0.5f, player.transform.position.y, 0), Quaternion.identity);
                 attackChance--;
                 //애니메이션
                 playerani.sideattack();
-                weaponani.sideattack();
+                //weaponani.sideattack();
             }
             else
             {
-                Instantiate(groundAttack, new Vector3(player.transform.position.x + 1, player.transform.position.y, 0), Quaternion.identity);
+                Instantiate(groundAttack, new Vector3(player.transform.position.x + 0.5f, player.transform.position.y, 0), Quaternion.identity);
                 attackChance--;
                 //애니메이션
                 playerani.sideattack();
-                weaponani.sideattack();
+                //weaponani.sideattack();
             }
         }
     }
@@ -40,17 +40,17 @@ public class PlayerAttack : MonoBehaviour
         {
             if (playerRoation.speed > 0)
             {
-                Instantiate(skyAttack, new Vector3(player.transform.position.x - 0.5f, player.transform.position.y + 1.3f, 0), Quaternion.identity);
+                Instantiate(skyAttack, new Vector3(player.transform.position.x - 0.5f, player.transform.position.y + 0.7f, 0), Quaternion.identity);
                 attackChance--;
                 playerani.upattack();
-                weaponani.upattack();
+                //weaponani.upattack();
             }
             else
             {
-                Instantiate(skyAttack, new Vector3(player.transform.position.x + 0.5f, player.transform.position.y + 1.3f, 0), Quaternion.identity);
+                Instantiate(skyAttack, new Vector3(player.transform.position.x + 0.5f, player.transform.position.y + 0.7f, 0), Quaternion.identity);
                 attackChance--;
                 playerani.upattack();
-                weaponani.upattack();
+               // weaponani.upattack();
             }
         }
     }
@@ -64,6 +64,11 @@ public class PlayerAttack : MonoBehaviour
         {
             attackChance++;
             attackDelay = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GroundAttack();
+            //SkyAttack();
         }
     }
 }

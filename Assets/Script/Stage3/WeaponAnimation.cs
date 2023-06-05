@@ -12,14 +12,14 @@ public class WeaponAnimation : MonoBehaviour
         ani = gameObject.GetComponent<Animator>();
         spriter = GetComponent<SpriteRenderer>();
     }
-    public void WeaponRotation()
-    {
-        if (playerRotaition.speed != 0)
-        {
-            spriter.flipX = playerRotaition.speed < 0;
-        }
+    //public void WeaponRotation()
+    //{
+    //    if (playerRotaition.speed != 0)
+    //    {
+    //        spriter.flipX = playerRotaition.speed < 0;
+    //    }
            
-    }
+    //}
     public void sideattack()
     {
         ani.SetTrigger("doside");

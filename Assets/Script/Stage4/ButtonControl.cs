@@ -31,7 +31,7 @@ public class ButtonControl : MonoBehaviour
     {
         Section();
         TargetHit();
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2f, 0);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2.2f, 0);
     }
     public void LeftButton()
     {
@@ -44,7 +44,7 @@ public class ButtonControl : MonoBehaviour
     }
     public void RightButton()
     {
-        transform.position = new Vector3(transform.position.x + speed, -2f, 0);
+        transform.position = new Vector3(transform.position.x + speed, -2.2f, 0);
     }
 
     void Section()
