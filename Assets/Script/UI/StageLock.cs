@@ -56,7 +56,7 @@ public class StageLock : MonoBehaviour
             {
                 if (targetParent.transform.GetChild(i) == clickobject.transform.parent)
                 {
-                    if (i == 3 || i == 5)
+                    if (i == 5)
                         return;
                     Debug.Log($"{i} 버튼 클릭");
                     targetParent.transform.GetChild(targetParent.transform.childCount-1).gameObject.SetActive(true);

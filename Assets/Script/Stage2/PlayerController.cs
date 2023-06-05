@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         if (isGround < 2)
         {
             ani.SetBool("isJump", true);
-
+            ani.SetTrigger("isJumpp");
             if (isGround == 0)
             {
                 rb.velocity = new Vector2(0f, jumpForce * 1.2f);

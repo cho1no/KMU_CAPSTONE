@@ -14,6 +14,8 @@ public class ButtonControl : MonoBehaviour
     public List<GameObject> balloonList3 = new List<GameObject>(); //오른쪽자리
 
     [SerializeField] bool section1, section2, section3;
+
+    Animator ani;
     private void Awake()
     {
     }
@@ -23,25 +25,26 @@ public class ButtonControl : MonoBehaviour
         hitButton.onClick.AddListener(HitButton);
         rightButton.onClick.AddListener(RightButton);
      
-        
+        ani = GetComponent<Animator>();
     }
     private void Update()
     {
         Section();
         TargetHit();
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2.5f, 0);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, 1.5f), -2f, 0);
     }
     public void LeftButton()
     {
-        transform.position = new Vector3(transform.position.x - speed, -2.5f, 0);
+        transform.position = new Vector3(transform.position.x - speed, -2f, 0);
     }
     public void HitButton()
     {
         target.transform.localScale += new Vector3(0.015f,0.015f, 0); //만큼 증가
+        //ani.SetTrigger("isPicking");
     }
     public void RightButton()
     {
-        transform.position = new Vector3(transform.position.x + speed, -2.5f, 0);
+        transform.position = new Vector3(transform.position.x + speed, -2f, 0);
     }
 
     void Section()

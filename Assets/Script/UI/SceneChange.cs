@@ -47,6 +47,12 @@ public class SceneChange : MonoBehaviour
         DataManager.Instance.SaveGameData();
         SceneManager.LoadScene("Stage3");
     }
+    public void Stage4_Go()
+    {
+        DataManager.Instance.data.SceneState = 4;
+        DataManager.Instance.SaveGameData();
+        SceneManager.LoadScene("Stage4");
+    }
 
     public void Stage5_Go()
     {
@@ -70,8 +76,9 @@ public class SceneChange : MonoBehaviour
             case 3:
                 SceneManager.LoadScene("Stage3");
                 break;
-            //case 4:
-            //    break;
+            case 4:
+                SceneManager.LoadScene("Stage4");
+                break;
             case 5:
                 SceneManager.LoadScene("Stage5");
                 break;
