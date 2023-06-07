@@ -1,0 +1,6999 @@
+fileFormatVersion: 2
+guid: 825780d65cb3d694aa82b8944429bc33
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1927
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e007e9c4c114bf9c0800000000000000
+      internalID: -3892445863131320306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_01
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1928
+        width: 57
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8f798a471560220800000000000000
+      internalID: 2451736608636401882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_02
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1929
+        width: 61
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2d66b1fbbc1ba90800000000000000
+      internalID: -7299829499331947814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_03
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1929
+        width: 64
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692d8812060586000800000000000000
+      internalID: 29361771387605654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_04
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1931
+        width: 70
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6c4669d55c1ebf0800000000000000
+      internalID: -296739094683924823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_05
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1939
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dff76e2533cf380800000000000000
+      internalID: -8936211129462424260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_06
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1939
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0c3e3118f396d50800000000000000
+      internalID: 6730980941698941147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_07
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1938
+        width: 83
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1297abdb22bc440800000000000000
+      internalID: 4957094013124026824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_08
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1939
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9662575e3615ba0800000000000000
+      internalID: -6101986182946199092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Attack_Left_09
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1938
+        width: 82
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d8a870d157c9fc0800000000000000
+      internalID: -3486783243950584448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_0
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1927
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c92d0c70b5a645b0800000000000000
+      internalID: -5384434127060784701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_00
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1927
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6c972da78337a50800000000000000
+      internalID: 6517615185903601389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_1
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1927
+        width: 70
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98737f38000ee5360800000000000000
+      internalID: 7160406750384306057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_2
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1930
+        width: 80
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06acc1add54f43c0800000000000000
+      internalID: -4373199894948829681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_3
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1934
+        width: 87
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfa06d79a13cc330800000000000000
+      internalID: 3732412795206021047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_4
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1936
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6293992e9a4128650800000000000000
+      internalID: 6233567554117908774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_5
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1939
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52863a96d75bab550800000000000000
+      internalID: 6177449389139912741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Damage_Left_6
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1940
+        width: 91
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5740a576c680860800000000000000
+      internalID: 7496360770905863678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_00
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fb7de0cb7e22a40800000000000000
+      internalID: 5342086902903717751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_01
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bc0743b9f0fc800800000000000000
+      internalID: 634743231756684129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_02
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ac5e5a15c9e84b0800000000000000
+      internalID: -5436235825700025805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_03
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2678181c1b8541ad0800000000000000
+      internalID: -2732461553428101278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_04
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d30bffad4a190c0800000000000000
+      internalID: -4570690886304776863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_05
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7e2546c3fe5e000800000000000000
+      internalID: 64720812326971377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_06
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b539ceccc46f7e40800000000000000
+      internalID: 5656350487806031286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_07
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2683c14632b8db070800000000000000
+      internalID: 8123802286965930082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_08
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1925
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0acdbaa5dc367e0800000000000000
+      internalID: -1773348038939729679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_09
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce665778ff69909c0800000000000000
+      internalID: -3960468373062195476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7b784fb41b979f0800000000000000
+      internalID: -470149746300307495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8a6d7ae7a064590800000000000000
+      internalID: -7690447774590523169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17620b75e40d44f0800000000000000
+      internalID: -843012171590637793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e98e6658dd805690800000000000000
+      internalID: -7615431009580971543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ebdf7d7af69dae0800000000000000
+      internalID: -1524064232214249885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_15
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbcfd3d1dc5bd8a0800000000000000
+      internalID: -6279323199165445174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07a06c536f8fb070800000000000000
+      internalID: 8124369909714036490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_17
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80bceba2829c0a10800000000000000
+      internalID: 1877036234634473611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_18
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309fa38d1964eb000800000000000000
+      internalID: 53557837786970371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_19
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1763
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4d88dc58244b9c0800000000000000
+      internalID: -3912429033831738153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_20
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b426f6c06106540800000000000000
+      internalID: 4999019829045382017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_21
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0ab2286ee5b2980800000000000000
+      internalID: -8562645922395479899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_22
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed78bb27830b1f30800000000000000
+      internalID: 4547232127849627111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_23
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6e7aa79aec461d0800000000000000
+      internalID: -3358332194808928546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_24
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cead103a20daeb0800000000000000
+      internalID: -4707103136398250969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_25
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4db3c67488b1ae90800000000000000
+      internalID: -7016123865398788786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Back_26
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee7b1d53f099a120800000000000000
+      internalID: 2425629249229258477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_00
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18278d14ebcc079e0800000000000000
+      internalID: -1625574347960192383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_01
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a6629519ccea0c0800000000000000
+      internalID: -4562484447841719700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_02
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d47d3fcc590dd80800000000000000
+      internalID: -8227911811709055602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_03
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690017f7c0aff5300800000000000000
+      internalID: 243187836485959830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_04
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6a2f808e31c88a0800000000000000
+      internalID: -6301639891294705928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_05
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c073004d916a850800000000000000
+      internalID: 6387821519798995975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_06
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d4c295b31e3b300800000000000000
+      internalID: 266804447960386954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_07
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1762
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf0d3be57d677870800000000000000
+      internalID: 8680527160005169084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae9771e37f98c0d0800000000000000
+      internalID: -3402294198425641307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_09
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdcee14799f50cc0800000000000000
+      internalID: -3745313087047152136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8f9f0c5d61dd450800000000000000
+      internalID: 6115068976360454380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca710dddf436c20c0800000000000000
+      internalID: -4599191924777150548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_12
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e508fb34de107d60800000000000000
+      internalID: 7885836844413748711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_13
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee8c29018bb45d50800000000000000
+      internalID: 6725206306450083561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e941d0366469b6760800000000000000
+      internalID: 7452215237468296350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbd2a36b9f03c210800000000000000
+      internalID: 1351941473207245775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_16
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab8cf7469f4a9340800000000000000
+      internalID: 4871293453826034595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_17
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c231006fb559a7e0800000000000000
+      internalID: -1753776299446291776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_18
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e472a16734ed370800000000000000
+      internalID: 8349184933715463727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_19
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1600
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab7330e44142e070800000000000000
+      internalID: 8134135641059589030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_20
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db4dd4efb2b6b280800000000000000
+      internalID: -9027831865769374762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_21
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728730c85379f4e20800000000000000
+      internalID: 3337052105142925351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_22
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c44ceadb35a7b0800000000000000
+      internalID: -5213695182158641314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_23
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f853cfd7e7fbc650800000000000000
+      internalID: 6254365082797693177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_24
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377c1f3562ee04ab0800000000000000
+      internalID: -5025755335760951437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_25
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9d5f371bacf8630800000000000000
+      internalID: 3931583863221246457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Front_26
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1599
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5b760eb5be8af60800000000000000
+      internalID: 8045939514136835547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_01
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1601
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186e9ae152167ba30800000000000000
+      internalID: 4230957186994005633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_02
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1601
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6c4a30097fc1000800000000000000
+      internalID: 8153497256380106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_03
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1601
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce779cd2f6310b520800000000000000
+      internalID: 2715691943534884844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_04
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1602
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3fd73f2da1fb4c0800000000000000
+      internalID: -4269664428393368648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_05
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1602
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d7c305a3e7e7ad0800000000000000
+      internalID: -2702583937456374466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_06
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1602
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb77dea5e4c1a740800000000000000
+      internalID: 5161623138703211501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_07
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1602
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6e730d697199000800000000000000
+      internalID: 43091607942588119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1458ae609b478d9b0800000000000000
+      internalID: -5055162243689577151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_09
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9bdf0c96b273910800000000000000
+      internalID: 1816968707876698529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a510911e83e21b0800000000000000
+      internalID: -5679539540629300665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6306d634580c16190800000000000000
+      internalID: -7970878186874642378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_12
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9f67ccc3cfa9ee0800000000000000
+      internalID: -1253412208210675272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_13
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25039d4f668470a60800000000000000
+      internalID: 7640154899889074258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1440
+        width: 56
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486a3f86bba5ee720800000000000000
+      internalID: 2877336972902508164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1440
+        width: 56
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407368d04c31815a0800000000000000
+      internalID: -6550463925248968956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_16
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1440
+        width: 56
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a0992ca2220e330800000000000000
+      internalID: 3738025257766291987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_17
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1440
+        width: 56
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4cc4cf60c335c20800000000000000
+      internalID: 3193962561436173474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_18
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1440
+        width: 56
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63f6a85fea532360800000000000000
+      internalID: 7143653417970758509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_19
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a929126232995df0800000000000000
+      internalID: -190960764094699100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_20
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08ebcf4ebdd163a0800000000000000
+      internalID: -6673809363334076403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_21
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1439
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9bcf69689de1740800000000000000
+      internalID: 5124772598076193260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_22
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1439
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d0a628dff5e3290800000000000000
+      internalID: -7908778353196659331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_23
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1439
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13329f47e864b7de0800000000000000
+      internalID: -1334395286923435215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_24
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1439
+        width: 55
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a66cb5ab9a85dcd0800000000000000
+      internalID: -2533966814220884320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_25
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1438
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7675a02a4707920800000000000000
+      internalID: 2986014792253663179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Idle_Left_26
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1438
+        width: 55
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3540a551bc83f00800000000000000
+      internalID: 1096849801829700586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_00
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1442
+        width: 58
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118d6b03391ff5990800000000000000
+      internalID: -7394926448639289327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_01
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1433
+        width: 78
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0a761a880959400800000000000000
+      internalID: 330329064179474686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_02
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1434
+        width: 79
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06859571ad6354410800000000000000
+      internalID: 1460633964474095712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_03
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1435
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1889d558cef7a120800000000000000
+      internalID: 2425187060749535260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_04
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1435
+        width: 83
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ceedb941dd9c7700800000000000000
+      internalID: 539479577588526788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_05
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1436
+        width: 83
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0288497efa8969cd0800000000000000
+      internalID: -2551684257586837472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_06
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1437
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9631d8ec4f37afa60800000000000000
+      internalID: 7708601207472591721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_07
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1275
+        width: 84
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628f2437ba1dc13e0800000000000000
+      internalID: -2081558393448630234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_08
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1274
+        width: 83
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59111bcbfa50b7c20800000000000000
+      internalID: 3205161812147376533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_09
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1273
+        width: 80
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3425cf7d8b4144040800000000000000
+      internalID: 4630849100973888067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1272
+        width: 81
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef5cca1ec0967820800000000000000
+      internalID: 2915677023656239074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_11
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1273
+        width: 79
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8899bdaaa23304600800000000000000
+      internalID: 450416221085211016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1272
+        width: 75
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6079fb3dc14b23920800000000000000
+      internalID: 2968633140295210758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jump_Left_13
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1272
+        width: 69
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a723b1c71ef067290800000000000000
+      internalID: -7893103835796000134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_00
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1275
+        width: 85
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62da85648f70a0a90800000000000000
+      internalID: -7347051079188042458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_01
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1292
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5c68f00516185b0800000000000000
+      internalID: -5367902284363151907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_02
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1297
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0195dae17a2c1d90800000000000000
+      internalID: -7125773841647431413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_03
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1298
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af67f926c1e0a89f0800000000000000
+      internalID: -465544096402934022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_04
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1298
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb891f1a426429790800000000000000
+      internalID: -7524874904232945477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_05
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1297
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6da7605cab886460800000000000000
+      internalID: 7235186373570309482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_06
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1293
+        width: 109
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b654557e145c0010800000000000000
+      internalID: 1156391694121588403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_07
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1288
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0361e1d275e99340800000000000000
+      internalID: 4871176753288143630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_08
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1281
+        width: 94
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7120174fe3d54fc0800000000000000
+      internalID: -3511167309822549635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Jumping_KickL_09
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1274
+        width: 79
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af22c731bf5ef31e0800000000000000
+      internalID: -2215799625116540166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_00
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1273
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afba15b138cd6ab90800000000000000
+      internalID: -7230849696039588870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_01
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1273
+        width: 76
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0e43f0648240440800000000000000
+      internalID: 4901086575853887654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_02
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1275
+        width: 67
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cdb58e955689ec0800000000000000
+      internalID: -3559984068611548107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_03
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1277
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccc0bd3e0f285b30800000000000000
+      internalID: 4276219584399330504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_04
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1279
+        width: 76
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c42d82ecb3e1d180800000000000000
+      internalID: -9092235772290063159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_05
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1278
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d6847c6eae95510800000000000000
+      internalID: 1538519024630525241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_06
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1278
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b290ce18cee650510800000000000000
+      internalID: 1514738811751106859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_07
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1277
+        width: 91
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d79e186adcb52840800000000000000
+      internalID: 5198768991104833491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_08
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1276
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d938281f35f1010800000000000000
+      internalID: 1161739525626764562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Picking_09
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1113
+        width: 81
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e1332e77787ea40800000000000000
+      internalID: 5397431627392687712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_00
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1115
+        width: 67
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca4acd5744ca38c0800000000000000
+      internalID: -4018683906679485750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_01
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1115
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ff1188129cc6cb0800000000000000
+      internalID: -4869295951240364190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_02
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1117
+        width: 65
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cc71b2330323320800000000000000
+      internalID: 2536142536487455876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_03
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1118
+        width: 64
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c6126ef8abdadd0800000000000000
+      internalID: -2473115493152494522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_04
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1113
+        width: 60
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666cf1a3e9c610af0800000000000000
+      internalID: -431944662415063450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_05
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1110
+        width: 60
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9074f20863cdc0070800000000000000
+      internalID: 8074070358605383433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_06
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1111
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343ccb4b0e0fd9a50800000000000000
+      internalID: 6529639882652697411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_07
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1114
+        width: 79
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a7b37a62b6f8ce0800000000000000
+      internalID: -1400783145330312647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_08
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1115
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13581a9a1f4533a20800000000000000
+      internalID: 3040867570315003185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_09
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1116
+        width: 77
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a3ba2d723413c30800000000000000
+      internalID: 4337321754451720734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_10
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1117
+        width: 77
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def760c738ea86160800000000000000
+      internalID: 7019051899001667565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_11
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1111
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d1ad173a9d63c30800000000000000
+      internalID: 4338894587031067927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_12
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1110
+        width: 61
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02106688fcac15c00800000000000000
+      internalID: 887713594264125728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Run_Left_13
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1113
+        width: 64
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c321bbea31ba74710800000000000000
+      internalID: 1677497487243022908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_00
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1132
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db38c7bfa5b005240800000000000000
+      internalID: 4778331690034299837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_01
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1132
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1772bfd67fc39b110800000000000000
+      internalID: 1277119002736011121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_02
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1133
+        width: 84
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6057a8893036143d0800000000000000
+      internalID: -3224186991125302010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_03
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 1125
+        width: 81
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8219c6f083f8e9450800000000000000
+      internalID: 6097468416445944104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_04
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 1122
+        width: 89
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c504934eaac3500800000000000000
+      internalID: 377364365982063681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_05
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1123
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469a0ca0de0018cf0800000000000000
+      internalID: -251919086068389532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_06
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1124
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc3d719d41a3e7c0800000000000000
+      internalID: -4043210685923115835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_07
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1125
+        width: 88
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e57eed0d420e3a50800000000000000
+      internalID: 6502637441939043809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_08
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1126
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6636ef7c72e15e070800000000000000
+      internalID: 8134941458122564454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-None-Swing_Up_09
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1126
+        width: 85
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5aa5c91e7fa0dd0800000000000000
+      internalID: -2518928493197482529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_00
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1112
+        width: 82
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b36cf7f8951d0d0800000000000000
+      internalID: -3399837770829120740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 950
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4380cd2d7cc3940800000000000000
+      internalID: 5277312571819963579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_02
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 951
+        width: 84
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5808c3a41b0c2440800000000000000
+      internalID: 4912313476829415515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_03
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 951
+        width: 85
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64857f750b0f36b0800000000000000
+      internalID: -5314516917032745877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_04
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 953
+        width: 117
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369490d364c6651f0800000000000000
+      internalID: -1056538013644273309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_05
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 907
+        width: 145
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0e6d4f37582e450800000000000000
+      internalID: 6116597976998011127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_06
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 907
+        width: 145
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd082bf667ff8c10800000000000000
+      internalID: 2058135576404037114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_07
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 907
+        width: 145
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8188821b8ee0dda30800000000000000
+      internalID: 4241562816620300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_08
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 947
+        width: 134
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad41b4f37cf1d3630800000000000000
+      internalID: 3908314992248296666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Attack_Left_09
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 947
+        width: 135
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc862d4510f44c70800000000000000
+      internalID: 8954545933398740165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_0
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 948
+        width: 111
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672c136b0e41252c0800000000000000
+      internalID: -4444466926899314058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_1
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 949
+        width: 125
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c42acc3d1cf153a0800000000000000
+      internalID: -6678279569909603135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_2
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 952
+        width: 118
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef0c051cb8f6fff0800000000000000
+      internalID: -2541263076454418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_3
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 956
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40ba252ea55c6e90800000000000000
+      internalID: -7031150711795961777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_4
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 958
+        width: 96
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d1b62d1681d400800000000000000
+      internalID: 347206106045601079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_5
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 956
+        width: 91
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f43da5a15a6e080800000000000000
+      internalID: -9158451259599794404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Damage_Left_6
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 955
+        width: 91
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a2c9bcacfd49c70800000000000000
+      internalID: 8977046019348638338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_00
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 947
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa9335b8ae4e35f0800000000000000
+      internalID: -775095599359616260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_01
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 947
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acb8c63c80e81960800000000000000
+      internalID: 7573049666242657448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_02
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 947
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b62418084068260800000000000000
+      internalID: 7099366812567104306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_03
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 947
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa0bfec89bdd96e0800000000000000
+      internalID: -1829064424288482574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_04
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62910b8ab2521d20800000000000000
+      internalID: 3247749242437079662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_05
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a267edaaffb9b66e0800000000000000
+      internalID: -1843208100092414422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_06
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250ccd6c2906bbdd0800000000000000
+      internalID: -2469273787164737454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_07
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96b00ec6654d3d80800000000000000
+      internalID: -8269377032937228641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_08
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399cb0af346ff28b0800000000000000
+      internalID: -5174646675007092333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_09
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 947
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05780fbfcd6cefbc0800000000000000
+      internalID: -3747339187503724720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe32ff63dc016b480800000000000000
+      internalID: -8883894741364694033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac71c183631c7bc0800000000000000
+      internalID: -3784128268798427987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_12
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 784
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d5a13d6a2a9f270800000000000000
+      internalID: 8284831826914729306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4beaa4581e240720800000000000000
+      internalID: 2811422749420612428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_14
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ab74df2a1d1f7c0800000000000000
+      internalID: -4039216892810380795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_15
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b4ff7f64fde4cf0800000000000000
+      internalID: -266029832066872494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_16
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebffdcbb08c1bc60800000000000000
+      internalID: 7832261179712994278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_17
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be087f251529d1540800000000000000
+      internalID: 4980297640923594987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_18
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7ab43379c212890800000000000000
+      internalID: -7484652077800773697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_19
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 785
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69bc310d9362bc90800000000000000
+      internalID: -7155547331956524694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_20
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59e7f412b3e10350800000000000000
+      internalID: 5981312134120204638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_21
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec9ddfbfaa319cd0800000000000000
+      internalID: -2553194987229700890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_22
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac34e1c0bfdec48e0800000000000000
+      internalID: -1707728496184376374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_23
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1822dd850fccae90800000000000000
+      internalID: -7013002896961558502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_24
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9a066ae1e5d7fb0800000000000000
+      internalID: -4648455754643101220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_25
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 784
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9278c0388099e730800000000000000
+      internalID: 4028910256268014234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Back_26
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 784
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966a05a1c93ac7de0800000000000000
+      internalID: -1334011498756790679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_00
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d916e1a2d0ebb4bb0800000000000000
+      internalID: -4950654401613241955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_01
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9c5ea05bf582790800000000000000
+      internalID: -7554683143737456183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_02
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3802460fadd0d70800000000000000
+      internalID: 9011099155445089260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_03
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c479c68973b9e40800000000000000
+      internalID: 5664182084144942236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_04
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 784
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a33b3eab4751840800000000000000
+      internalID: 5194186091274648179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_05
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 784
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecf48fdad3181680800000000000000
+      internalID: -8784249242412319519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_06
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 784
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db694ba74420baf60800000000000000
+      internalID: 8046527652367210173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_07
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 784
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c832ba66e9624e6f0800000000000000
+      internalID: -656357183920069748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_08
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 784
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d7976480dd2fd60800000000000000
+      internalID: 7922637722109967626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_09
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6780a99009cd3e0800000000000000
+      internalID: -2027587361310214462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0149c2eff36ac40800000000000000
+      internalID: 5523172353918636279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc46a62e47d66cb0800000000000000
+      internalID: -4870969216298758921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 621
+        width: 119
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3348a6bc27d4450800000000000000
+      internalID: 6074637690383643554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ceffac4a154bcb30800000000000000
+      internalID: 4308613447768080067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b056f04ff2ac83ee0800000000000000
+      internalID: -1281051786679982837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_15
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a9b9897bdc7ccd0800000000000000
+      internalID: -2537833676576941453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04af87968c4cb67a0800000000000000
+      internalID: -6382791681825506752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_17
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c617281e36ca9600800000000000000
+      internalID: 475910680636495552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_18
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f13cfa9168d26b10800000000000000
+      internalID: 1973377500465345009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_19
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 622
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0920d8b42fba5d3b0800000000000000
+      internalID: -5488291513743113584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_20
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0c680c80a958210800000000000000
+      internalID: 1334642226965692584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_21
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801b11a7b9aeafc20800000000000000
+      internalID: 3241160835335303432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_22
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5f8ccef0e4b35f0800000000000000
+      internalID: -775940680487209535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_23
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c10f9ea6b2d1e30800000000000000
+      internalID: 4475781342867495997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_24
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 621
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84616466950e19e70800000000000000
+      internalID: 9120317394974545480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_25
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 621
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1a041ec95f4b890800000000000000
+      internalID: -7443054229993774613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Front_26
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 621
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1961d33c3c5c1c6e0800000000000000
+      internalID: -1818955329896114543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_00
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 623
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f670a0b7b769320800000000000000
+      internalID: 2564372806213529355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_01
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 623
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb485f1436d242f0800000000000000
+      internalID: -989993448715564095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_02
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 623
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba62543e22073e30800000000000000
+      internalID: 4483054351540185785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_03
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 623
+        width: 112
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976732b10050dab00800000000000000
+      internalID: 841334203401598585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_04
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 624
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad5fb6d32ef74d40800000000000000
+      internalID: 5568698894147083690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_05
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 624
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad6c13147046c1b0800000000000000
+      internalID: -5636747016326582880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_06
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 624
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed30f9b105624880800000000000000
+      internalID: -8628222877999546901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_07
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 624
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34def9e38996e0670800000000000000
+      internalID: 8506852848756059459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 461
+        width: 113
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ea28ff432554aa0800000000000000
+      internalID: -6177440926290235795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_09
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 461
+        width: 113
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af4175a0179b1fc0800000000000000
+      internalID: -3523056185736343640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4290eb94cb9ac7800800000000000000
+      internalID: 611550275571681572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8796046b0ba7e7270800000000000000
+      internalID: 8250166466779834744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_12
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d791b505b5217b9a0800000000000000
+      internalID: -6217480577162208899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_13
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dfa31c2aadc2540800000000000000
+      internalID: 4984599280153722249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 462
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db426ea9f420db690800000000000000
+      internalID: -7584903656497601347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 462
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46556301b1a0395c0800000000000000
+      internalID: -4210010115308890780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_16
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 462
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162626ffb55d73050800000000000000
+      internalID: 5780323237856698977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_17
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 462
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a3cb1263a5f7bb0800000000000000
+      internalID: -4936127478034056683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_18
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 462
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f7272f9eb6772a0800000000000000
+      internalID: -6739799664797515993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_19
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fe7ed59d5d53420800000000000000
+      internalID: 2609226688691171178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_20
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 461
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7554153cf901ba0800000000000000
+      internalID: -6120216232365566030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_21
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 461
+        width: 113
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc8a2dffd3dee890800000000000000
+      internalID: -7426765776508777259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_22
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 461
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3a8565511e811b0800000000000000
+      internalID: -5685547047796038729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_23
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 461
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10335a75780455380800000000000000
+      internalID: -8983202931685379327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_24
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 461
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b424a6973f4ed5a0800000000000000
+      internalID: -6494666512452541262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_25
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 460
+        width: 112
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278cff6a4cae3c500800000000000000
+      internalID: 415433720984488050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Idle_Left_26
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 460
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac60ce1d1a4f2260800000000000000
+      internalID: 7074955028552772771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_00
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 458
+        width: 82
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4b0e4369525b0c0800000000000000
+      internalID: -4560697720580295498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_01
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 455
+        width: 78
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc283aaebe397d10800000000000000
+      internalID: 2123797687902416120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_02
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 456
+        width: 79
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa296cf74d323310800000000000000
+      internalID: 1383235414942886566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_03
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 457
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572247ded17f82640800000000000000
+      internalID: 5055562289633305205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_04
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 457
+        width: 83
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2432846ac1dce140800000000000000
+      internalID: 4750402374168884267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_05
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 458
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad301d08482987ea0800000000000000
+      internalID: -5874784616110292006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_06
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 459
+        width: 86
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9635f92b8e1c9d80800000000000000
+      internalID: -8242679634941626726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_07
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 297
+        width: 86
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5659497cf2822b630800000000000000
+      internalID: 3941256809579582821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_08
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 296
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4650758c966c25d0800000000000000
+      internalID: -3085978822215969201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_09
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 295
+        width: 83
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313a959de331ee130800000000000000
+      internalID: 3597834312971035411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 294
+        width: 84
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2e026334a207680800000000000000
+      internalID: -8759454807076314389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_11
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 295
+        width: 83
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6aaa159010fbafa0800000000000000
+      internalID: -5788268942042944913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 294
+        width: 79
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88af7979b775552b0800000000000000
+      internalID: -5596470773602059640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jump_Left_13
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 294
+        width: 73
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d308b09eca8556a40800000000000000
+      internalID: 5360788431121907773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_00
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 297
+        width: 87
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1144af1a53fccb0800000000000000
+      internalID: -4841592104595222039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_01
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 314
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502aded168f8545a0800000000000000
+      internalID: -6537661477867904507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_02
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 319
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3745cc235e33861c0800000000000000
+      internalID: -4510297967318772621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_03
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 320
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ab729f658bc83e0800000000000000
+      internalID: -2050061046673589680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_04
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 320
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352fe2c0a87779820800000000000000
+      internalID: 2924937917794021971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_05
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 319
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461e6c790309a4920800000000000000
+      internalID: 2975349042210857316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_06
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 315
+        width: 109
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e4c159068c724c0800000000000000
+      internalID: -4312257801039884773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_07
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 310
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5609520f8294e420800000000000000
+      internalID: 2658410822972802653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_08
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 303
+        width: 94
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7529daf6b7722a0800000000000000
+      internalID: -6762300595889874990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Jumping_KickL_09
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 296
+        width: 79
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b249e5edb61d98b70800000000000000
+      internalID: 8901876399696942123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_00
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 295
+        width: 119
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ab373e0d8aa4d80800000000000000
+      internalID: -8265608550962447739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_01
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 295
+        width: 129
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25a330ed243b70f0800000000000000
+      internalID: -1118242710831782614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_02
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 297
+        width: 117
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f0c7604fbcc4690800000000000000
+      internalID: -7616488620849098915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_03
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 299
+        width: 116
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61140d1485f02f480800000000000000
+      internalID: -8867007844603379434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_04
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 301
+        width: 116
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eea52cca5d3f2a60800000000000000
+      internalID: 7651401752107134697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_05
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 299
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49db3c1d93fc0d2b0800000000000000
+      internalID: -5561717692563210860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_06
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 299
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef2365a2395db810800000000000000
+      internalID: 1782679101566562281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_07
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 297
+        width: 129
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d9d75b915f4fa60800000000000000
+      internalID: 7707054353105657168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_08
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 296
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cbf4426cddd2970800000000000000
+      internalID: 8731879095623728229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Picking_09
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 133
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf2cfae804b8f180800000000000000
+      internalID: -9081310698197471293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_00
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 137
+        width: 96
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d5276607d922ae0800000000000000
+      internalID: -1575523813545583237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_01
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 137
+        width: 94
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474f4a5b6b75f7fa0800000000000000
+      internalID: -5800821352786758540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_02
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 135
+        width: 89
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2f2e165f5865610800000000000000
+      internalID: 1609621205787276009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_03
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 129
+        width: 84
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e216b293cca4fd0800000000000000
+      internalID: -2356846909062042082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_04
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 135
+        width: 97
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5663cbb5b0dcff4a0800000000000000
+      internalID: -6557297083760757147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_05
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 132
+        width: 108
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54308d137c50c900800000000000000
+      internalID: 702663191355733083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_06
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 133
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3fadd964d30ab30800000000000000
+      internalID: 4296501418016830437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_07
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 136
+        width: 79
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b314abbabc99620800000000000000
+      internalID: 2781478183302675281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_08
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 137
+        width: 81
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b71b0f369ab17c0800000000000000
+      internalID: -4099496789085684935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_09
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 138
+        width: 81
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0533dde1c5caee0800000000000000
+      internalID: -1248521709058567975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_10
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 139
+        width: 82
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76873a2d8c9d264a0800000000000000
+      internalID: -6601474647221110681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_11
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 133
+        width: 73
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219ca37d143d13490800000000000000
+      internalID: -7768195602500105966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_12
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 132
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c3be6e18f7e3bb0800000000000000
+      internalID: -4954382344159282081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Run_Left_13
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 135
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb5797b01c0f8870800000000000000
+      internalID: 8687175472160136155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_00
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 154
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d20d3abc8deceb0800000000000000
+      internalID: -4697578992162558624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_01
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 154
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc942439bfa2500b0800000000000000
+      internalID: -5763152888154928689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_02
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 155
+        width: 84
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76db1d0af4571270800000000000000
+      internalID: 8221133077726615163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_03
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 128
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521fe7b4fd0071c90800000000000000
+      internalID: -7199284520284131035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_04
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 144
+        width: 150
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2491dafed1173b0800000000000000
+      internalID: -5516595153313643868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_05
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 145
+        width: 151
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee44fa97879f20d0800000000000000
+      internalID: -3445368581239058709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_06
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 146
+        width: 151
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66eefcda4aada6d90800000000000000
+      internalID: -7103625061397959066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_07
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 147
+        width: 152
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b54328a7835b6030800000000000000
+      internalID: 3488974178435155382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_08
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 148
+        width: 152
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61c51c252b636500800000000000000
+      internalID: 388271800281579887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep-Weapon_Bat-Swing_Up_09
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 148
+        width: 151
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab65f8820460a40800000000000000
+      internalID: 5334021351614626458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sheep-None-Attack_Left_00: -3892445863131320306
+      Sheep-None-Attack_Left_01: 2451736608636401882
+      Sheep-None-Attack_Left_02: -7299829499331947814
+      Sheep-None-Attack_Left_03: 29361771387605654
+      Sheep-None-Attack_Left_04: -296739094683924823
+      Sheep-None-Attack_Left_05: -8936211129462424260
+      Sheep-None-Attack_Left_06: 6730980941698941147
+      Sheep-None-Attack_Left_07: 4957094013124026824
+      Sheep-None-Attack_Left_08: -6101986182946199092
+      Sheep-None-Attack_Left_09: -3486783243950584448
+      Sheep-None-Damage_Left_0: -5384434127060784701
+      Sheep-None-Damage_Left_1: 7160406750384306057
+      Sheep-None-Damage_Left_2: -4373199894948829681
+      Sheep-None-Damage_Left_3: 3732412795206021047
+      Sheep-None-Damage_Left_4: 6233567554117908774
+      Sheep-None-Damage_Left_5: 6177449389139912741
+      Sheep-None-Damage_Left_6: 7496360770905863678
+      Sheep-None-Idle_Back_00: 5342086902903717751
+      Sheep-None-Idle_Back_01: 634743231756684129
+      Sheep-None-Idle_Back_02: -5436235825700025805
+      Sheep-None-Idle_Back_03: -2732461553428101278
+      Sheep-None-Idle_Back_04: -4570690886304776863
+      Sheep-None-Idle_Back_05: 64720812326971377
+      Sheep-None-Idle_Back_06: 5656350487806031286
+      Sheep-None-Idle_Back_07: 8123802286965930082
+      Sheep-None-Idle_Back_08: -1773348038939729679
+      Sheep-None-Idle_Back_09: -3960468373062195476
+      Sheep-None-Idle_Back_10: -470149746300307495
+      Sheep-None-Idle_Back_11: -7690447774590523169
+      Sheep-None-Idle_Back_12: -843012171590637793
+      Sheep-None-Idle_Back_13: -7615431009580971543
+      Sheep-None-Idle_Back_14: -1524064232214249885
+      Sheep-None-Idle_Back_15: -6279323199165445174
+      Sheep-None-Idle_Back_16: 8124369909714036490
+      Sheep-None-Idle_Back_17: 1877036234634473611
+      Sheep-None-Idle_Back_18: 53557837786970371
+      Sheep-None-Idle_Back_19: -3912429033831738153
+      Sheep-None-Idle_Back_20: 4999019829045382017
+      Sheep-None-Idle_Back_21: -8562645922395479899
+      Sheep-None-Idle_Back_22: 4547232127849627111
+      Sheep-None-Idle_Back_23: -3358332194808928546
+      Sheep-None-Idle_Back_24: -4707103136398250969
+      Sheep-None-Idle_Back_25: -7016123865398788786
+      Sheep-None-Idle_Back_26: 2425629249229258477
+      Sheep-None-Idle_Front_00: -1625574347960192383
+      Sheep-None-Idle_Front_01: -4562484447841719700
+      Sheep-None-Idle_Front_02: -8227911811709055602
+      Sheep-None-Idle_Front_03: 243187836485959830
+      Sheep-None-Idle_Front_04: -6301639891294705928
+      Sheep-None-Idle_Front_05: 6387821519798995975
+      Sheep-None-Idle_Front_06: 266804447960386954
+      Sheep-None-Idle_Front_07: 8680527160005169084
+      Sheep-None-Idle_Front_08: -3402294198425641307
+      Sheep-None-Idle_Front_09: -3745313087047152136
+      Sheep-None-Idle_Front_10: 6115068976360454380
+      Sheep-None-Idle_Front_11: -4599191924777150548
+      Sheep-None-Idle_Front_12: 7885836844413748711
+      Sheep-None-Idle_Front_13: 6725206306450083561
+      Sheep-None-Idle_Front_14: 7452215237468296350
+      Sheep-None-Idle_Front_15: 1351941473207245775
+      Sheep-None-Idle_Front_16: 4871293453826034595
+      Sheep-None-Idle_Front_17: -1753776299446291776
+      Sheep-None-Idle_Front_18: 8349184933715463727
+      Sheep-None-Idle_Front_19: 8134135641059589030
+      Sheep-None-Idle_Front_20: -9027831865769374762
+      Sheep-None-Idle_Front_21: 3337052105142925351
+      Sheep-None-Idle_Front_22: -5213695182158641314
+      Sheep-None-Idle_Front_23: 6254365082797693177
+      Sheep-None-Idle_Front_24: -5025755335760951437
+      Sheep-None-Idle_Front_25: 3931583863221246457
+      Sheep-None-Idle_Front_26: 8045939514136835547
+      Sheep-None-Idle_Left_00: 6517615185903601389
+      Sheep-None-Idle_Left_01: 4230957186994005633
+      Sheep-None-Idle_Left_02: 8153497256380106
+      Sheep-None-Idle_Left_03: 2715691943534884844
+      Sheep-None-Idle_Left_04: -4269664428393368648
+      Sheep-None-Idle_Left_05: -2702583937456374466
+      Sheep-None-Idle_Left_06: 5161623138703211501
+      Sheep-None-Idle_Left_07: 43091607942588119
+      Sheep-None-Idle_Left_08: -5055162243689577151
+      Sheep-None-Idle_Left_09: 1816968707876698529
+      Sheep-None-Idle_Left_10: -5679539540629300665
+      Sheep-None-Idle_Left_11: -7970878186874642378
+      Sheep-None-Idle_Left_12: -1253412208210675272
+      Sheep-None-Idle_Left_13: 7640154899889074258
+      Sheep-None-Idle_Left_14: 2877336972902508164
+      Sheep-None-Idle_Left_15: -6550463925248968956
+      Sheep-None-Idle_Left_16: 3738025257766291987
+      Sheep-None-Idle_Left_17: 3193962561436173474
+      Sheep-None-Idle_Left_18: 7143653417970758509
+      Sheep-None-Idle_Left_19: -190960764094699100
+      Sheep-None-Idle_Left_20: -6673809363334076403
+      Sheep-None-Idle_Left_21: 5124772598076193260
+      Sheep-None-Idle_Left_22: -7908778353196659331
+      Sheep-None-Idle_Left_23: -1334395286923435215
+      Sheep-None-Idle_Left_24: -2533966814220884320
+      Sheep-None-Idle_Left_25: 2986014792253663179
+      Sheep-None-Idle_Left_26: 1096849801829700586
+      Sheep-None-Jump_Left_00: -7394926448639289327
+      Sheep-None-Jump_Left_01: 330329064179474686
+      Sheep-None-Jump_Left_02: 1460633964474095712
+      Sheep-None-Jump_Left_03: 2425187060749535260
+      Sheep-None-Jump_Left_04: 539479577588526788
+      Sheep-None-Jump_Left_05: -2551684257586837472
+      Sheep-None-Jump_Left_06: 7708601207472591721
+      Sheep-None-Jump_Left_07: -2081558393448630234
+      Sheep-None-Jump_Left_08: 3205161812147376533
+      Sheep-None-Jump_Left_09: 4630849100973888067
+      Sheep-None-Jump_Left_10: 2915677023656239074
+      Sheep-None-Jump_Left_11: 450416221085211016
+      Sheep-None-Jump_Left_12: 2968633140295210758
+      Sheep-None-Jump_Left_13: -7893103835796000134
+      Sheep-None-Jumping_KickL_00: -7347051079188042458
+      Sheep-None-Jumping_KickL_01: -5367902284363151907
+      Sheep-None-Jumping_KickL_02: -7125773841647431413
+      Sheep-None-Jumping_KickL_03: -465544096402934022
+      Sheep-None-Jumping_KickL_04: -7524874904232945477
+      Sheep-None-Jumping_KickL_05: 7235186373570309482
+      Sheep-None-Jumping_KickL_06: 1156391694121588403
+      Sheep-None-Jumping_KickL_07: 4871176753288143630
+      Sheep-None-Jumping_KickL_08: -3511167309822549635
+      Sheep-None-Jumping_KickL_09: -2215799625116540166
+      Sheep-None-Picking_00: -7230849696039588870
+      Sheep-None-Picking_01: 4901086575853887654
+      Sheep-None-Picking_02: -3559984068611548107
+      Sheep-None-Picking_03: 4276219584399330504
+      Sheep-None-Picking_04: -9092235772290063159
+      Sheep-None-Picking_05: 1538519024630525241
+      Sheep-None-Picking_06: 1514738811751106859
+      Sheep-None-Picking_07: 5198768991104833491
+      Sheep-None-Picking_08: 1161739525626764562
+      Sheep-None-Picking_09: 5397431627392687712
+      Sheep-None-Run_Left_00: -4018683906679485750
+      Sheep-None-Run_Left_01: -4869295951240364190
+      Sheep-None-Run_Left_02: 2536142536487455876
+      Sheep-None-Run_Left_03: -2473115493152494522
+      Sheep-None-Run_Left_04: -431944662415063450
+      Sheep-None-Run_Left_05: 8074070358605383433
+      Sheep-None-Run_Left_06: 6529639882652697411
+      Sheep-None-Run_Left_07: -1400783145330312647
+      Sheep-None-Run_Left_08: 3040867570315003185
+      Sheep-None-Run_Left_09: 4337321754451720734
+      Sheep-None-Run_Left_10: 7019051899001667565
+      Sheep-None-Run_Left_11: 4338894587031067927
+      Sheep-None-Run_Left_12: 887713594264125728
+      Sheep-None-Run_Left_13: 1677497487243022908
+      Sheep-None-Swing_Up_00: 4778331690034299837
+      Sheep-None-Swing_Up_01: 1277119002736011121
+      Sheep-None-Swing_Up_02: -3224186991125302010
+      Sheep-None-Swing_Up_03: 6097468416445944104
+      Sheep-None-Swing_Up_04: 377364365982063681
+      Sheep-None-Swing_Up_05: -251919086068389532
+      Sheep-None-Swing_Up_06: -4043210685923115835
+      Sheep-None-Swing_Up_07: 6502637441939043809
+      Sheep-None-Swing_Up_08: 8134941458122564454
+      Sheep-None-Swing_Up_09: -2518928493197482529
+      Sheep-Weapon_Bat-Attack_Left_00: -3399837770829120740
+      Sheep-Weapon_Bat-Attack_Left_01: 5277312571819963579
+      Sheep-Weapon_Bat-Attack_Left_02: 4912313476829415515
+      Sheep-Weapon_Bat-Attack_Left_03: -5314516917032745877
+      Sheep-Weapon_Bat-Attack_Left_04: -1056538013644273309
+      Sheep-Weapon_Bat-Attack_Left_05: 6116597976998011127
+      Sheep-Weapon_Bat-Attack_Left_06: 2058135576404037114
+      Sheep-Weapon_Bat-Attack_Left_07: 4241562816620300312
+      Sheep-Weapon_Bat-Attack_Left_08: 3908314992248296666
+      Sheep-Weapon_Bat-Attack_Left_09: 8954545933398740165
+      Sheep-Weapon_Bat-Damage_Left_0: -4444466926899314058
+      Sheep-Weapon_Bat-Damage_Left_1: -6678279569909603135
+      Sheep-Weapon_Bat-Damage_Left_2: -2541263076454418
+      Sheep-Weapon_Bat-Damage_Left_3: -7031150711795961777
+      Sheep-Weapon_Bat-Damage_Left_4: 347206106045601079
+      Sheep-Weapon_Bat-Damage_Left_5: -9158451259599794404
+      Sheep-Weapon_Bat-Damage_Left_6: 8977046019348638338
+      Sheep-Weapon_Bat-Idle_Back_00: -775095599359616260
+      Sheep-Weapon_Bat-Idle_Back_01: 7573049666242657448
+      Sheep-Weapon_Bat-Idle_Back_02: 7099366812567104306
+      Sheep-Weapon_Bat-Idle_Back_03: -1829064424288482574
+      Sheep-Weapon_Bat-Idle_Back_04: 3247749242437079662
+      Sheep-Weapon_Bat-Idle_Back_05: -1843208100092414422
+      Sheep-Weapon_Bat-Idle_Back_06: -2469273787164737454
+      Sheep-Weapon_Bat-Idle_Back_07: -8269377032937228641
+      Sheep-Weapon_Bat-Idle_Back_08: -5174646675007092333
+      Sheep-Weapon_Bat-Idle_Back_09: -3747339187503724720
+      Sheep-Weapon_Bat-Idle_Back_10: -8883894741364694033
+      Sheep-Weapon_Bat-Idle_Back_11: -3784128268798427987
+      Sheep-Weapon_Bat-Idle_Back_12: 8284831826914729306
+      Sheep-Weapon_Bat-Idle_Back_13: 2811422749420612428
+      Sheep-Weapon_Bat-Idle_Back_14: -4039216892810380795
+      Sheep-Weapon_Bat-Idle_Back_15: -266029832066872494
+      Sheep-Weapon_Bat-Idle_Back_16: 7832261179712994278
+      Sheep-Weapon_Bat-Idle_Back_17: 4980297640923594987
+      Sheep-Weapon_Bat-Idle_Back_18: -7484652077800773697
+      Sheep-Weapon_Bat-Idle_Back_19: -7155547331956524694
+      Sheep-Weapon_Bat-Idle_Back_20: 5981312134120204638
+      Sheep-Weapon_Bat-Idle_Back_21: -2553194987229700890
+      Sheep-Weapon_Bat-Idle_Back_22: -1707728496184376374
+      Sheep-Weapon_Bat-Idle_Back_23: -7013002896961558502
+      Sheep-Weapon_Bat-Idle_Back_24: -4648455754643101220
+      Sheep-Weapon_Bat-Idle_Back_25: 4028910256268014234
+      Sheep-Weapon_Bat-Idle_Back_26: -1334011498756790679
+      Sheep-Weapon_Bat-Idle_Front_00: -4950654401613241955
+      Sheep-Weapon_Bat-Idle_Front_01: -7554683143737456183
+      Sheep-Weapon_Bat-Idle_Front_02: 9011099155445089260
+      Sheep-Weapon_Bat-Idle_Front_03: 5664182084144942236
+      Sheep-Weapon_Bat-Idle_Front_04: 5194186091274648179
+      Sheep-Weapon_Bat-Idle_Front_05: -8784249242412319519
+      Sheep-Weapon_Bat-Idle_Front_06: 8046527652367210173
+      Sheep-Weapon_Bat-Idle_Front_07: -656357183920069748
+      Sheep-Weapon_Bat-Idle_Front_08: 7922637722109967626
+      Sheep-Weapon_Bat-Idle_Front_09: -2027587361310214462
+      Sheep-Weapon_Bat-Idle_Front_10: 5523172353918636279
+      Sheep-Weapon_Bat-Idle_Front_11: -4870969216298758921
+      Sheep-Weapon_Bat-Idle_Front_12: 6074637690383643554
+      Sheep-Weapon_Bat-Idle_Front_13: 4308613447768080067
+      Sheep-Weapon_Bat-Idle_Front_14: -1281051786679982837
+      Sheep-Weapon_Bat-Idle_Front_15: -2537833676576941453
+      Sheep-Weapon_Bat-Idle_Front_16: -6382791681825506752
+      Sheep-Weapon_Bat-Idle_Front_17: 475910680636495552
+      Sheep-Weapon_Bat-Idle_Front_18: 1973377500465345009
+      Sheep-Weapon_Bat-Idle_Front_19: -5488291513743113584
+      Sheep-Weapon_Bat-Idle_Front_20: 1334642226965692584
+      Sheep-Weapon_Bat-Idle_Front_21: 3241160835335303432
+      Sheep-Weapon_Bat-Idle_Front_22: -775940680487209535
+      Sheep-Weapon_Bat-Idle_Front_23: 4475781342867495997
+      Sheep-Weapon_Bat-Idle_Front_24: 9120317394974545480
+      Sheep-Weapon_Bat-Idle_Front_25: -7443054229993774613
+      Sheep-Weapon_Bat-Idle_Front_26: -1818955329896114543
+      Sheep-Weapon_Bat-Idle_Left_00: 2564372806213529355
+      Sheep-Weapon_Bat-Idle_Left_01: -989993448715564095
+      Sheep-Weapon_Bat-Idle_Left_02: 4483054351540185785
+      Sheep-Weapon_Bat-Idle_Left_03: 841334203401598585
+      Sheep-Weapon_Bat-Idle_Left_04: 5568698894147083690
+      Sheep-Weapon_Bat-Idle_Left_05: -5636747016326582880
+      Sheep-Weapon_Bat-Idle_Left_06: -8628222877999546901
+      Sheep-Weapon_Bat-Idle_Left_07: 8506852848756059459
+      Sheep-Weapon_Bat-Idle_Left_08: -6177440926290235795
+      Sheep-Weapon_Bat-Idle_Left_09: -3523056185736343640
+      Sheep-Weapon_Bat-Idle_Left_10: 611550275571681572
+      Sheep-Weapon_Bat-Idle_Left_11: 8250166466779834744
+      Sheep-Weapon_Bat-Idle_Left_12: -6217480577162208899
+      Sheep-Weapon_Bat-Idle_Left_13: 4984599280153722249
+      Sheep-Weapon_Bat-Idle_Left_14: -7584903656497601347
+      Sheep-Weapon_Bat-Idle_Left_15: -4210010115308890780
+      Sheep-Weapon_Bat-Idle_Left_16: 5780323237856698977
+      Sheep-Weapon_Bat-Idle_Left_17: -4936127478034056683
+      Sheep-Weapon_Bat-Idle_Left_18: -6739799664797515993
+      Sheep-Weapon_Bat-Idle_Left_19: 2609226688691171178
+      Sheep-Weapon_Bat-Idle_Left_20: -6120216232365566030
+      Sheep-Weapon_Bat-Idle_Left_21: -7426765776508777259
+      Sheep-Weapon_Bat-Idle_Left_22: -5685547047796038729
+      Sheep-Weapon_Bat-Idle_Left_23: -8983202931685379327
+      Sheep-Weapon_Bat-Idle_Left_24: -6494666512452541262
+      Sheep-Weapon_Bat-Idle_Left_25: 415433720984488050
+      Sheep-Weapon_Bat-Idle_Left_26: 7074955028552772771
+      Sheep-Weapon_Bat-Jump_Left_00: -4560697720580295498
+      Sheep-Weapon_Bat-Jump_Left_01: 2123797687902416120
+      Sheep-Weapon_Bat-Jump_Left_02: 1383235414942886566
+      Sheep-Weapon_Bat-Jump_Left_03: 5055562289633305205
+      Sheep-Weapon_Bat-Jump_Left_04: 4750402374168884267
+      Sheep-Weapon_Bat-Jump_Left_05: -5874784616110292006
+      Sheep-Weapon_Bat-Jump_Left_06: -8242679634941626726
+      Sheep-Weapon_Bat-Jump_Left_07: 3941256809579582821
+      Sheep-Weapon_Bat-Jump_Left_08: -3085978822215969201
+      Sheep-Weapon_Bat-Jump_Left_09: 3597834312971035411
+      Sheep-Weapon_Bat-Jump_Left_10: -8759454807076314389
+      Sheep-Weapon_Bat-Jump_Left_11: -5788268942042944913
+      Sheep-Weapon_Bat-Jump_Left_12: -5596470773602059640
+      Sheep-Weapon_Bat-Jump_Left_13: 5360788431121907773
+      Sheep-Weapon_Bat-Jumping_KickL_00: -4841592104595222039
+      Sheep-Weapon_Bat-Jumping_KickL_01: -6537661477867904507
+      Sheep-Weapon_Bat-Jumping_KickL_02: -4510297967318772621
+      Sheep-Weapon_Bat-Jumping_KickL_03: -2050061046673589680
+      Sheep-Weapon_Bat-Jumping_KickL_04: 2924937917794021971
+      Sheep-Weapon_Bat-Jumping_KickL_05: 2975349042210857316
+      Sheep-Weapon_Bat-Jumping_KickL_06: -4312257801039884773
+      Sheep-Weapon_Bat-Jumping_KickL_07: 2658410822972802653
+      Sheep-Weapon_Bat-Jumping_KickL_08: -6762300595889874990
+      Sheep-Weapon_Bat-Jumping_KickL_09: 8901876399696942123
+      Sheep-Weapon_Bat-Picking_00: -8265608550962447739
+      Sheep-Weapon_Bat-Picking_01: -1118242710831782614
+      Sheep-Weapon_Bat-Picking_02: -7616488620849098915
+      Sheep-Weapon_Bat-Picking_03: -8867007844603379434
+      Sheep-Weapon_Bat-Picking_04: 7651401752107134697
+      Sheep-Weapon_Bat-Picking_05: -5561717692563210860
+      Sheep-Weapon_Bat-Picking_06: 1782679101566562281
+      Sheep-Weapon_Bat-Picking_07: 7707054353105657168
+      Sheep-Weapon_Bat-Picking_08: 8731879095623728229
+      Sheep-Weapon_Bat-Picking_09: -9081310698197471293
+      Sheep-Weapon_Bat-Run_Left_00: -1575523813545583237
+      Sheep-Weapon_Bat-Run_Left_01: -5800821352786758540
+      Sheep-Weapon_Bat-Run_Left_02: 1609621205787276009
+      Sheep-Weapon_Bat-Run_Left_03: -2356846909062042082
+      Sheep-Weapon_Bat-Run_Left_04: -6557297083760757147
+      Sheep-Weapon_Bat-Run_Left_05: 702663191355733083
+      Sheep-Weapon_Bat-Run_Left_06: 4296501418016830437
+      Sheep-Weapon_Bat-Run_Left_07: 2781478183302675281
+      Sheep-Weapon_Bat-Run_Left_08: -4099496789085684935
+      Sheep-Weapon_Bat-Run_Left_09: -1248521709058567975
+      Sheep-Weapon_Bat-Run_Left_10: -6601474647221110681
+      Sheep-Weapon_Bat-Run_Left_11: -7768195602500105966
+      Sheep-Weapon_Bat-Run_Left_12: -4954382344159282081
+      Sheep-Weapon_Bat-Run_Left_13: 8687175472160136155
+      Sheep-Weapon_Bat-Swing_Up_00: -4697578992162558624
+      Sheep-Weapon_Bat-Swing_Up_01: -5763152888154928689
+      Sheep-Weapon_Bat-Swing_Up_02: 8221133077726615163
+      Sheep-Weapon_Bat-Swing_Up_03: -7199284520284131035
+      Sheep-Weapon_Bat-Swing_Up_04: -5516595153313643868
+      Sheep-Weapon_Bat-Swing_Up_05: -3445368581239058709
+      Sheep-Weapon_Bat-Swing_Up_06: -7103625061397959066
+      Sheep-Weapon_Bat-Swing_Up_07: 3488974178435155382
+      Sheep-Weapon_Bat-Swing_Up_08: 388271800281579887
+      Sheep-Weapon_Bat-Swing_Up_09: 5334021351614626458
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
