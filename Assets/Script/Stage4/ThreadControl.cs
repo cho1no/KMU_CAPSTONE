@@ -25,7 +25,7 @@ public class ThreadControl : MonoBehaviour
     }
     void BalloonOff()
     {
-        if (transform.GetChild(0).gameObject.activeSelf == false)
+        if (transform.GetChild(0).gameObject.activeSelf == false)// 터졌을때
         {
             ani.SetBool("Dead", true);
             speed = -3;

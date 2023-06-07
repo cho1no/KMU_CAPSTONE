@@ -7,10 +7,12 @@ public class BalloonControl : MonoBehaviour
     //float speed = 0.6f;
     ButtonControl buttonControl;
     //Transform balloon;
+    //Animator ani;
     private void Awake()
     {
         buttonControl = FindObjectOfType<ButtonControl>();
         //balloon = transform.parent;
+        //ani = GetComponent<Animator>();
     }
     private void OnEnable()
     {
@@ -23,8 +25,14 @@ public class BalloonControl : MonoBehaviour
             Score.instance.GetScore(30);
             gameObject.SetActive(false);
             ListRemove();
+            //ani.SetBool("Bomb", true);
         }
-        //transform.position = transform.position + Vector3.up * speed * Time.deltaTime;
+        if (transform.position.y >= 5)
+        {
+            gameObject.SetActive(false);
+            ListRemove();
+            GameManager4.instance.gameOver = true;
+        }
 
     }
     void ListRemove()

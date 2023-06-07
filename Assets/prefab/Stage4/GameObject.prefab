@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3937933652394830067}
   - component: {fileID: 3937933652394830066}
   - component: {fileID: 3937933652394830064}
+  - component: {fileID: 5421622057039745317}
   m_Layer: 0
   m_Name: Balloon 1
   m_TagString: Untagged
@@ -97,6 +98,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14f8504f7240e140a1fa7bd68d4aea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5421622057039745317
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937933652394830077}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19ca266d719ce3b47b4dda7c08db100f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4166550826818207144
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2974415811130138628}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +236,8 @@ GameObject:
   - component: {fileID: 4635192295395489710}
   - component: {fileID: 5053098141575827562}
   - component: {fileID: 831146045409067756}
-  m_Layer: 0
+  - component: {fileID: 1463767056933505219}
+  m_Layer: 12
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,8 +363,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 1.7}
-  m_Size: {x: 7, y: 5}
+  m_Offset: {x: 0, y: 1.7}
+  m_Size: {x: 2, y: 1}
   m_Direction: 1
 --- !u!114 &831146045409067756
 MonoBehaviour:
@@ -356,6 +379,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
+  house: {fileID: 0}
+--- !u!50 &1463767056933505219
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635192295395489704}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &4635192295527836164
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192295527836165}
   - component: {fileID: 4635192295527836170}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296001663243}
   - component: {fileID: 4635192296001663240}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LegBackR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296049762168}
   - component: {fileID: 4635192296049762169}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LegFrontL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296185702806}
   - component: {fileID: 4635192296185702807}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LegFrontR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296329743007}
   - component: {fileID: 4635192296329743004}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LegBackL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -786,7 +831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296427238252}
   - component: {fileID: 4635192296427238253}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635192296706072953}
   - component: {fileID: 4635192296706072958}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5227824769736835701}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AnchorWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +1039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9199577808289898890}
   - component: {fileID: 1861554972059188124}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1010452087882715173}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
