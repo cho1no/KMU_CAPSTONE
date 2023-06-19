@@ -5706,6 +5706,9 @@ MonoBehaviour:
   getHpItem: {fileID: 8300000, guid: 45c96fa8cac9ae94aaa0c773d4eb6951, type: 3}
   stage1CatchStar: {fileID: 8300000, guid: caf45adaa437bca46b064f85cc93f755, type: 3}
   stage3WolfHit: {fileID: 8300000, guid: 3ba26ae896e4a254fa56b882e4b0267c, type: 3}
+  stage4Hand: {fileID: 8300000, guid: 943e0f2b775f368469f7eea28e43ca14, type: 3}
+  stage4ballon: {fileID: 8300000, guid: 238569b2b13880540b5918a4b126eef0, type: 3}
+  stage4ballonpop: {fileID: 8300000, guid: 10aa129978b0b004a93f1ef025cd158c, type: 3}
   stage5Boom: {fileID: 8300000, guid: b6ab5493d09b4ce4bb17fe4e8f519eb6, type: 3}
   stage5BossAppear: {fileID: 8300000, guid: a9da7a482bee92341b2f815aaca3f7c8, type: 3}
 --- !u!4 &1523223474

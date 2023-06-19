@@ -12,7 +12,7 @@ public class NoteManager : MonoBehaviour
 
     public int level;
     int num;
-    [SerializeField] int  maxLevel;
+    [SerializeField] int maxLevel;
     [SerializeField] Transform tfNoteApeear;
     [SerializeField] double feverTime;
     [SerializeField] float levelUpTimer;
@@ -88,7 +88,7 @@ public class NoteManager : MonoBehaviour
                 {
                     num = 3;
                     GameObject t_note = NotePool1.instance.Get(num);
-                    t_note.GetComponent<NoteControl>().Init(speedData[level]);// �ð��� ���� ��Ʈ ���ǵ� ���
+                    t_note.GetComponent<NoteControl>().Init(speedData[level]);//  ð           Ʈ    ǵ     
                     t_note.transform.position = tfNoteApeear.position;
                     t_note.transform.SetParent(transform);
                     t_note.SetActive(true);
@@ -151,6 +151,7 @@ public class NoteManager : MonoBehaviour
         else if (randomNote <= 100)
         {
             num = 2;
+
         }
     }
 }

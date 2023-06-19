@@ -11,7 +11,7 @@ public class NoteControl : MonoBehaviour
     UnityEngine.UI.Image noteImage;
     [SerializeField] float speedUpTime;
     float initialWidth, initialHeight;
- 
+
     RectTransform rectTransform;
     NoteManager noteManager;
     private void Awake()

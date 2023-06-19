@@ -23,6 +23,7 @@ public class BalloonControl : MonoBehaviour
     {
         if (transform.localScale == new Vector3(0.35f, 0.35f, 1))
         {
+            ballonpop.instance.ballonpopp();
             Score.instance.GetScore(30);
             gameObject.SetActive(false);
             ListRemove();

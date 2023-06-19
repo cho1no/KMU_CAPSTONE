@@ -5,11 +5,9 @@ using Assets.FantasyMonsters.Scripts;
 
 public class WolfAni : MonoBehaviour
 {
-    float speed = 1f;
-
+    int speed = 2;
     Monster monster;
     Rigidbody2D rigid;
-    //Renderer render;
     [SerializeField]GameObject parent;
     public Transform house;
     private void Awake()
@@ -17,15 +15,15 @@ public class WolfAni : MonoBehaviour
         monster = GetComponent<Monster>();
         parent = transform.parent.gameObject;
         rigid = GetComponent<Rigidbody2D>();
+        
         house = GameObject.Find("House").GetComponent<Transform>();
-        //render = GetComponent<Renderer>();
+
     }
     private void OnEnable()
     {
         monster.SetHead(0);
         gameObject.layer = 12;
         rigid.isKinematic = true;
-        //render.sortingOrder = -2;
     }
     private void Update()
     {
@@ -33,7 +31,8 @@ public class WolfAni : MonoBehaviour
         {   
             rigid.isKinematic = false;
             gameObject.layer = 13;
-            //render.sortingOrder = -10; // 이거 배경 뒤에해달라해서 이것만바꿨음 이것때문에 안됨
+            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = -10; // 이거 배경 뒤에해달라해서 이것만바꿨음 이것때문에 안됨
+            
         }
         if (parent.transform.GetChild(0).gameObject.activeSelf == false && !GameManager4.instance.gameOver) // 풍선이 터졌을때
         {
