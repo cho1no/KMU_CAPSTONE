@@ -10,9 +10,9 @@ public class NoteManager : MonoBehaviour
     public int bpm = 0;
     [SerializeField] double currentTime;
 
-
+    public int level;
     int num;
-    [SerializeField] int level, maxLevel;
+    [SerializeField] int  maxLevel;
     [SerializeField] Transform tfNoteApeear;
     [SerializeField] double feverTime;
     [SerializeField] float levelUpTimer;
@@ -65,7 +65,6 @@ public class NoteManager : MonoBehaviour
                 {
                     RandomGenerate();
                     GameObject t_note = NotePool1.instance.Get(num);
-                    t_note.GetComponent<NoteControl>().Init(speedData[level]);
                     t_note.transform.position = tfNoteApeear.position;
                     t_note.transform.SetParent(transform);
                     t_note.SetActive(true);

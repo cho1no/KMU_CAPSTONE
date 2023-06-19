@@ -7,12 +7,13 @@ public class BalloonControl : MonoBehaviour
     //float speed = 0.6f;
     ButtonControl buttonControl;
     //Transform balloon;
-    //Animator ani;
+    Animator ani;
     private void Awake()
     {
         buttonControl = FindObjectOfType<ButtonControl>();
         //balloon = transform.parent;
-        //ani = GetComponent<Animator>();
+        ani = GetComponent<Animator>();
+        
     }
     private void OnEnable()
     {

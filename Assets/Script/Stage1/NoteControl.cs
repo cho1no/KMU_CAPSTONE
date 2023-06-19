@@ -54,6 +54,7 @@ public class NoteControl : MonoBehaviour
     }
     private void Update()
     {
+        Init(noteManager.speedData[noteManager.level]);
         Vector3 newSize = transform.localPosition += Vector3.down * noteSpeed * Time.deltaTime;
         newSize = Vector3.Min(newSize, Vector3.one * maxSize);
 
