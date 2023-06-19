@@ -40,6 +40,7 @@ public class ButtonControl : MonoBehaviour
     public void HitButton()
     {
         target.transform.localScale += new Vector3(0.015f,0.015f, 0); //만큼 증가
+        //TotalSound.instance.ballonsizeup();
         //ani.SetTrigger("isPicking");
     }
     public void RightButton()

@@ -15,6 +15,10 @@ public class TotalSound : MonoBehaviour
     public AudioClip stage1CatchStar;
     [Header("Stage3")]
     public AudioClip stage3WolfHit;
+    [Header("Stage4")]
+    public AudioClip stage4Hand;
+    public AudioClip stage4ballon;
+    public AudioClip stage4ballonpop;
     [Header("Stage5")]
     public AudioClip stage5Boom;
     public AudioClip stage5BossAppear;
@@ -59,8 +63,22 @@ public class TotalSound : MonoBehaviour
         audioSource.clip = stage3WolfHit;
         audioSource.Play();
     }
-
-
+    //Stage4
+    public void Hand()
+    {
+        audioSource.clip = stage4Hand;
+        audioSource.Play();
+    }
+    public void ballonsizeup()
+    {
+        audioSource.clip = stage4ballon;
+        audioSource.Play();
+    }
+    public void ballonpop()
+    {
+        audioSource.clip = stage4ballonpop;
+        audioSource.Play();
+    }
     //Stage5
     public void Stage5BoomClick()
     {

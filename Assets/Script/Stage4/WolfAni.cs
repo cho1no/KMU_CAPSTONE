@@ -15,7 +15,9 @@ public class WolfAni : MonoBehaviour
         monster = GetComponent<Monster>();
         parent = transform.parent.gameObject;
         rigid = GetComponent<Rigidbody2D>();
+        
         house = GameObject.Find("House").GetComponent<Transform>();
+
     }
     private void OnEnable()
     {
@@ -29,6 +31,8 @@ public class WolfAni : MonoBehaviour
         {   
             rigid.isKinematic = false;
             gameObject.layer = 13;
+            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = -10; // 이거 배경 뒤에해달라해서 이것만바꿨음 이것때문에 안됨
+            
         }
         if (parent.transform.GetChild(0).gameObject.activeSelf == false && !GameManager4.instance.gameOver) // 풍선이 터졌을때
         {
@@ -53,7 +57,7 @@ public class WolfAni : MonoBehaviour
     }
     public void Tracking()
     {
-        if (transform.position.y <= -1.8f)
+        if (gameObject.layer == 13)
         {
             float dis = Vector3.Distance(transform.position, house.position); //내위치와 target의 위치 사이의 거리를 구함
             if (dis <= 10) // 거리가 10칸 안으로 좁혀졌으면 쫒기 시작

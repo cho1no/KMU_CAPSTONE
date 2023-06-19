@@ -28,7 +28,10 @@ public class ThreadControl : MonoBehaviour
         if (transform.GetChild(0).gameObject.activeSelf == false)// 터졌을때
         {
             ani.SetBool("Dead", true);
+            //ani.SetBool("Bomb", true);
+            ani.SetTrigger("Bombb");
             speed = -3;
+            
         }
     }
     void ObjectFalse()
