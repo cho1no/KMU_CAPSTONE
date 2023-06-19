@@ -34,7 +34,7 @@ public class NoteManager : MonoBehaviour
     private void Start()
     {
         stageState = State.Normal;
-        maxLevel = 5;
+        maxLevel = 4;
     }
 
     private void Update()

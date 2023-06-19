@@ -3844,11 +3844,11 @@ MonoBehaviour:
   - noteSpeed: 475
     bpm: 165
   - noteSpeed: 500
-    bpm: 1800
+    bpm: 180
   bpm: 120
   currentTime: 0
   level: 0
-  maxLevel: 0
+  maxLevel: 4
   tfNoteApeear: {fileID: 1349387963}
   feverTime: 0
   levelUpTimer: 0

@@ -2407,12 +2407,12 @@ MonoBehaviour:
   spawnPoint: []
   level:
   - spawnMaxTime: 4
-  - spawnMaxTime: 3.5
   - spawnMaxTime: 2.5
-  - spawnMaxTime: 1.7
-  - spawnMaxTime: 0.9
+  - spawnMaxTime: 2.1
+  - spawnMaxTime: 1.9
+  - spawnMaxTime: 1.45
   curlevel: 0
-  maxLevel: 5
+  maxLevel: 4
 --- !u!1 &920518719
 GameObject:
   m_ObjectHideFlags: 0

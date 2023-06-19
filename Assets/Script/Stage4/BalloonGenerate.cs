@@ -9,7 +9,7 @@ public class BalloonGenerate : MonoBehaviour
 
     public Level[] level;
     
-    [SerializeField]int curlevel, maxLevel = 5;
+    [SerializeField]int curlevel, maxLevel = 4;
     ButtonControl buttonControl;
     private void Awake()
     {
