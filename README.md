@@ -1,4 +1,4 @@
-![back05.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/090c08c4-7970-47dd-9d2c-882cd18f41a0/4144f9de-2dc7-43c2-a298-4401b88d80a7/back05.jpg)
+![Image](https://github.com/user-attachments/assets/8898d645-adae-456a-8e57-80b72ba062cb)
 
                  **점수 갱신**
 
