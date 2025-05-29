@@ -32,9 +32,7 @@ __<미니게임 수집 시스템>__
 ---
 <div align="center"> 
 <img src = "https://github.com/user-attachments/assets/b2bde323-8d3b-4f48-b3a9-7e8bd58cc95d" width = "150" height="300"/ >
-<SafeArea 적용 전>
 <img src = "https://github.com/user-attachments/assets/61f81ecf-87bb-44b4-a6d9-ba0b75bb4a75" width = "150" height="300"/ >
-<SafeArea 적용 후>
      
 __<모바일 UI환경 구축>__
 
