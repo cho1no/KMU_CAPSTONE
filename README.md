@@ -43,8 +43,8 @@ __<모바일 UI환경 구축>__
 이를 통해 UI 요소가 자동으로 조정되도록 구현하여 다양한 디바이스에서도 최적의 가독성과 사용성을 유지하도록 하였습니다.
 
 </div>
----
 
+---
 <div align="center"> 
 <img src = "https://github.com/user-attachments/assets/f9d4f8f5-1d73-4427-b5ab-ec660ebbd580" width = "150" height="300"/ >
 __<UI/UX>__
@@ -52,6 +52,7 @@ __<UI/UX>__
 Unity의 Video Clip 시스템을 활용하여 게임 시작 전 GIF 형태의 짧은 플레이 영상을 제공함으로써, 플레이어가 직관적으로 게임 플레이 방법을 익힐 수 있도록 구현하였습니다.
 
 </div>
+
 ---
 <div align="center"> 
 <img src = "https://github.com/user-attachments/assets/e9db1b2d-d648-49f7-bf9f-796c6fb4211d" width = "500" height="300"/>
