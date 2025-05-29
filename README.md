@@ -31,6 +31,20 @@ __<미니게임 수집 시스템>__
 
 ---
 <div align="center"> 
+<img src = "https://github.com/user-attachments/assets/28aa81fa-48a1-4546-b92b-bd2d0f3e0e73" width = "150" height="300"/ >
+<SafeArea 적용 전>
+<img src = "https://github.com/user-attachments/assets/f444c405-5df7-4939-8252-58bc69725ae6" width = "150" height="300"/ >
+<SafeArea 적용 후>
+     
+__<모바일 UI환경 구축>__
+
+모바일 기기별 화면 비율과 해상도 등 다양한차이를 고려하여 UI가 가려지거나 잘리는 문제를 방지하는 오픈 소스코드를 사용하였습니다. 
+
+이를 통해 UI 요소가 자동으로 조정되도록 구현하여 다양한 디바이스에서도 최적의 가독성과 사용성을 유지하도록 하였습니다.
+
+</div>
+---
+<div align="center"> 
 <img src = "https://github.com/user-attachments/assets/e9db1b2d-d648-49f7-bf9f-796c6fb4211d" width = "500" height="300"/>
 
 __미니게임__ 
