@@ -31,9 +31,9 @@ __<미니게임 수집 시스템>__
 
 ---
 <div align="center"> 
-<img src = "https://github.com/user-attachments/assets/28aa81fa-48a1-4546-b92b-bd2d0f3e0e73:제목_없음35.png" width = "150" height="300"/ >
+<img src = "https://github.com/user-attachments/assets/b2bde323-8d3b-4f48-b3a9-7e8bd58cc95d" width = "150" height="300"/ >
 <SafeArea 적용 전>
-<img src = "https://github.com/user-attachments/assets/f444c405-5df7-4939-8252-58bc69725ae6:image35.png" width = "150" height="300"/ >
+<img src = "https://github.com/user-attachments/assets/61f81ecf-87bb-44b4-a6d9-ba0b75bb4a75" width = "150" height="300"/ >
 <SafeArea 적용 후>
      
 __<모바일 UI환경 구축>__
@@ -46,7 +46,8 @@ __<모바일 UI환경 구축>__
 
 ---
 <div align="center"> 
-<img src = "https://github.com/user-attachments/assets/f9d4f8f5-1d73-4427-b5ab-ec660ebbd580:Screenshot_20250305_152939_Capstone0505.png" width = "150" height="300"/ >
+<img src = "https://github.com/user-attachments/assets/2bbcc9d7-d85b-4e56-93f2-b44451d26ab3" width = "150" height="300"/ >
+     
 __<UI/UX>__
 
 Unity의 Video Clip 시스템을 활용하여 게임 시작 전 GIF 형태의 짧은 플레이 영상을 제공함으로써, 플레이어가 직관적으로 게임 플레이 방법을 익힐 수 있도록 구현하였습니다.
